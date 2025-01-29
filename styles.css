@@ -1,0 +1,818 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #5a1717; /* Color de fondo similar al de la imagen */
+    color: #fff;
+}
+
+.cuadrado { 
+    position: relative; 
+    top: 39%; 
+    width: 333px; /* Ancho del cuadrado */ 
+    height: 63px; /* Altura del cuadrado */ 
+    background-color: yellow; /* Color de fondo */ 
+    z-index: 1; 
+    display: flex; 
+    margin-bottom: 20px;
+}
+
+.texto { 
+    color: #5a1717; /* Color del texto */ 
+    font-size: 24px; 
+    margin: 0; 
+}
+
+.header { 
+    display: flex; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #400e0e; 
+    z-index: 1000; /* Para asegurar que el header esté por encima de otros elementos */ }
+
+.header .separador{
+    position: absolute;
+    top: 10px; 
+    left: 220px;
+    width: 2px; /* Ancho del cuadrado */ 
+    height: 67px; /* Altura del cuadrado */ 
+    background-color: white; /* Color de fondo */ 
+    z-index: 1; 
+    display: flex; 
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.header .logo img {
+    display: flex;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    height: 60px;
+}
+
+.header .menu{
+    display: none;
+    background: transparent;
+    border: transparent;
+}
+
+ul { 
+    list-style-type: none; /* Elimina los puntos de las listas desordenadas */ 
+    padding: 0; 
+    margin: 0; }
+
+.nav-links {
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    : left;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease; /* Transición suave */
+    margin-right: 25px;
+    justify-content: flex-start;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; /* Ajusta la posición de la línea */
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease; /* Transición suave */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.dropdown { 
+    position: relative; 
+} 
+
+.dropdown-content { 
+    display: none; 
+    width: 170px;
+    position: absolute; 
+    background-color: #400e0e; 
+    z-index: ; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+
+.dropdown-content a { 
+    width: 170px;
+    color: #fffffff; 
+    padding: 10px; 
+    text-decoration: none; 
+    display: block; 
+    border-bottom: 0px solid #ccc; 
+    transition: background-color 0.3s; 
+} 
+.menub{
+    display: none;
+    background: transparent;
+    border: transparent;
+}
+.dropdown-content a:hover { 
+    background-color: #5a1717; 
+} 
+
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+
+.button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #fff; /* Color de fondo inicial */
+    color: #5a1717; /* Color del texto */
+    text-decoration: none;
+    border: 2px solid transparent; /* Borde inicial transparente */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+    right: 10%;
+}
+
+.button:hover {
+    background-color: transparent; /* Fondo transparente en estado hover */
+    color: #fff; /* Cambia el color del texto para mejor visibilidad */
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+
+/* Sección Hero */
+.hero {
+    padding: 50px 30px;
+    margin-bottom: 270px;
+    margin-top: 80px;
+    justify-content: space-between;
+    align-items: bottom;
+    text-align: left;
+}
+
+.hero h1 {
+    width: 25%;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    z-index: 3;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #f0f0f0;
+    text-align: left;
+    width: 40%;
+}
+
+.heroImages1{
+    position: absolute; 
+    top: 15%; 
+    right: 5%; 
+    width: 275px; 
+    height: 550px; 
+    z-index: 3;
+}
+
+.heroImages2{ 
+    position: absolute; 
+    top: 29%; 
+    right: 7%; 
+    width: 700px; 
+    height: 448.84px; 
+    z-index: 2;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    margin-top: 0%;
+    background-color: #441515;
+    height: 100vh;
+}
+
+
+.info .responsabilidad{
+    flex: 1 1 30%; /* Ajusta cada div a un ancho flexible de 30% */
+    max-width: 100%; /* No permita que exceda el 30% del ancho del contenedor */
+    max-height: 70%;
+    background-color: #5a1717; /* Añadir un color de fondo para visibilidad */
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1%;
+    z-index: 2;
+    margin-top: 10vh;
+
+}
+
+.info .atencion{
+    flex: 1 1 30%; /* Ajusta cada div a un ancho flexible de 30% */
+    max-width: 100%; /* No permita que exceda el 30% del ancho del contenedor */
+    max-height: 90%;
+    background-color: #F0D1D1; /* Añadir un color de fondo para visibilidad */
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1%;
+    z-index: 2;
+
+}
+
+.info .atencion h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #5a1717;
+}
+
+.info .atencion p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #5a1717;
+}
+
+.info .etica{
+    flex: 1 1 30%; /* Ajusta cada div a un ancho flexible de 30% */
+    max-width: 100%; /* No permita que exceda el 30% del ancho del contenedor */
+    max-height: 70%;
+    background-color: #5a1717; /* Añadir un color de fondo para visibilidad */
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1%;
+    z-index: 2;
+    margin-top: 10vh;
+
+}
+
+.info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.info h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.info .linea{
+    display: none;
+    position: absolute;
+    border-radio: 15%; 
+    height:7px; 
+    width: 97.5%;
+    background: #ffffff; /* Color de la línea */ 
+    margin: 300px 0; /* Espacio superior e inferior */
+    z-index: 1;
+
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .info div {
+        flex: 1 1 100%; /* Ajusta cada div a un ancho flexible del 100% */
+        max-width: 100%; /* No permita que exceda el 100% del ancho del contenedor */
+    }
+}
+
+
+.whatsapp-icon {
+    display: inline-block;
+    margin: 15px;
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+
+/* Sección de Servicios Mejorada */
+.servicios {
+    position: relative;
+    margin-top: 77px;
+}
+
+.carousel {
+    position: relative;
+    left: 10%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 20%;
+    transition: transform 0.5s, filter 0.5s;
+    margin: 0 20px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.carousel-item.active img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.carousel-item:not(.active) img {
+    transform: scale(0.8);
+    filter: brightness(0.7);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+.price-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.price-display h2 {
+    margin-bottom: 10px;
+}
+
+#price-info {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Sección de Misión, Visión y Valores */
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.about-item {
+    flex: 1;
+    height: 200px;
+    background-color: #7a2e2e;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Sección de Contacto */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #25D366;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #25D366;
+}
+
+////////
+
+.humo-container {
+    position: relative;
+    width: 100px;
+    height: 300px;
+}
+
+.humo {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: humoAnim 5s infinite ease-in-out;
+    opacity: 0;
+}
+
+@keyframes humoAnim {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateX(-20px); /* Desplazamiento a la izquierda */
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(-20px, -300px) scale(2); /* Subida */
+        opacity: 0;
+    }
+}
+
+/* Animaciones para el humo en la izquierda */
+#humo1-izquierda {
+    animation-delay: 0s;
+    left: 0;
+}
+#humo2-izquierda {
+    animation-delay: 1s;
+    left: 50px;
+}
+#humo3-izquierda {
+    animation-delay: 2s;
+    left: 100px;
+}
+
+/* Animaciones para el humo en la derecha */
+#humo1-derecha {
+    animation-delay: 0.5s;
+    left: 0;
+    animation-direction: alternate; /* Cambiar dirección para la derecha */
+}
+#humo2-derecha {
+    animation-delay: 1.5s;
+    left: 50px;
+    animation-direction: alternate; /* Cambiar dirección para la derecha */
+}
+#humo3-derecha {
+    animation-delay: 2.5s;
+    left: 100px;
+    animation-direction: alternate; /* Cambiar dirección para la derecha */
+}
+
+@keyframes humoAnimDerecha {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateX(20px); /* Desplazamiento a la derecha */
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(20px, -300px) scale(2); /* Subida */
+        opacity: 0;
+    }
+}
+
+#humo1-derecha, #humo2-derecha, #humo3-derecha {
+    animation-name: humoAnimDerecha;
+}
+
+///////
+
+.enlace {
+    position: relative;
+}
+
+.whatsapp-icon {
+    display: inline-block;
+}
+
+.mensaje {
+    position: absolute;
+    top: 50%;
+    left: -300px; /* Ajusta este valor según la distancia que quieras del enlace */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, left 0.3s;
+    white-space: nowrap;
+}
+
+.enlace:hover .mensaje {
+    opacity: 1;
+    left: -210px; /* Ajusta este valor para acercar el mensaje al enlace */
+}
+
+.icons{
+    position: absolute;
+    left: 47%;
+    bottom: 35%;
+    color: #EEEEEE;
+    width: 150px;
+    flex-wrap: wrap;
+    min-width: 150px;
+}
+
+#icon1{
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 30px;
+    height: 30px;
+}
+
+#icon1:hover{
+    transform: scale(1.7);
+}
+
+#icon2{
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 30px;
+    height: 30px;
+}
+
+#icon2:hover{
+    transform: scale(1.7);
+}
+
+#icon3{
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 30px;
+    height: 30px;
+}
+
+#icon3:hover{
+    transform: scale(1.7);
+}
+
+a{
+    margin-right: 4%;
+    font-size: 17px;
+    text-decoration: none;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: color 0.7s ease;
+    transition: text-decoration 0.7s ease;
+}
+a:hover {
+    color: white; 
+    text-decoration: underline;
+    text-decoration-color: #EEEEEE;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/*Ajuste de dispositivos*/
+
+@media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    }
+    @media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    }
+    @media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    }
+    @media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    }
+    @media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    }
+    
+    @media screen and (max-width: 600px) {
+        .profile-picture {
+            /* Estilos para el primer div cuando la pantalla es pequeña */
+            order: 2; /* Cambia el orden de visualización */
+            margin-top: 20px; /* Espacio entre los divs */
+        }
+    
+        .presentacion {
+            /* Estilos para el segundo div cuando la pantalla es pequeña */
+            order: 1; /* Cambia el orden de visualización */
+            margin-bottom: 20px; /* Espacio entre los divs */
+        }
+        
+    }
+    
+    #juancho:hover {
+        color: red;
+        cursor: pointer;
+    }
+    
+    #ad {
+        display: none;
+        position: absolute;
+        background-color: #151515;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        left: 10%;
+        top: 5%;
+        z-index: 0;
+    }
+    h1{
+        position: relative; 
+        text-align: center; 
+        font-size: 80px; 
+        color: white; 
+        margin-top: 300px;
+    }
+    
+    /* Resolución para dispositivos moviles volteados */
+    /* se ve mal la resolucion acostada en IPHONES ://// */
+    @media screen and (max-width: 900px){
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            bleed: 0px;
+            width: auto;
+        }
+    
+        h1{
+            position: relative; 
+            text-align: center; 
+            font-size: 45px; 
+            color: white; 
+            margin-top: 300px;
+        }
+        .nav-links{
+            display: none;
+        }
+        .button{
+            left: 5%;
+        }
+        .header .separador{
+            position: absolute;
+            top: 10px; 
+            left: 70px;
+            width: 2px; /* Ancho del cuadrado */ 
+            height: 45px; /* Altura del cuadrado */ 
+            background-color: white; /* Color de fondo */ 
+            z-index: 1; 
+            display: flex; 
+            margin-bottom: 20px;
+            border-radius: 25px;
+        }
+        .menu{
+
+            position: absolute;
+            top: 1.5%;
+            left: 4%;
+            z-index: 1000;
+
+        }
+        .menub{
+            display: flex;
+            background: transparent;
+            border: transparent;
+        }
+        .notification {
+            position: fixed;
+            bottom: 150px;
+            right: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .icons{
+            bottom: -65%;
+            left: 40%;
+            width: 130px;
+            position: absolute;
+            bottom: 45%;
+        }
+        .icons svg {
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+        }
+        footer{
+            position: absolute;
+            bottom: -75%;
+            left: 12%;
+        }
+        #ad {
+            display: none;
+            position: absolute;
+            align-items: center;
+            text-align: center;
+            background-color: #151515;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            left: 12%;
+            top: 8%;
+            z-index: 0;
+            width: 150px;
+        }
+    
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media screen and (max-width: 500px) {
+        .logo{
+            display: none;
+        }
+
+    }
