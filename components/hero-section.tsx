@@ -24,17 +24,17 @@ export function HeroSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Desarrollo de Software en Caracas | Apps, Páginas Web y Hosting Empresarial
+            Transformamos tu presencia online para que puedas brillar sin preocuparte por los detalles.
             </h1>
 
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              Soluciones de software empresarial, diseño de páginas web y hosting de alta calidad para impulsar el crecimiento de tu negocio en la era digital.
+              Nos especializamos en crear, gestionar y optimizar tu presencia online en costos accesibles para que puedas concentrarte en lo que realmente importa: ¡hacer crecer tu negocio!
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="#contacto">
+              <Link href="https://calendly.com/softwans7/llamada-gratuita-para-conocer-el-paquete-profesional">
                 <Button size="lg" className="w-full min-[400px]:w-auto">
-                  Solicitar Presupuesto
+                  Agendar llamada
                 </Button>
               </Link>
               <Link href="#servicios">

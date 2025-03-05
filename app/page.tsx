@@ -24,8 +24,8 @@ export default function Home() {
                 Hablanos sobre tu proyecto
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                Estamos listos para ayudarte a llevar tu negocio al siguiente nivel. Contáctanos hoy mismo para una
-                consulta gratuita.
+                ¡No pierdas el tiempo! Para asegurarnos de ofrecer un servicio de calidad, trabajamos con una cantidad limitada de clientes. Estamos listos para ayudarte y llevar tu negocio al siguiente nivel. Contáctanos hoy mismo para una
+                llamada totalmente gratuita.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">

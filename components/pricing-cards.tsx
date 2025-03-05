@@ -47,7 +47,15 @@ export function PricingCards() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-primary" />
-                  <span>Soporte por email</span>
+                  <span>Gestión de 1 red social</span>
+                </li>
+                <li className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-primary" />
+                  <span>1 Correo Corporativo</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span>Soporte prioritario por email</span>
                 </li>
               </ul>
               <br />
@@ -96,8 +104,16 @@ export function PricingCards() {
                   <span>SEO básico</span>
                 </li>
                 <li className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-primary" />
+                  <span>Gestión de 3 redes sociales</span>
+                </li>
+                <li className="flex items-center gap-2">
                   <Check className="h-4 w-4" />
                   <span>Integración con redes sociales</span>
+                </li>
+                <li className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-primary" />
+                  <span>3 Correos Corporativos</span>
                 </li>
               </ul>
               <br />
@@ -115,7 +131,7 @@ export function PricingCards() {
               <h3 className="text-2xl font-bold">Empresarial</h3>
               <p className="text-muted-foreground">Solución completa para grandes empresas</p>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">€199</span>
+                <span className="text-3xl font-bold">€249.99</span>
                 <span className="text-muted-foreground">/mes</span>
               </div>
             </div>
@@ -150,12 +166,20 @@ export function PricingCards() {
                   <span>Integración con CRM</span>
                 </li>
                 <li className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-primary" />
+                  <span>5 Correos Corporativos</span>
+                </li>
+                <li className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-primary" />
                   <span>Análisis de datos avanzado</span>
                 </li>
+                <li className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-primary" />
+                  <span>Gestión de 5 redes sociales</span>
+                </li>
               </ul>
               <br />
-              <Link href="#contacto" className="w-full">
+              <Link href="https://wa.me/message/Y5IO4FCCEMICH1" className="w-full">
                 <Button variant="outline" className="w-full">
                   Contactar Ventas
                 </Button>
