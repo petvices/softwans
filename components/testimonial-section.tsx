@@ -9,7 +9,7 @@ export function TestimonialSection() {
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Testimonios</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Lo que dicen nuestros clientes</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Descubre por qué las empresas confían en nosotros para sus necesidades tecnológicas.
+              Descubre por qué las empresas confían en nosotros para su presencia online y necesidades tecnológicas.
             </p>
           </div>
         </div>

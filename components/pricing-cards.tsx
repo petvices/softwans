@@ -104,7 +104,7 @@ export function PricingCards() {
                   <span>SEO básico</span>
                 </li>
                 <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary" />
+                  <Check className="h-4 w-4" />
                   <span>Gestión de 3 redes sociales</span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -112,7 +112,7 @@ export function PricingCards() {
                   <span>Integración con redes sociales</span>
                 </li>
                 <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary" />
+                  <Check className="h-4 w-4" />
                   <span>3 Correos Corporativos</span>
                 </li>
               </ul>
@@ -166,7 +166,7 @@ export function PricingCards() {
                   <span>Integración con CRM</span>
                 </li>
                 <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary" />
+                  <Check className="h-4 w-4 text-primary" />
                   <span>5 Correos Corporativos</span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -174,14 +174,14 @@ export function PricingCards() {
                   <span>Análisis de datos avanzado</span>
                 </li>
                 <li className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-primary" />
+                  <Check className="h-4 w-4 text-primary" />
                   <span>Gestión de 5 redes sociales</span>
                 </li>
               </ul>
               <br />
               <Link href="https://wa.me/message/Y5IO4FCCEMICH1" className="w-full">
                 <Button variant="outline" className="w-full">
-                  Contactar Ventas
+                  Seleccionar Plan
                 </Button>
               </Link>
             </div>

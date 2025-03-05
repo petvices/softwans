@@ -43,8 +43,8 @@ export function FeatureSection() {
             </div>
             <h3 className="mb-2 text-xl font-bold">Hosting</h3>
             <p className="text-muted-foreground">
-              Servicios de alojamiento web rápidos, seguros y confiables con soporte técnico 24/7 para mantener tu
-              negocio siempre en línea.
+              Servicios de alojamiento web rápidos, seguros y confiables con soporte técnico 24/7 para mantener la
+              presencia de tú negocio siempre en línea.
             </p>
           </div>
           <div className="rounded-lg border bg-background p-8 shadow-sm">

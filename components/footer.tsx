@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">TechSolutions</h3>
+            <h3 className="text-lg font-semibold">Softwans Corporations</h3>
             <p className="text-sm text-muted-foreground">
               Soluciones tecnológicas para empresas de todos los tamaños. Impulsamos tu negocio en la era digital.
             </p>
