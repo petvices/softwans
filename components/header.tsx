@@ -129,6 +129,13 @@ export function Header() {
               >
                 Contacto
               </Link>
+              <Link
+                href="/hypatia"
+                className="text-sm font-medium transition-colors hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Hypatia
+              </Link>
               <div className="flex gap-4 pt-2">
                 <Button
                   variant="outline"
