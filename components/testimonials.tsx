@@ -37,14 +37,16 @@ export function Testimonials() {
   ];
 
   useEffect(() => {
-    let interval;
+    let interval: ReturnType<typeof setInterval> | null = null; // Definir tipo explícito
     if (autoplay) {
       interval = setInterval(() => {
         setActiveIndex((prev) => (prev + 1) % testimonials.length);
       }, 5000);
     }
-    return () => clearInterval(interval);
-  }, [autoplay, testimonials.length]);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [autoplay, testimonials.length]);  
 
   const handlePrev = () => {
     setAutoplay(false);
