@@ -6,6 +6,7 @@ import * as RechartsPrimitive from "recharts"
 import { cn } from "@/lib/utils"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const THEMES = { light: "", dark: ".dark" } as const
 
 export type ChartConfig = {
@@ -69,7 +70,8 @@ ChartContainer.displayName = "Chart"
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
-    ([_unused, config]) => config.theme || config.color
+    ([, config]) => config.theme || config.color
+
   )
 
   if (!colorConfig.length) {
