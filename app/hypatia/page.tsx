@@ -91,7 +91,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
+                  <a href="https://wa.me/message/Y5IO4FCCEMICH1" className="text-gray-500 hover:text-purple-600 transition-colors">
                     Contacto
                   </a>
                 </li>
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-sm text-gray-500 pt-6 border-t">
-            © {new Date().getFullYear()} Hypatia AI. Todos los derechos reservados.
+            © {new Date().getFullYear()} Hypatia AI. Todos los derechos reservados. Softwans 
           </div>
         </div>
       </footer>

@@ -123,6 +123,13 @@ export function Header() {
                 Testimonios
               </Link>
               <Link
+                href="#contacto"
+                className="text-sm font-medium transition-colors hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contacto
+              </Link>
+              <Link
                 href="/hypatia"
                 className="text-sm font-medium transition-colors hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
