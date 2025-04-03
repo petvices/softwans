@@ -153,6 +153,8 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+          </div>
         </motion.div>
       )}
     </header>
