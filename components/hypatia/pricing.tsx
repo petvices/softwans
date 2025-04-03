@@ -13,10 +13,24 @@ export function Pricing() {
 
   const plans = [
     {
+      name: " ",
+      price: " ",
+      description: " ",
+      features: [" ",],
+      popular: true,
+    },
+    {
       name: "Básico",
       price: "9.99",
       description: "Ideal para emprendedores individuales",
       features: ["Gestión de recordatorios", "Envío de correos básico", "Soporte por correo electrónico", "1 usuario", "Preguntas sin limite"],
+      popular: true,
+    },
+    {
+      name: " ",
+      price: " ",
+      description: " ",
+      features: [" "],
       popular: true,
     },
 //    {

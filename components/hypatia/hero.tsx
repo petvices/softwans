@@ -64,14 +64,15 @@ export function Hero() {
                 <span>Comenzar ahora</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
-              <Button
-                variant="outline"
+{/*
+              <Button variant="outline"
                 size="lg"
                 className="group border-purple-200 hover:border-purple-600 transition-colors text-lg px-6 py-6 h-auto"
               >
-                <Play className="mr-2 h-4 w-4 text-purple-600" />
-                <span>Ver demostración</span>
+                <Play className="mr-2 h-4 w-4 text-purple-600" /> 
+                <span>Ver demostración</span> 
               </Button>
+*/}         
             </motion.div>
 
             <motion.div
@@ -119,8 +120,8 @@ export function Hero() {
                 <Image
                   src="/images/hypatia.png"
                   alt="Hypatia AI Assistant"
-                  width={350}
-                  height={350}
+                  width={300}
+                  height={300}
                   className="rounded-2xl object-cover"
                 />
 
