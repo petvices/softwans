@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { CalendarDays, Mail, BarChart3, Clock, Users, Zap } from 'lucide-react'
+import { CalendarDays, Mail, BarChart3, Clock, Zap } from 'lucide-react'
 import Image from "next/image"
 
 // Definimos una interfaz para el tipo de feature
