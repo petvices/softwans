@@ -153,15 +153,6 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <div className="flex flex-col space-y-2 pt-2 border-t">
-              <Button variant="outline" size="sm" className="w-full">
-                Iniciar sesión
-              </Button>
-              <Button size="sm" className="w-full bg-gradient-to-r from-purple-600 to-indigo-600">
-                Registrarse
-              </Button>
-            </div>
-          </div>
         </motion.div>
       )}
     </header>
