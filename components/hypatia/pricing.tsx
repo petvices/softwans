@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion"
 import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
 
 export function Pricing() {
   const ref = useRef(null)
@@ -15,34 +16,34 @@ export function Pricing() {
       name: "Básico",
       price: "9.99",
       description: "Ideal para emprendedores individuales",
-      features: ["Gestión de recordatorios", "Envío de correos básico", "Soporte por correo electrónico", "1 usuario"],
+      features: ["Gestión de recordatorios", "Envío de correos básico", "Soporte por correo electrónico", "1 usuario", "Preguntas sin limite"],
     },
-    {
-      name: "Profesional",
-      price: "24.99",
-      description: "Perfecto para pequeñas empresas",
-      features: [
-        "Todo lo del plan Básico",
-        "Análisis de negocio",
-        "Gestión de clientes",
-        "Soporte prioritario",
-        "Hasta 5 usuarios",
-      ],
-      popular: true,
-    },
-    {
-      name: "Empresarial",
-      price: "49.99",
-      description: "Para empresas en crecimiento",
-      features: [
-        "Todo lo del plan Profesional",
-        "API personalizada",
-        "Integraciones avanzadas",
-        "Soporte 24/7",
-        "Usuarios ilimitados",
-      ],
-    },
-  ]
+//    {
+//      name: "Profesional",
+//      price: "24.99",
+//      description: "Perfecto para pequeñas empresas",
+//      features: [
+//        "Todo lo del plan Básico",
+//        "Análisis de negocio",
+//        "Gestión de clientes",
+//        "Soporte prioritario",
+//        "Hasta 5 usuarios",
+//      ],
+//      popular: true,
+//    },
+//    {
+//      name: "Empresarial",
+//      price: "49.99",
+//      description: "Para empresas en crecimiento",
+//      features: [
+//        "Todo lo del plan Profesional",
+//        "API personalizada",
+//        "Integraciones avanzadas",
+//        "Soporte 24/7",
+//        "Usuarios ilimitados",
+//      ],
+//    },
+ ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -141,6 +142,7 @@ export function Pricing() {
                   </ul>
                 </CardContent>
                 <CardFooter>
+                <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                   <Button
                     className={`w-full ${
                       plan.popular
@@ -151,6 +153,7 @@ export function Pricing() {
                   >
                     {plan.popular ? "Comenzar ahora" : "Elegir plan"}
                   </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </motion.div>
@@ -165,7 +168,9 @@ export function Pricing() {
         >
           <h3 className="text-xl font-bold mb-2">¿Necesitas un plan personalizado?</h3>
           <p className="text-gray-500 mb-4">Contáctanos para crear un plan a medida para tu empresa.</p>
+          <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
           <Button variant="outline">Contactar ventas</Button>
+          </Link>
         </motion.div>
       </div>
     </section>

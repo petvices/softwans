@@ -22,7 +22,7 @@ export function Features() {
       title: "Gestión de recordatorios",
       description:
         "Hypatia te ayuda a organizar tu agenda y nunca olvidar una cita importante. Configura recordatorios recurrentes o puntuales y recibe notificaciones en el momento adecuado.",
-      image: "/placeholder.svg?height=300&width=400&text=Recordatorios",
+      image: "/images/hypatia_1.png?height=300&width=400&text=Recordatorios",
       color: "from-purple-500 to-indigo-500",
       lightColor: "bg-purple-100",
     },
@@ -31,7 +31,7 @@ export function Features() {
       title: "Envío de correos",
       description:
         "Redacta y programa correos electrónicos con facilidad, ahorrando tiempo valioso. Hypatia puede sugerir respuestas y crear plantillas personalizadas para tus necesidades.",
-      image: "/placeholder.svg?height=300&width=400&text=Emails",
+      image: "/images/hypatia_3.png?height=300&width=400&text=Emails",
       color: "from-indigo-500 to-blue-500",
       lightColor: "bg-indigo-100",
     },
@@ -40,7 +40,7 @@ export function Features() {
       title: "Análisis de negocio",
       description:
         "Obtén insights valiosos sobre el rendimiento de tu negocio o emprendimiento. Visualiza tendencias, identifica oportunidades y toma decisiones basadas en datos reales.",
-      image: "/placeholder.svg?height=300&width=400&text=Análisis",
+      image: "/images/hypatia_4.png?height=300&width=400&text=Análisis",
       color: "from-blue-500 to-cyan-500",
       lightColor: "bg-blue-100",
     },
@@ -49,25 +49,16 @@ export function Features() {
       title: "Ahorro de tiempo",
       description:
         "Automatiza tareas repetitivas y enfócate en lo que realmente importa. Hypatia puede gestionar múltiples tareas simultáneamente, liberando tu tiempo para actividades de mayor valor.",
-      image: "/placeholder.svg?height=300&width=400&text=Productividad",
+      image: "/images/hypatia_2.png?height=300&width=400&text=Productividad",
       color: "from-cyan-500 to-teal-500",
       lightColor: "bg-cyan-100",
-    },
-    {
-      icon: <Users className="h-10 w-10" />,
-      title: "Gestión de clientes",
-      description:
-        "Mantén un seguimiento efectivo de tus clientes y sus necesidades. Organiza contactos, registra interacciones y programa seguimientos para mejorar tus relaciones comerciales.",
-      image: "/placeholder.svg?height=300&width=400&text=Clientes",
-      color: "from-teal-500 to-green-500",
-      lightColor: "bg-teal-100",
     },
     {
       icon: <Zap className="h-10 w-10" />,
       title: "Respuestas rápidas",
       description:
         "Hypatia responde al instante, proporcionando la información que necesitas cuando la necesitas. Obtén respuestas precisas a tus preguntas sin esperas innecesarias.",
-      image: "/placeholder.svg?height=300&width=400&text=Respuestas",
+      image: "/images/hypatia.png?height=300&width=400&text=Respuestas",
       color: "from-green-500 to-purple-500",
       lightColor: "bg-green-100",
     },

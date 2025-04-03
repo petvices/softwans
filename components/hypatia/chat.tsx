@@ -15,13 +15,13 @@ const predefinedQuestions = [
     id: 1,
     question: "¿Cómo puedo adquirir Hypatia?",
     answer:
-      "Puedes adquirir Hypatia a través de nuestra página web. Simplemente selecciona el plan que mejor se adapte a tus necesidades en nuestra sección de precios y haz clic en 'Comenzar ahora'. El proceso de registro toma menos de 2 minutos.",
+      "Puedes adquirir Hypatia a través de nuestra página web: https//Softwans.com/Hypatia, Simplemente selecciona la versión del dispositivo en la que lo vayas a usar y registrate como beta tester. El proceso de registro toma menos de 2 minutos.",
   },
   {
     id: 2,
     question: "¿Qué incluye el plan Profesional?",
     answer:
-      "Nuestro plan Profesional por $24.99/mes incluye análisis de negocio avanzado, gestión de clientes, soporte prioritario y hasta 5 usuarios. Además, tendrás acceso a todas las funcionalidades del plan Básico como gestión de recordatorios y envío de correos.",
+      "Nuestro plan Profesional por $24.99/mes incluye análisis de negocio avanzado, gestión de clientes, soporte prioritario y hasta 5 usuarios. Además, tendrás acceso a todas las funcionalidades del plan Básico como gestión de recordatorios y envío de correos. Aun que he de mencionar que este plan aún no se encuentra activo",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const predefinedQuestions = [
     id: 4,
     question: "¿Puedo probar Hypatia antes de comprarla?",
     answer:
-      "¡Por supuesto! Ofrecemos una prueba gratuita de 14 días de cualquiera de nuestros planes. Durante este período podrás explorar todas las funcionalidades sin compromiso. No requerimos datos de pago para comenzar tu prueba gratuita.",
+      "¡Por supuesto! Ofrecemos una prueba gratuita con preguntas limitadas de cualquiera de nuestros planes. Durante este período podrás explorar todas las funcionalidades sin compromiso. No requerimos datos de pago para comenzar tu prueba gratuita.",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export function Chat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "¡Hola! Soy Hypatia, tu asistente IA. Puedo ayudarte con la gestión de recordatorios, envío de correos y optimización de tu negocio. ¿Qué te gustaría saber?",
+      text: "¡Hola! Soy Hypatia, tu asistente IA. Puedo ayudarte con la gestión de recordatorios, envío de correos y optimización de tu negocio. ¿Qué te gustaría saber sobre mí?",
       sender: "bot",
     },
   ])

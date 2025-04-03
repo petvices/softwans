@@ -87,7 +87,7 @@ export function Hero() {
                     className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden"
                   >
                     <Image
-                      src={`/placeholder.svg?height=32&width=32&text=${i}`}
+                      src={`/images/user.png?height=32&width=32&text=${i}`}
                       alt={`User ${i}`}
                       width={32}
                       height={32}
@@ -96,7 +96,7 @@ export function Hero() {
                   </div>
                 ))}
               </div>
-              <span>+2,500 usuarios activos</span>
+              <span>+5 usuarios activos</span>
             </motion.div>
           </div>
 
@@ -119,8 +119,8 @@ export function Hero() {
                 <Image
                   src="/images/hypatia.png"
                   alt="Hypatia AI Assistant"
-                  width={250}
-                  height={250}
+                  width={350}
+                  height={350}
                   className="rounded-2xl object-cover"
                 />
 

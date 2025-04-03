@@ -16,22 +16,22 @@ export function Testimonials() {
     {
       name: "María González",
       role: "Fundadora de StartupX",
-      image: "/placeholder.svg?height=80&width=80&text=MG",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: "Hypatia ha transformado por completo la forma en que gestiono mi negocio. Los recordatorios automáticos y el envío de correos me han ahorrado horas de trabajo cada semana.",
-      rating: 5
+      rating: 4
     },
     {
       name: "Carlos Rodríguez",
       role: "Director de Marketing",
-      image: "/placeholder.svg?height=80&width=80&text=CR",
+      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       content: "La capacidad de análisis de Hypatia es impresionante. Me ha ayudado a identificar tendencias en mi negocio que no había notado antes, lo que ha resultado en un aumento del 30% en ventas.",
       rating: 5
     },
     {
-      name: "Laura Martínez",
-      role: "Emprendedora",
-      image: "/placeholder.svg?height=80&width=80&text=LM",
-      content: "Como emprendedora, necesitaba una solución que me ayudara a gestionar múltiples tareas. Hypatia no solo cumplió con mis expectativas, sino que las superó. ¡Es como tener un asistente personal 24/7!",
+      name: "Rodrigo Martínez",
+      role: "Emprendedor",
+      image: "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      content: "Como emprendedor, necesitaba una solución que me ayudara a gestionar múltiples tareas. Hypatia no solo cumplió con mis expectativas, sino que las superó. ¡Es como tener un asistente personal 24/7!",
       rating: 4
     }
   ];
