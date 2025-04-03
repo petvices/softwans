@@ -107,15 +107,7 @@ export function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Button variant="outline" size="sm" className="border-purple-200 hover:border-purple-600 transition-colors">
-            Iniciar sesión
-          </Button>
-          <Button
-            size="sm"
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
-          >
-            Registrarse
-          </Button>
+
         </motion.div>
 
         <div className="md:hidden flex items-center">
