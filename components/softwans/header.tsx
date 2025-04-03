@@ -3,34 +3,15 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Moon, Sun } from "lucide-react"
+import { Menu, X, Moon, Sun, ArrowRight } from "lucide-react"
 import { LoginModal } from "@/components/login-modal"
-import Script from 'next/script';
-
+import { motion } from "framer-motion"
 
 export function Header() {
-  <>
-  <Script id="json" 
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Softwans",
-        "url": "https://softwans.com",
-        "logo": "https://softwans.com/favicon.ico",
-        "sameAs": [
-          "https://www.instagram.com/softwans/"
-        ]
-      }),
-    }}
-  />
-  <header>...</header>
-</>
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  // Cambiamos el estado inicial a true para que comience en modo oscuro
   const [isDarkMode, setIsDarkMode] = useState(true)
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   // Efecto para establecer el modo oscuro por defecto
   useEffect(() => {
@@ -46,6 +27,20 @@ export function Header() {
     }
   }, [isDarkMode])
 
+  // Efecto para detectar el scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
   }
@@ -56,10 +51,26 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header
+        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+          isScrolled
+            ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            : "bg-transparent"
+        }`}
+      >
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-primary">Softwans</span> Corporations
+            <motion.span
+              className="text-primary"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              Tech
+            </motion.span>
+            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
+              Solutions
+            </motion.span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#servicios" className="text-sm font-medium transition-colors hover:text-primary">
@@ -74,20 +85,20 @@ export function Header() {
             <Link href="#contacto" className="text-sm font-medium transition-colors hover:text-primary">
               Contacto
             </Link>
-            <Link href="/hypatia" className="text-sm font-medium transition-colors hover:text-primary">
-              Hypatia
-            </Link>
           </nav>
           <div className="hidden md:flex gap-4 items-center">
-            <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full" aria-label="Cambiar tema">  
+            <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full">
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               <span className="sr-only">Cambiar tema</span>
             </Button>
             <Button variant="outline" size="sm" onClick={openLoginModal}>
               Iniciar Sesión
             </Button>
-            <Link href="https://wa.me/message/Y5IO4FCCEMICH1" passHref>
-             <Button size="sm">Contáctanos</Button>
+            <Link href="#contacto">
+              <Button size="sm" className="group">
+                Cotizar
+                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
             </Link>
           </div>
           <div className="flex md:hidden gap-2 items-center">
@@ -95,7 +106,7 @@ export function Header() {
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               <span className="sr-only">Cambiar tema</span>
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Abrir menú">
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               <span className="sr-only">Toggle menu</span>
             </Button>
@@ -132,13 +143,6 @@ export function Header() {
               >
                 Contacto
               </Link>
-              <Link
-                href="/hypatia"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contacto
-              </Link>
               <div className="flex gap-4 pt-2">
                 <Button
                   variant="outline"
@@ -151,9 +155,11 @@ export function Header() {
                 >
                   Iniciar Sesión
                 </Button>
-                <Button size="sm" className="w-full">
-                  Solicitar Demo
-                </Button>
+                <Link href="#contacto" className="w-full">
+                  <Button size="sm" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Cotizar
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>
@@ -163,7 +169,4 @@ export function Header() {
     </>
   )
 }
-
-
-
 

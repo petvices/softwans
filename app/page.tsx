@@ -1,11 +1,14 @@
-import { MessageSquare, Users } from "lucide-react"
-import { ContactForm } from "@/components/contact-form"
-import { PricingCards } from "@/components/pricing-cards"
-import { TestimonialSection } from "@/components/testimonial-section"
-import { FeatureSection } from "@/components/feature-section"
-import { HeroSection } from "@/components/hero-section"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { HeroSection } from "@/components/softwans/hero-section"
+import { Header } from "@/components/softwans/header"
+import { Footer } from "@/components/softwans/footer"
+import { ServicesSection } from "@/components/softwans/services-section"
+import { PricingCards } from "@/components/softwans/pricing-cards"
+import { TestimonialSection } from "@/components/softwans/testimonial-section"
+import { ContactSection } from "@/components/softwans/contact-section"
+import { WhyChooseUs } from "@/components/softwans/why-choose-us"
+import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
+import { CtaBanner } from "@/components/softwans/cta-banner"
+import { PortfolioSection } from "@/components/softwans/portfolio-section"
 
 export default function Home() {
   return (
@@ -13,36 +16,16 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <FeatureSection />
+        <ServicesSection />
+        <WhyChooseUs />
+        <PortfolioSection />
         <PricingCards />
+        <CtaBanner />
         <TestimonialSection />
-        <section id="contacto" className="container py-12 md:py-24 lg:py-32">
-          <div className="mx-auto grid max-w-5xl gap-12 px-4 md:px-6 lg:grid-cols-2">
-            <div className="space-y-4">
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Contacto</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Hablanos sobre tu proyecto
-              </h2>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                ¡No pierdas el tiempo! Para asegurarnos de ofrecer un servicio de calidad, trabajamos con una cantidad limitada de clientes. Estamos listos para ayudarte y llevar tu negocio al siguiente nivel. Contáctanos hoy mismo para una
-                llamada totalmente gratuita.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <MessageSquare className="h-5 w-5 text-primary" />
-                  <span>info@softwans.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" />
-                  <span>+58 424-2670533</span>
-                </div>
-              </div>
-            </div>
-            <ContactForm />
-          </div>
-        </section>
+        <ContactSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

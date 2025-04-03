@@ -1,11 +1,11 @@
-import { Chat } from "@/components/chat"
-import { Features } from "@/components/features"
-import { Hero } from "@/components/hero"
-import { Navbar } from "@/components/navbar"
-import { Pricing } from "@/components/pricing"
-import { Testimonials } from "@/components/testimonials"
-import { ParticlesBackground } from "@/components/particles-background"
-import { FloatingIcons } from "@/components/floating-icons"
+import { Chat } from "@/components/hypatia/chat"
+import { Features } from "@/components/hypatia/features"
+import { Hero } from "@/components/hypatia/hero"
+import { Navbar } from "@/components/hypatia/navbar"
+import { Pricing } from "@/components/hypatia/pricing"
+import { Testimonials } from "@/components/hypatia/testimonials"
+import { ParticlesBackground } from "@/components/hypatia/particles-background"
+import { FloatingIcons } from "@/components/hypatia/floating-icons"
 
 export default function Home() {
   return (
