@@ -74,6 +74,9 @@ export function Header() {
             <Link href="#contacto" className="text-sm font-medium transition-colors hover:text-primary">
               Contacto
             </Link>
+            <Link href="/hypatia" className="text-sm font-medium transition-colors hover:text-primary">
+              Hypatia
+            </Link>
           </nav>
           <div className="hidden md:flex gap-4 items-center">
             <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full" aria-label="Cambiar tema">  
