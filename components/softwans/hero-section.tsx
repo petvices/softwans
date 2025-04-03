@@ -48,7 +48,7 @@ export function HeroSection() {
                 </Button>
               </Link>
               <Link
-                href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20cotizar%20sus%20servicios"
+                href="https://wa.me/message/Y5IO4FCCEMICH1"
                 target="_blank"
               >
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
@@ -61,7 +61,7 @@ export function HeroSection() {
             <div className="grid grid-cols-3 gap-4 pt-4">
               <div className="flex flex-col items-center rounded-lg border bg-background/50 p-3 backdrop-blur">
                 <Code className="mb-2 h-6 w-6 text-primary" />
-                <p className="text-center text-sm font-medium">Desarrollo Web</p>
+                <p className="text-center text-sm font-medium">Desarrollo</p>
               </div>
               <div className="flex flex-col items-center rounded-lg border bg-background/50 p-3 backdrop-blur">
                 <TrendingUp className="mb-2 h-6 w-6 text-primary" />
@@ -83,7 +83,7 @@ export function HeroSection() {
             <div className="absolute inset-0 z-0 translate-x-10 translate-y-10 rounded-3xl bg-primary/20 blur-xl"></div>
             <div className="relative z-10 overflow-hidden rounded-3xl border bg-background/80 shadow-xl backdrop-blur">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="https://images.unsplash.com/photo-1726056652684-9c135013cef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0"
                 width={600}
                 height={600}
                 alt="Digital Marketing"
@@ -96,4 +96,3 @@ export function HeroSection() {
     </section>
   )
 }
-

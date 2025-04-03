@@ -23,7 +23,7 @@ export function PricingCards() {
               <h3 className="text-2xl font-bold">Básico</h3>
               <p className="text-muted-foreground">Ideal para pequeñas empresas y startups</p>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">$29.99</span>
+                <span className="text-3xl font-bold">$49.99</span>
                 <span className="text-muted-foreground">/mes</span>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function PricingCards() {
               <h3 className="text-2xl font-bold text-primary-foreground">Profesional</h3>
               <p className="text-primary-foreground/80">Perfecto para empresas en crecimiento</p>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold text-primary-foreground">$79.99</span>
+                <span className="text-3xl font-bold text-primary-foreground">$99.99</span>
                 <span className="text-primary-foreground/80">/mes</span>
               </div>
             </div>
@@ -131,7 +131,7 @@ export function PricingCards() {
               <h3 className="text-2xl font-bold">Empresarial</h3>
               <p className="text-muted-foreground">Solución completa para grandes empresas</p>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">€249.99</span>
+                <span className="text-3xl font-bold">€299.99</span>
                 <span className="text-muted-foreground">/mes</span>
               </div>
             </div>

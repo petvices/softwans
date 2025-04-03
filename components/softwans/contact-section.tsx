@@ -92,7 +92,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Teléfono</h3>
-                  <p className="text-muted-foreground">+34 123 456 789</p>
+                  <p className="text-muted-foreground">+58 424-2670533</p>
                   <p className="text-muted-foreground">Lun-Vie: 9:00 - 18:00</p>
                 </div>
               </div>
@@ -105,21 +105,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-muted-foreground">info@tuempresa.com</p>
-                  <p className="text-muted-foreground">soporte@tuempresa.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl border bg-background/80 p-6 backdrop-blur-sm">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Dirección</h3>
-                  <p className="text-muted-foreground">Calle Principal 123</p>
-                  <p className="text-muted-foreground">28001, Madrid, España</p>
+                  <p className="text-muted-foreground">ventas@softwans.com</p>
+                  <p className="text-muted-foreground">soporte@softwans.com</p>
                 </div>
               </div>
             </div>
@@ -131,7 +118,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">WhatsApp</h3>
-                  <p className="text-muted-foreground">+34 123 456 789</p>
+                  <p className="text-muted-foreground">+58 424-2670533</p>
                   <p className="text-muted-foreground">Respuesta inmediata</p>
                 </div>
               </div>

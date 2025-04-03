@@ -9,28 +9,16 @@ import { ArrowRight } from "lucide-react"
 export function PortfolioSection() {
   const projects = [
     {
-      title: "E-commerce de Moda",
+      title: "Landing Page",
       category: "Desarrollo Web",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "#contacto",
+      image: "https://satvicosalimentos.com/wp-content/uploads/2023/10/satv3.png",
+      link: "https://satvicosalimentos.com/",
     },
     {
-      title: "App de Delivery",
+      title: "Hypatia",
       category: "Desarrollo Móvil",
       image: "/placeholder.svg?height=400&width=600",
-      link: "#contacto",
-    },
-    {
-      title: "Campaña Digital para Restaurante",
-      category: "Marketing Digital",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "#contacto",
-    },
-    {
-      title: "Sistema de Gestión Empresarial",
-      category: "Software",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "#contacto",
+      link: "/hypatia",
     },
   ]
 
@@ -93,12 +81,7 @@ export function PortfolioSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Link href="#contacto">
-            <Button size="lg" className="group">
-              Ver Todos los Proyectos
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </Link>
+
         </motion.div>
       </div>
     </section>

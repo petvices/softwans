@@ -36,7 +36,7 @@ export function CtaBanner() {
                 </Button>
               </Link>
               <Link
-                href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20cotizar%20sus%20servicios"
+                href="https://wa.me/message/Y5IO4FCCEMICH1"
                 target="_blank"
               >
                 <Button

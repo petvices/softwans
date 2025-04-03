@@ -66,10 +66,10 @@ export function Header() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Tech
+              Softwans
             </motion.span>
             <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-              Solutions
+              Corporations
             </motion.span>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -94,7 +94,7 @@ export function Header() {
             <Button variant="outline" size="sm" onClick={openLoginModal}>
               Iniciar Sesión
             </Button>
-            <Link href="#contacto">
+            <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
               <Button size="sm" className="group">
                 Cotizar
                 <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
