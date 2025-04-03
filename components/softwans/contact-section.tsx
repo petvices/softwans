@@ -26,9 +26,10 @@ export function ContactSection() {
   };
   
 
-  const handleServiceChange = (value) => {
-    setFormData((prev) => ({ ...prev, service: value }))
-  }
+  const handleServiceChange = (value: string) => {
+    setFormData((prev) => ({ ...prev, service: value }));
+  };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
