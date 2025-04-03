@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -18,10 +20,30 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Función para manejar los clics en los enlaces de navegación
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+
+    // Solo aplicamos el comportamiento personalizado para enlaces internos con #
+    if (href.startsWith("#")) {
+      const targetId = href.substring(1)
+      const targetElement = document.getElementById(targetId)
+
+      if (targetElement) {
+        // Cerrar el menú móvil si está abierto
+        setMobileMenuOpen(false)
+
+        // Scroll suave hacia el elemento
+        targetElement.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }
+
   const navLinks = [
     { name: "Características", href: "#features" },
     { name: "Testimonios", href: "#testimonials" },
     { name: "Precios", href: "#pricing" },
+    { name: "Descargar", href: "#download" },
     { name: "Prueba Hypatia", href: "#chat" },
   ]
 
@@ -67,7 +89,11 @@ export function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <Link href={link.href} className="text-sm font-medium relative group">
+              <Link
+                href={link.href}
+                className="text-sm font-medium relative group"
+                onClick={(e) => handleNavLinkClick(e, link.href)}
+              >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-indigo-600 transition-all duration-300 group-hover:w-full"></span>
               </Link>
@@ -81,6 +107,15 @@ export function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <Button variant="outline" size="sm" className="border-purple-200 hover:border-purple-600 transition-colors">
+            Iniciar sesión
+          </Button>
+          <Button
+            size="sm"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            Registrarse
+          </Button>
         </motion.div>
 
         <div className="md:hidden flex items-center">
@@ -110,7 +145,10 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 className="text-sm font-medium py-2"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  handleNavLinkClick(e, link.href)
+                  setMobileMenuOpen(false)
+                }}
               >
                 {link.name}
               </Link>

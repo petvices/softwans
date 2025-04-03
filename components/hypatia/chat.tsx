@@ -1,42 +1,47 @@
-"use client";
+"use client"
 
-import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 type Message = {
-  id: number;
-  text: string;
-  sender: "user" | "bot";
-};
+  id: number
+  text: string
+  sender: "user" | "bot"
+}
 
 // Definimos las preguntas predefinidas y sus respuestas
 const predefinedQuestions = [
   {
     id: 1,
     question: "¿Cómo puedo adquirir Hypatia?",
-    answer: "Puedes adquirir Hypatia a través de nuestra página web. Simplemente selecciona el plan que mejor se adapte a tus necesidades en nuestra sección de precios y haz clic en 'Comenzar ahora'. El proceso de registro toma menos de 2 minutos."
+    answer:
+      "Puedes adquirir Hypatia a través de nuestra página web. Simplemente selecciona el plan que mejor se adapte a tus necesidades en nuestra sección de precios y haz clic en 'Comenzar ahora'. El proceso de registro toma menos de 2 minutos.",
   },
   {
     id: 2,
     question: "¿Qué incluye el plan Profesional?",
-    answer: "Nuestro plan Profesional por $24.99/mes incluye análisis de negocio avanzado, gestión de clientes, soporte prioritario y hasta 5 usuarios. Además, tendrás acceso a todas las funcionalidades del plan Básico como gestión de recordatorios y envío de correos."
+    answer:
+      "Nuestro plan Profesional por $24.99/mes incluye análisis de negocio avanzado, gestión de clientes, soporte prioritario y hasta 5 usuarios. Además, tendrás acceso a todas las funcionalidades del plan Básico como gestión de recordatorios y envío de correos.",
   },
   {
     id: 3,
     question: "¿Cómo me ayuda Hypatia con mis recordatorios?",
-    answer: "Hypatia te ayuda a gestionar tus recordatorios de manera eficiente. Puedes configurar recordatorios recurrentes o puntuales, recibir notificaciones en el momento adecuado y sincronizar con tu calendario. Nunca más olvidarás una cita o tarea importante."
+    answer:
+      "Hypatia te ayuda a gestionar tus recordatorios de manera eficiente. Puedes configurar recordatorios recurrentes o puntuales, recibir notificaciones en el momento adecuado y sincronizar con tu calendario. Nunca más olvidarás una cita o tarea importante.",
   },
   {
     id: 4,
     question: "¿Puedo probar Hypatia antes de comprarla?",
-    answer: "¡Por supuesto! Ofrecemos una prueba gratuita de 14 días de cualquiera de nuestros planes. Durante este período podrás explorar todas las funcionalidades sin compromiso. No requerimos datos de pago para comenzar tu prueba gratuita."
+    answer:
+      "¡Por supuesto! Ofrecemos una prueba gratuita de 14 días de cualquiera de nuestros planes. Durante este período podrás explorar todas las funcionalidades sin compromiso. No requerimos datos de pago para comenzar tu prueba gratuita.",
   },
   {
     id: 5,
     question: "¿Qué hace diferente a Hypatia de otros asistentes?",
-    answer: "Hypatia se diferencia por su capacidad de aprendizaje adaptativo, que le permite entender tus preferencias y hábitos para ofrecerte una experiencia personalizada. Además, nuestra IA está especializada en gestión de negocios y emprendimientos, con funcionalidades diseñadas específicamente para aumentar tu productividad profesional."
-  }
-];
+    answer:
+      "Hypatia se diferencia por su capacidad de aprendizaje adaptativo, que le permite entender tus preferencias y hábitos para ofrecerte una experiencia personalizada. Además, nuestra IA está especializada en gestión de negocios y emprendimientos, con funcionalidades diseñadas específicamente para aumentar tu productividad profesional.",
+  },
+]
 
 export function Chat() {
   const [messages, setMessages] = useState<Message[]>([
@@ -45,115 +50,124 @@ export function Chat() {
       text: "¡Hola! Soy Hypatia, tu asistente IA. Puedo ayudarte con la gestión de recordatorios, envío de correos y optimización de tu negocio. ¿Qué te gustaría saber?",
       sender: "bot",
     },
-  ]);
-  const [isTyping, setIsTyping] = useState(false);
-  const [askedQuestions, setAskedQuestions] = useState<number[]>([]);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-  const chatContainerRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  ])
+  const [isTyping, setIsTyping] = useState(false)
+  const [askedQuestions, setAskedQuestions] = useState<number[]>([])
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const chatContainerRef = useRef<HTMLDivElement>(null)
+  const chatMessagesRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        setIsVisible(entry.isIntersecting)
       },
-      { threshold: 0.1 }
-    );
-    
+      { threshold: 0.1 },
+    )
+
     // Guardar una referencia al elemento actual para usarla en la limpieza
-    const currentChatContainer = chatContainerRef.current;
-    
+    const currentChatContainer = chatContainerRef.current
+
     if (currentChatContainer) {
-      observer.observe(currentChatContainer);
+      observer.observe(currentChatContainer)
     }
-    
+
     return () => {
       if (currentChatContainer) {
-        observer.unobserve(currentChatContainer);
+        observer.unobserve(currentChatContainer)
       }
-    };
-  }, []);
+    }
+  }, [])
 
   const handleQuestionSelect = (questionId: number) => {
-    const selectedQuestion = predefinedQuestions.find(q => q.id === questionId);
-    if (!selectedQuestion) return;
+    const selectedQuestion = predefinedQuestions.find((q) => q.id === questionId)
+    if (!selectedQuestion) return
 
     // Add user message
     const userMessage: Message = {
       id: messages.length + 1,
       text: selectedQuestion.question,
       sender: "user",
-    };
-    setMessages((prev) => [...prev, userMessage]);
-    setAskedQuestions((prev) => [...prev, questionId]);
-    setIsTyping(true);
+    }
+    setMessages((prev) => [...prev, userMessage])
+    setAskedQuestions((prev) => [...prev, questionId])
+    setIsTyping(true)
 
     // Simulate bot response with typing effect
     setTimeout(() => {
-      setIsTyping(false);
+      setIsTyping(false)
       const botMessage: Message = {
         id: messages.length + 2,
         text: selectedQuestion.answer,
         sender: "bot",
-      };
-      setMessages((prev) => [...prev, botMessage]);
-    }, 1500);
-  };
+      }
+      setMessages((prev) => [...prev, botMessage])
+    }, 1500)
+  }
 
+  // Modificado para que solo haga scroll dentro del contenedor de mensajes
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isTyping]);
+    if (messagesEndRef.current && chatMessagesRef.current) {
+      // Solo hacemos scroll dentro del contenedor de chat, no en toda la página
+      chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight
+    }
+  }, [messages, isTyping])
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }
-    }
-  };
+      transition: { duration: 0.5 },
+    },
+  }
 
   const messageVariants = {
     hidden: { opacity: 0, y: 10 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.3 }
+      transition: { duration: 0.3 },
     },
-    exit: { 
+    exit: {
       opacity: 0,
-      transition: { duration: 0.2 }
-    }
-  };
+      transition: { duration: 0.2 },
+    },
+  }
 
   const buttonVariants = {
-    hover: { 
+    hover: {
       scale: 1.03,
       boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      transition: { duration: 0.2 }
+      transition: { duration: 0.2 },
     },
-    tap: { scale: 0.97 }
-  };
+    tap: { scale: 0.97 },
+  }
 
   return (
     <section id="chat" className="py-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-indigo-50 to-white pointer-events-none"></div>
-      
+
       <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-block rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-800 mb-4">
             Prueba ahora
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Interactúa con <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">Hypatia</span>
+            Interactúa con{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
+              Hypatia
+            </span>
           </h2>
           <p className="mt-4 text-gray-500 md:text-xl max-w-[700px] mx-auto">
-            Descubre cómo Hypatia puede ayudarte en tu día a día. Selecciona una pregunta para ver cómo Hypatia puede asistirte.
+            Descubre cómo Hypatia puede ayudarte en tu día a día. Selecciona una pregunta para ver cómo Hypatia puede
+            asistirte.
           </p>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           ref={chatContainerRef}
           className="max-w-2xl mx-auto border rounded-xl overflow-hidden bg-white shadow-lg"
           variants={containerVariants}
@@ -184,15 +198,13 @@ export function Chat() {
               </div>
             </div>
           </div>
-          
-          <div className="h-96 overflow-y-auto p-4 bg-gray-50">
+
+          <div ref={chatMessagesRef} className="h-96 overflow-y-auto p-4 bg-gray-50">
             <AnimatePresence>
               {messages.map((message) => (
                 <motion.div
                   key={message.id}
-                  className={`mb-4 flex ${
-                    message.sender === "user" ? "justify-end" : "justify-start"
-                  }`}
+                  className={`mb-4 flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
                   variants={messageVariants}
                   initial="hidden"
                   animate="visible"
@@ -209,7 +221,7 @@ export function Chat() {
                   </div>
                 </motion.div>
               ))}
-              
+
               {isTyping && (
                 <motion.div
                   className="mb-4 flex justify-start"
@@ -220,9 +232,18 @@ export function Chat() {
                 >
                   <div className="max-w-[80%] rounded-2xl p-4 bg-white border shadow-sm text-gray-800">
                     <div className="flex space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-gray-300 animate-bounce" style={{ animationDelay: "0ms" }}></div>
-                      <div className="w-2 h-2 rounded-full bg-gray-300 animate-bounce" style={{ animationDelay: "150ms" }}></div>
-                      <div className="w-2 h-2 rounded-full bg-gray-300 animate-bounce" style={{ animationDelay: "300ms" }}></div>
+                      <div
+                        className="w-2 h-2 rounded-full bg-gray-300 animate-bounce"
+                        style={{ animationDelay: "0ms" }}
+                      ></div>
+                      <div
+                        className="w-2 h-2 rounded-full bg-gray-300 animate-bounce"
+                        style={{ animationDelay: "150ms" }}
+                      ></div>
+                      <div
+                        className="w-2 h-2 rounded-full bg-gray-300 animate-bounce"
+                        style={{ animationDelay: "300ms" }}
+                      ></div>
                     </div>
                   </div>
                 </motion.div>
@@ -230,7 +251,7 @@ export function Chat() {
             </AnimatePresence>
             <div ref={messagesEndRef} />
           </div>
-          
+
           <div className="p-4 border-t">
             <div className="space-y-3">
               <p className="text-sm text-gray-500 mb-2">Selecciona una pregunta:</p>
@@ -258,7 +279,7 @@ export function Chat() {
                   </motion.button>
                 ))}
               </div>
-              
+
               {askedQuestions.length === predefinedQuestions.length && (
                 <motion.button
                   onClick={() => setAskedQuestions([])}
@@ -275,6 +296,6 @@ export function Chat() {
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
 

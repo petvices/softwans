@@ -1,11 +1,12 @@
-import { Chat } from "@/components/hypatia/chat"
-import { Features } from "@/components/hypatia/features"
-import { Hero } from "@/components/hypatia/hero"
-import { Navbar } from "@/components/hypatia/navbar"
-import { Pricing } from "@/components/hypatia/pricing"
-import { Testimonials } from "@/components/hypatia/testimonials"
-import { ParticlesBackground } from "@/components/hypatia/particles-background"
-import { FloatingIcons } from "@/components/hypatia/floating-icons"
+import { Chat } from "@/components/chat"
+import { Features } from "@/components/features"
+import { Hero } from "@/components/hero"
+import { Navbar } from "@/components/navbar"
+import { Pricing } from "@/components/pricing"
+import { Testimonials } from "@/components/testimonials"
+import { ParticlesBackground } from "@/components/particles-background"
+import { FloatingIcons } from "@/components/floating-icons"
+import { Download } from "@/components/download"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Features />
         <Testimonials />
         <Pricing />
+        <Download />
         <Chat />
       </main>
       <footer className="py-8 border-t relative z-10 bg-gradient-to-r from-purple-900/10 to-indigo-900/10">
@@ -46,18 +48,18 @@ export default function Home() {
               <h3 className="font-bold mb-4">Producto</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
+                  <a href="#features" className="text-gray-500 hover:text-purple-600 transition-colors">
                     Características
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
+                  <a href="#pricing" className="text-gray-500 hover:text-purple-600 transition-colors">
                     Precios
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
-                    Integraciones
+                  <a href="#download" className="text-gray-500 hover:text-purple-600 transition-colors">
+                    Descargar
                   </a>
                 </li>
               </ul>
@@ -91,7 +93,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/message/Y5IO4FCCEMICH1" className="text-gray-500 hover:text-purple-600 transition-colors">
+                  <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
                     Contacto
                   </a>
                 </li>
@@ -104,7 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-sm text-gray-500 pt-6 border-t">
-            © {new Date().getFullYear()} Hypatia AI. Todos los derechos reservados. Softwans 
+            © {new Date().getFullYear()} Hypatia AI. Todos los derechos reservados a Softwans Corporations.
           </div>
         </div>
       </footer>

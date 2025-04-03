@@ -1,17 +1,25 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { ArrowRight, Play } from 'lucide-react';
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+import { ArrowRight, Play } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(true);
-  }, []);
+    setIsVisible(true)
+  }, [])
+
+  // Función para hacer scroll suave a la sección de descarga
+  const scrollToDownload = () => {
+    const downloadSection = document.getElementById("download")
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <section className="py-20 md:py-28 relative overflow-hidden">
@@ -37,25 +45,27 @@ export function Hero() {
                 Conoce a Hypatia
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
-                Tu asistente IA personal que gestiona recordatorios, envía correos y optimiza la gestión de tu negocio con inteligencia artificial avanzada.
+                Tu asistente IA personal que gestiona recordatorios, envía correos y optimiza la gestión de tu negocio
+                con inteligencia artificial avanzada.
               </p>
             </motion.div>
-            
+
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <Button 
+              <Button
+                onClick={scrollToDownload}
                 className="group bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg px-6 py-6 h-auto"
                 size="lg"
               >
                 <span>Comenzar ahora</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="group border-purple-200 hover:border-purple-600 transition-colors text-lg px-6 py-6 h-auto"
               >
@@ -63,7 +73,7 @@ export function Hero() {
                 <span>Ver demostración</span>
               </Button>
             </motion.div>
-            
+
             <motion.div
               className="flex items-center gap-4 text-sm text-gray-500"
               initial={{ opacity: 0 }}
@@ -72,11 +82,14 @@ export function Hero() {
             >
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden">
-                    <Image 
-                      src={`/placeholder.svg?height=32&width=32&text=${i}`} 
-                      alt={`User ${i}`} 
-                      width={32} 
+                  <div
+                    key={i}
+                    className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden"
+                  >
+                    <Image
+                      src={`/placeholder.svg?height=32&width=32&text=${i}`}
+                      alt={`User ${i}`}
+                      width={32}
                       height={32}
                       className="object-cover"
                     />
@@ -86,7 +99,7 @@ export function Hero() {
               <span>+2,500 usuarios activos</span>
             </motion.div>
           </div>
-          
+
           <motion.div
             className="mx-auto lg:ml-auto flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -96,12 +109,12 @@ export function Hero() {
             <div className="relative w-full max-w-[500px] aspect-square">
               {/* Animated glow effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 animate-pulse"></div>
-              
+
               {/* Main image with floating animation */}
               <motion.div
                 className="relative z-10 rounded-2xl overflow-hidden shadow-2xl"
                 animate={{ y: [0, -10, 0] }}
-                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                transition={{ repeat: Number.POSITIVE_INFINITY, duration: 4, ease: "easeInOut" }}
               >
                 <Image
                   src="/placeholder.svg?height=500&width=500&text=Hypatia+AI"
@@ -110,12 +123,12 @@ export function Hero() {
                   height={500}
                   className="rounded-2xl object-cover"
                 />
-                
+
                 {/* Floating UI elements */}
-                <motion.div 
+                <motion.div
                   className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg"
                   animate={{ y: [0, 5, 0] }}
-                  transition={{ repeat: Infinity, duration: 3, delay: 1, ease: "easeInOut" }}
+                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3, delay: 1, ease: "easeInOut" }}
                 >
                   <div className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
@@ -129,16 +142,21 @@ export function Hero() {
                     </div>
                   </div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg"
                   animate={{ y: [0, -5, 0] }}
-                  transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
+                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3.5, ease: "easeInOut" }}
                 >
                   <div className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-full bg-purple-100 flex items-center justify-center">
                       <svg className="h-4 w-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
                       </svg>
                     </div>
                     <div className="text-xs">
@@ -153,6 +171,6 @@ export function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
