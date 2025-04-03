@@ -22,7 +22,7 @@ export function Features() {
       title: "Gestión de recordatorios",
       description:
         "Hypatia te ayuda a organizar tu agenda y nunca olvidar una cita importante. Configura recordatorios recurrentes o puntuales y recibe notificaciones en el momento adecuado.",
-      image: "/images/hypatia_1.png?height=300&width=400&text=Recordatorios",
+      image: "https://images.unsplash.com/photo-1617106400337-66e7d72a466e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-purple-500 to-indigo-500",
       lightColor: "bg-purple-100",
     },
@@ -31,7 +31,7 @@ export function Features() {
       title: "Envío de correos",
       description:
         "Redacta y programa correos electrónicos con facilidad, ahorrando tiempo valioso. Hypatia puede sugerir respuestas y crear plantillas personalizadas para tus necesidades.",
-      image: "/images/hypatia_3.png?height=300&width=400&text=Emails",
+      image: "https://images.unsplash.com/photo-1620287341401-e2945a4b9daa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-indigo-500 to-blue-500",
       lightColor: "bg-indigo-100",
     },
@@ -40,7 +40,7 @@ export function Features() {
       title: "Análisis de negocio",
       description:
         "Obtén insights valiosos sobre el rendimiento de tu negocio o emprendimiento. Visualiza tendencias, identifica oportunidades y toma decisiones basadas en datos reales.",
-      image: "/images/hypatia_4.png?height=300&width=400&text=Análisis",
+      image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-blue-500 to-cyan-500",
       lightColor: "bg-blue-100",
     },
@@ -49,7 +49,7 @@ export function Features() {
       title: "Ahorro de tiempo",
       description:
         "Automatiza tareas repetitivas y enfócate en lo que realmente importa. Hypatia puede gestionar múltiples tareas simultáneamente, liberando tu tiempo para actividades de mayor valor.",
-      image: "/images/hypatia_2.png?height=300&width=400&text=Productividad",
+      image: "https://images.unsplash.com/photo-1592495981488-073153776d9a?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-cyan-500 to-teal-500",
       lightColor: "bg-cyan-100",
     },
@@ -58,7 +58,7 @@ export function Features() {
       title: "Respuestas rápidas",
       description:
         "Hypatia responde al instante, proporcionando la información que necesitas cuando la necesitas. Obtén respuestas precisas a tus preguntas sin esperas innecesarias.",
-      image: "/images/hypatia.png?height=300&width=400&text=Respuestas",
+      image: "https://images.unsplash.com/photo-1511345624864-d6cf46344e8c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-green-500 to-purple-500",
       lightColor: "bg-green-100",
     },
