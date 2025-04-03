@@ -117,7 +117,7 @@ export function Hero() {
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 4, ease: "easeInOut" }}
               >
                 <Image
-                  src="/public/images/hypatia.png"
+                  src="/images/hypatia.png"
                   alt="Hypatia AI Assistant"
                   width={500}
                   height={500}
