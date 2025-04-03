@@ -31,9 +31,9 @@ export function ContactSection() {
   };
   
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);  
 
     // Simulación de envío de formulario
     setTimeout(() => {
