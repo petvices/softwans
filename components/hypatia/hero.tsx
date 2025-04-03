@@ -119,8 +119,8 @@ export function Hero() {
                 <Image
                   src="/images/hypatia.png"
                   alt="Hypatia AI Assistant"
-                  width={500}
-                  height={500}
+                  width={250}
+                  height={250}
                   className="rounded-2xl object-cover"
                 />
 
