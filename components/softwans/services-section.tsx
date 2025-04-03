@@ -22,49 +22,49 @@ export function ServicesSection() {
       title: "Desarrollo Web",
       description:
         "Sitios web profesionales, responsivos y optimizados para SEO que representan perfectamente tu marca.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <LineChart className="h-10 w-10 text-primary" />,
       title: "Marketing Digital",
       description: "Estrategias personalizadas para aumentar tu visibilidad online y generar leads cualificados.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
       title: "Gestión de Redes Sociales",
       description: "Creación de contenido, programación y análisis para aumentar tu comunidad y engagement.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <Search className="h-10 w-10 text-primary" />,
       title: "SEO",
       description: "Optimización para motores de búsqueda que mejora tu posicionamiento y aumenta el tráfico orgánico.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <Code className="h-10 w-10 text-primary" />,
       title: "Desarrollo de Software",
       description: "Soluciones personalizadas para automatizar procesos y mejorar la eficiencia de tu negocio.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <ShoppingBag className="h-10 w-10 text-primary" />,
       title: "E-Commerce",
       description: "Tiendas online optimizadas para convertir visitantes en clientes y aumentar tus ventas.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <Smartphone className="h-10 w-10 text-primary" />,
       title: "Aplicaciones Móviles",
       description: "Apps nativas y multiplataforma que conectan tu negocio con clientes en cualquier lugar.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
     {
       icon: <Database className="h-10 w-10 text-primary" />,
       title: "Analítica de Datos",
       description: "Análisis de métricas para tomar decisiones basadas en datos y optimizar tus estrategias.",
-      link: "#contacto",
+      link: "https://wa.me/message/Y5IO4FCCEMICH1",
     },
   ]
 
