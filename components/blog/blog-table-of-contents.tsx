@@ -1,47 +1,45 @@
-"use client"
-
-import { useState, useEffect } from "react"
-import { ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect, useMemo } from "react";
 
 export function BlogTableOfContents() {
-  const [activeSection, setActiveSection] = useState("")
-  const [isOpen, setIsOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
-  const sections = [
-    { id: "introduccion", title: "Introducción" },
-    { id: "transformacion", title: "Transformación de la productividad" },
-    { id: "automatizacion", title: "Automatización inteligente" },
-    { id: "analisis-predictivo", title: "Análisis predictivo" },
-    { id: "asistentes-virtuales", title: "Asistentes virtuales" },
-    { id: "procesamiento-lenguaje", title: "Procesamiento de lenguaje" },
-    { id: "implementacion", title: "Implementación en empresas" },
-    { id: "casos-exito", title: "Casos de éxito" },
-    { id: "consideraciones", title: "Consideraciones éticas" },
-    { id: "futuro", title: "El futuro de la IA" },
-    { id: "conclusion", title: "Conclusión" },
-  ]
+  const sections = useMemo(
+    () => [
+      { id: "introduccion", title: "Introducción" },
+      { id: "transformacion", title: "Transformación de la productividad" },
+      { id: "automatizacion", title: "Automatización inteligente" },
+      { id: "analisis-predictivo", title: "Análisis predictivo" },
+      { id: "asistentes-virtuales", title: "Asistentes virtuales" },
+      { id: "procesamiento-lenguaje", title: "Procesamiento de lenguaje" },
+      { id: "implementacion", title: "Implementación en empresas" },
+      { id: "casos-exito", title: "Casos de éxito" },
+      { id: "consideraciones", title: "Consideraciones éticas" },
+      { id: "futuro", title: "El futuro de la IA" },
+      { id: "conclusion", title: "Conclusión" },
+    ],
+    [] // Dependencias vacías para evitar redefinición en cada render
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100
+      const scrollPosition = window.scrollY + 100;
 
-      // Encontrar la sección activa
       for (const section of sections) {
-        const element = document.getElementById(section.id)
+        const element = document.getElementById(section.id);
         if (element) {
-          const { offsetTop, offsetHeight } = element
+          const { offsetTop, offsetHeight } = element;
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section.id)
-            break
+            setActiveSection(section.id);
+            break;
           }
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [sections])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [sections]);
 
   return (
     <div className="rounded-xl border bg-background/50 p-6 shadow-md">
@@ -61,9 +59,9 @@ export function BlogTableOfContents() {
               activeSection === section.id ? "bg-primary/10 text-primary font-medium" : "hover:bg-muted"
             }`}
             onClick={(e) => {
-              e.preventDefault()
-              document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })
-              setIsOpen(false)
+              e.preventDefault();
+              document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" });
+              setIsOpen(false);
             }}
           >
             {section.title}
@@ -71,6 +69,5 @@ export function BlogTableOfContents() {
         ))}
       </div>
     </div>
-  )
+  );
 }
-

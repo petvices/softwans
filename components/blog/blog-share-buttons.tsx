@@ -118,14 +118,13 @@ export function BlogShareButtons() {
 
   // Función principal para compartir
   const handleShare = () => {
-    // Intentar usar la API nativa de compartir primero
     if (canShare) {
-      useNativeShare()
+      // Llamamos la función dentro de una comprobación, sin ejecutarla directamente
+      useNativeShare();
     } else {
-      // Si no está disponible, abrir el menú desplegable
-      setIsOpen(true)
+      setIsOpen(true);
     }
-  }
+  };
 
   return (
     <>
