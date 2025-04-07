@@ -101,7 +101,7 @@ export default function IAProductividadPage() {
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <div className="relative aspect-video overflow-hidden rounded-xl mb-10 shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=600&width=1200"
+                    src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="Inteligencia Artificial en el entorno empresarial"
                     width={1200}
                     height={600}

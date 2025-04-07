@@ -15,7 +15,7 @@ export function BlogCta() {
           aumentar la productividad de tu empresa.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="/#contacto">
+          <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
             <Button size="lg" className="w-full sm:w-auto group">
               Solicitar consultoría gratuita
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
