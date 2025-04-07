@@ -229,9 +229,9 @@ export default function IAProductividadPage() {
                   </h4>
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="bg-background rounded-lg p-4 border">
-                      <p className="font-semibold mb-1">Asana + IA</p>
+                      <p className="font-semibold mb-1">Hypatia 0.3</p>
                       <p className="text-sm text-muted-foreground mb-0">
-                        Gestión de proyectos con priorización inteligente de tareas
+                        Asistente que te ayuda con cosas repetitivas y muy básicas en tú negocio o emprendimiento
                       </p>
                     </div>
                     <div className="bg-background rounded-lg p-4 border">
