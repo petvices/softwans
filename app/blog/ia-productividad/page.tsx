@@ -5,8 +5,8 @@ import { BlogAuthor } from "@/components/blog/blog-author"
 import { BlogRelatedPosts } from "@/components/blog/blog-related-posts"
 import { BlogCta } from "@/components/blog/blog-cta"
 import { BlogTableOfContents } from "@/components/blog/blog-table-of-contents"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { Header } from "@/components/softwans/header"
+import { Footer } from "@/components/softwans/footer"
 
 export const metadata: Metadata = {
   title: "IA y Productividad: Transformando el Mundo de los Negocios | TechSolutions",
