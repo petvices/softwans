@@ -405,7 +405,7 @@ export default function IAProductividadPage() {
                   <div className="bg-muted/50 rounded-xl p-6 border-l-4 border-amber-500">
                     <h3 className="text-xl font-bold mb-2">Transparencia algorítmica</h3>
                     <p className="text-lg leading-relaxed mb-0">
-                      Los algoritmos de "caja negra" pueden generar desconfianza. Es importante poder explicar, al menos
+                      Los algoritmos de &quot;caja negra&quot; pueden generar desconfianza. Es importante poder explicar, al menos
                       en términos generales, cómo la IA llega a determinadas conclusiones o recomendaciones.
                     </p>
                   </div>
@@ -457,7 +457,7 @@ export default function IAProductividadPage() {
                   <div className="rounded-xl border bg-primary/5 p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
                     <h3 className="text-xl font-bold mb-3 text-primary">Democratización de la IA</h3>
                     <p className="mb-0">
-                      Las herramientas de "IA sin código" permitirán que incluso pequeñas empresas sin recursos técnicos
+                      Las herramientas de &quot;IA sin código&quot; permitirán que incluso pequeñas empresas sin recursos técnicos
                       especializados puedan implementar soluciones avanzadas adaptadas a sus necesidades.
                     </p>
                   </div>
