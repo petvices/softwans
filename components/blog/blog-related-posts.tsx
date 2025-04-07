@@ -35,6 +35,9 @@ export function BlogRelatedPosts() {
     <section className="bg-muted/30 py-16">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+          <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-2">
+            <span className="mr-1">📚</span> Más contenido
+          </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Artículos relacionados</h2>
           <p className="max-w-[700px] text-muted-foreground">
             Sigue explorando cómo la tecnología puede transformar tu negocio con estos artículos seleccionados.
@@ -44,7 +47,7 @@ export function BlogRelatedPosts() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {relatedPosts.map((post, index) => (
             <Link key={index} href={post.slug} className="group">
-              <div className="rounded-lg border bg-background overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-xl border bg-background overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
                 <div className="aspect-video overflow-hidden">
                   <Image
                     src={post.image || "/placeholder.svg"}
@@ -55,10 +58,17 @@ export function BlogRelatedPosts() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm font-medium text-primary mb-2">{post.category}</div>
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{post.title}</h3>
-                  <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <div className="text-sm text-muted-foreground">{post.date}</div>
+                  <div className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-3">
+                    {post.category}
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 line-clamp-2">{post.excerpt}</p>
+                  <div className="flex justify-between items-center">
+                    <div className="text-sm text-muted-foreground">{post.date}</div>
+                    <div className="text-primary text-sm font-medium group-hover:underline">Leer más</div>
+                  </div>
                 </div>
               </div>
             </Link>
