@@ -132,9 +132,8 @@ export function BlogShareButtons() {
 
       {/* Menú desplegable como fallback */}
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-        <DropdownMenuTrigger asChild>
-          <span className="hidden">Compartir</span> {/* Trigger oculto, ya que usamos el botón de arriba */}
-        </DropdownMenuTrigger>
+        {/* Corregido: No usar asChild con un span vacío */}
+        <DropdownMenuTrigger className="hidden">Compartir</DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuItem onClick={shareOnTwitter}>
             <Twitter className="h-4 w-4 mr-2" />
