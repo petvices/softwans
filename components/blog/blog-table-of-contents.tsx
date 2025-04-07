@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -8,19 +8,23 @@ export function BlogTableOfContents() {
   const [activeSection, setActiveSection] = useState("")
   const [isOpen, setIsOpen] = useState(false)
 
-  const sections = [
-    { id: "introduccion", title: "Introducción" },
-    { id: "transformacion", title: "Transformación de la productividad" },
-    { id: "automatizacion", title: "Automatización inteligente" },
-    { id: "analisis-predictivo", title: "Análisis predictivo" },
-    { id: "asistentes-virtuales", title: "Asistentes virtuales" },
-    { id: "procesamiento-lenguaje", title: "Procesamiento de lenguaje" },
-    { id: "implementacion", title: "Implementación en empresas" },
-    { id: "casos-exito", title: "Casos de éxito" },
-    { id: "consideraciones", title: "Consideraciones éticas" },
-    { id: "futuro", title: "El futuro de la IA" },
-    { id: "conclusion", title: "Conclusión" },
-  ]
+  // Usar useMemo para evitar recrear el array en cada renderizado
+  const sections = useMemo(
+    () => [
+      { id: "introduccion", title: "Introducción" },
+      { id: "transformacion", title: "Transformación de la productividad" },
+      { id: "automatizacion", title: "Automatización inteligente" },
+      { id: "analisis-predictivo", title: "Análisis predictivo" },
+      { id: "asistentes-virtuales", title: "Asistentes virtuales" },
+      { id: "procesamiento-lenguaje", title: "Procesamiento de lenguaje" },
+      { id: "implementacion", title: "Implementación en empresas" },
+      { id: "casos-exito", title: "Casos de éxito" },
+      { id: "consideraciones", title: "Consideraciones éticas" },
+      { id: "futuro", title: "El futuro de la IA" },
+      { id: "conclusion", title: "Conclusión" },
+    ],
+    [],
+  )
 
   useEffect(() => {
     const handleScroll = () => {

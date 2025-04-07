@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Share2, Twitter, Facebook, Linkedin, LinkIcon } from "lucide-react"
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect } from "react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useToast } from "@/components/ui/use-toast"
 
@@ -22,14 +22,9 @@ export function BlogShareButtons() {
       if (document.title) {
         setPageTitle(document.title)
       }
-    }
-  }, [])
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && navigator.share) {
-      setCanShare(true)
-    } else {
-      setCanShare(false)
+      // Verificar si la API de compartir está disponible
+      setCanShare(!!navigator.share)
     }
   }, [])
 
@@ -73,7 +68,7 @@ export function BlogShareButtons() {
   }
 
   // Función para usar Web Share API si está disponible
-  const useNativeShare = useCallback(() => {
+  const nativeShare = () => {
     if (navigator.share) {
       navigator
         .share({
@@ -92,7 +87,7 @@ export function BlogShareButtons() {
       return true
     }
     return false
-  }, [currentUrl, pageTitle, toast])
+  }
 
   // Función para copiar el enlace al portapapeles
   const handleCopyLink = () => {
@@ -120,7 +115,7 @@ export function BlogShareButtons() {
   const handleShare = () => {
     // Intentar usar la API nativa de compartir primero
     if (canShare) {
-      useNativeShare()
+      nativeShare()
     } else {
       // Si no está disponible, abrir el menú desplegable
       setIsOpen(true)
