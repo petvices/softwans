@@ -6,26 +6,31 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Moon, Sun, ArrowRight } from "lucide-react"
 import { LoginModal } from "@/components/login-modal"
 import { motion } from "framer-motion"
+import { useTheme } from "next-themes"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(true)
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { setTheme } = useTheme()
 
   // Efecto para establecer el modo oscuro por defecto
   useEffect(() => {
     document.documentElement.classList.add("dark")
-  }, [])
+    setTheme("dark")
+  }, [setTheme])
 
   // Efecto para manejar el tema oscuro
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark")
+      setTheme("dark")
     } else {
       document.documentElement.classList.remove("dark")
+      setTheme("light")
     }
-  }, [isDarkMode])
+  }, [isDarkMode, setTheme])
 
   // Efecto para detectar el scroll
   useEffect(() => {

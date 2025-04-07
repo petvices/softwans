@@ -1,13 +1,12 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft, Clock, Bookmark, CheckCircle, AlertTriangle, Lightbulb } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Clock, CheckCircle, AlertTriangle, Lightbulb } from "lucide-react"
 import { BlogAuthor } from "@/components/blog/blog-author"
 import { BlogRelatedPosts } from "@/components/blog/blog-related-posts"
 import { BlogCta } from "@/components/blog/blog-cta"
-import { BlogShareButtons } from "@/components/blog/blog-share-buttons"
 import { BlogTableOfContents } from "@/components/blog/blog-table-of-contents"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "IA y Productividad: Transformando el Mundo de los Negocios | TechSolutions",
@@ -18,24 +17,8 @@ export const metadata: Metadata = {
 export default function IAProductividadPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Barra de navegación del blog con enlace de regreso */}
-      <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
-          <Link href="/" className="flex items-center gap-2 mr-6">
-            <Button variant="ghost" size="sm" className="gap-1">
-              <ArrowLeft className="h-4 w-4" />
-              <span>Volver al inicio</span>
-            </Button>
-          </Link>
-          <div className="ml-auto flex items-center gap-2">
-            <BlogShareButtons />
-            <Button variant="ghost" size="icon">
-              <Bookmark className="h-4 w-4" />
-              <span className="sr-only">Guardar artículo</span>
-            </Button>
-          </div>
-        </div>
-      </div>
+      {/* Incluir el Header completo para mantener la navegación consistente */}
+      <Header />
 
       <main className="flex-1">
         {/* Cabecera del artículo */}
@@ -422,7 +405,7 @@ export default function IAProductividadPage() {
                   <div className="bg-muted/50 rounded-xl p-6 border-l-4 border-amber-500">
                     <h3 className="text-xl font-bold mb-2">Transparencia algorítmica</h3>
                     <p className="text-lg leading-relaxed mb-0">
-                      Los algoritmos de &quot;caja negra&quot; pueden generar desconfianza. Es importante poder explicar, al menos
+                      Los algoritmos de "caja negra" pueden generar desconfianza. Es importante poder explicar, al menos
                       en términos generales, cómo la IA llega a determinadas conclusiones o recomendaciones.
                     </p>
                   </div>
@@ -474,7 +457,7 @@ export default function IAProductividadPage() {
                   <div className="rounded-xl border bg-primary/5 p-6 shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
                     <h3 className="text-xl font-bold mb-3 text-primary">Democratización de la IA</h3>
                     <p className="mb-0">
-                      Las herramientas de &quot;IA sin código&quot; permitirán que incluso pequeñas empresas sin recursos técnicos
+                      Las herramientas de "IA sin código" permitirán que incluso pequeñas empresas sin recursos técnicos
                       especializados puedan implementar soluciones avanzadas adaptadas a sus necesidades.
                     </p>
                   </div>
@@ -515,6 +498,9 @@ export default function IAProductividadPage() {
         {/* Artículos relacionados */}
         <BlogRelatedPosts />
       </main>
+
+      {/* Incluir el Footer para mantener la consistencia */}
+      <Footer />
     </div>
   )
 }
