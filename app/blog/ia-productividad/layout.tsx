@@ -1,9 +1,6 @@
 import "./global.css"
+import type { ReactNode } from "react"
 
-export default function BlogLayout({ children }) {
-  return (
-    <div className="dark">
-      {children}
-    </div>
-  )
+export default function BlogLayout({ children }: { children: ReactNode }) {
+  return <div className="dark">{children}</div>
 }
