@@ -264,7 +264,7 @@ export default function IAProductividadPage() {
 
             <h3>Transparencia algorítmica</h3>
             <p>
-              Los algoritmos de "caja negra" pueden generar desconfianza. Es importante poder explicar, al menos en
+              Los algoritmos de &quot;caja negra&quot; pueden generar desconfianza. Es importante poder explicar, al menos en
               términos generales, cómo la IA llega a determinadas conclusiones o recomendaciones.
             </p>
 
@@ -297,7 +297,7 @@ export default function IAProductividadPage() {
 
             <h3>Democratización de la IA</h3>
             <p>
-              Las herramientas de "IA sin código" permitirán que incluso pequeñas empresas sin recursos técnicos
+              Las herramientas de &quot;IA sin código&quot; permitirán que incluso pequeñas empresas sin recursos técnicos
               especializados puedan implementar soluciones avanzadas adaptadas a sus necesidades.
             </p>
 
