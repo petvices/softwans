@@ -66,10 +66,10 @@ export function Header() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Softwans
+              Tech
             </motion.span>
             <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-              Corporations
+              Solutions
             </motion.span>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -85,6 +85,9 @@ export function Header() {
             <Link href="#contacto" className="text-sm font-medium transition-colors hover:text-primary">
               Contacto
             </Link>
+            <Link href="/blog/ia-productividad" className="text-sm font-medium transition-colors hover:text-primary">
+              Blog
+            </Link>
           </nav>
           <div className="hidden md:flex gap-4 items-center">
             <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full">
@@ -94,7 +97,7 @@ export function Header() {
             <Button variant="outline" size="sm" onClick={openLoginModal}>
               Iniciar Sesión
             </Button>
-            <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
+            <Link href="#contacto">
               <Button size="sm" className="group">
                 Cotizar
                 <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -142,6 +145,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contacto
+              </Link>
+              <Link
+                href="/blog/ia-productividad"
+                className="text-sm font-medium transition-colors hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <div className="flex gap-4 pt-2">
                 <Button
