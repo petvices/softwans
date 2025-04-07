@@ -71,10 +71,10 @@ export function Header() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Tech
+              Softwans
             </motion.span>
             <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-              Solutions
+              Corporations
             </motion.span>
           </Link>
           <nav className="hidden md:flex gap-6">
