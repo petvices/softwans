@@ -222,7 +222,7 @@ export function ContactSection() {
                   <p className="text-center text-sm text-muted-foreground">
                     También puedes contactarnos directamente por{" "}
                     <a
-                      href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20cotizar%20sus%20servicios"
+                      href="https://wa.me/message/Y5IO4FCCEMICH1s"
                       target="_blank"
                       className="font-medium text-primary hover:underline"
                       rel="noreferrer"

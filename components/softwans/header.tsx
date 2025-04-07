@@ -170,7 +170,7 @@ export function Header() {
                 >
                   Iniciar Sesión
                 </Button>
-                <Link href="#contacto" className="w-full">
+                <Link href="https://wa.me/message/Y5IO4FCCEMICH1" className="w-full">
                   <Button size="sm" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Cotizar
                   </Button>
