@@ -513,7 +513,7 @@ export default function IAProductividadPage() {
         </div>
 
         {/* Artículos relacionados */}
-        <BlogRelatedPosts />
+
       </main>
     </div>
   )
