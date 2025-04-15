@@ -2,7 +2,7 @@ import type React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { Github, Twitter, Instagram, Linkedin, Globe, Mail, Youtube, ArrowLeft } from "lucide-react"
+import { Instagram, Globe, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 
