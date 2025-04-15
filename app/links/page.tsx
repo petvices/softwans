@@ -2,7 +2,7 @@ import type React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { Twitter, Instagram, Globe, ArrowLeft } from "lucide-react"
+import { Instagram, Globe, ArrowLeft, MessagesSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export default function LinksPage() {
 
           <LinkButton
             href="https://wa.me/message/Y5IO4FCCEMICH1"
-            icon={<Twitter className="h-5 w-5" />}
+            icon={<MessagesSquare className="h-5 w-5" />}
             label="WhatsApp"
             color="bg-[#25D366]"
           />
