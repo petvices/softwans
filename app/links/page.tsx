@@ -29,7 +29,7 @@ export default function LinksPage() {
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-primary/50 blur-md opacity-70"></div>
           <div className="relative rounded-full border-2 border-primary/20 p-1 bg-background">
             <Image
-              src="/placeholder.svg?height=120&width=120"
+              src="/images/softwans.jpg?height=120&width=120"
               alt="Softwans"
               width={120}
               height={120}
