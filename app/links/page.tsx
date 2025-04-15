@@ -6,8 +6,8 @@ import { Instagram, Globe, ArrowLeft, MessagesSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Enlaces | Softwans",
-  description: "Conecta con nosotros en todas nuestras plataformas sociales y canales digitales.",
+  title: "Enlaces | Softwans Corporations",
+  description: "Conecta con nosotros en todas nuestras plataformas sociales y canales digitales para que no te pierdas ninguna de nuestras novedades.",
 }
 
 export default function LinksPage() {
