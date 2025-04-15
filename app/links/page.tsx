@@ -67,8 +67,8 @@ export default function LinksPage() {
 
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} TechSolutions</p>
-          <p className="mt-1">Hecho con ❤️ sin depender de terceros</p>
+          <p>© {new Date().getFullYear()} Softwans</p>
+          <p className="mt-1">Hecho por Softwans Corporations</p>
         </div>
       </div>
     </div>
