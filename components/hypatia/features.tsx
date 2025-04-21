@@ -122,7 +122,7 @@ function FeatureItem({ feature, index, totalFeatures }: FeatureItemProps) {
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div 
-          className={`absolute ${isEven ? '-left-20' : '-right-20'} ${index % 3 === 0 ? 'top-0' : index % 3 === 1 ? 'top-1/3' : 'bottom-0'} w-40 h-40 rounded-full blur-3xl opacity-20 bg-gradient-to-r ${feature.color} text-[#020818]`}
+          className={`absolute ${isEven ? '-left-20' : '-right-20'} ${index % 3 === 0 ? 'top-0' : index % 3 === 1 ? 'top-1/3' : 'bottom-0'} w-40 h-40 rounded-full blur-3xl opacity-20 bg-gradient-to-r ${feature.color}`}
         ></div>
       </div>
       
@@ -152,7 +152,7 @@ function FeatureItem({ feature, index, totalFeatures }: FeatureItemProps) {
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
               />
               <div className={`absolute inset-0 bg-gradient-to-tr ${feature.color} opacity-40`}></div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-[#020818]">
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
                 <p className="text-sm font-medium">Funcionalidad #{index + 1}</p>
               </div>
             </div>
@@ -166,14 +166,14 @@ function FeatureItem({ feature, index, totalFeatures }: FeatureItemProps) {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className={`p-2 rounded-full bg-gradient-to-r ${feature.color} text-[#020818]`}>
+            <div className={`p-2 rounded-full bg-gradient-to-r ${feature.color} text-white`}>
               {feature.icon}
             </div>
             <span className="font-medium pr-2">Característica destacada</span>
           </motion.div>
           
           <motion.h3 
-            className="text-2xl md:text-3xl font-bold"
+            className="text-2xl md:text-3xl font-bold text-[#020818]"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -206,11 +206,12 @@ function FeatureItem({ feature, index, totalFeatures }: FeatureItemProps) {
           >
             {[1, 2, 3, 4].map((item) => (
               <div key={item} className="flex items-start gap-2">
-                <div className={`p-1 rounded-full bg-gradient-to-r ${feature.color} text-[#020818] mt-0.5 flex-shrink-0`}>
+                <div className={`p-1 rounded-full bg-gradient-to-r ${feature.color} text-white mt-0.5 flex-shrink-0`}>
                   <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
+                <span className="text-sm text-gray-600">Beneficio destacado #{item}</span>
               </div>
             ))}
           </motion.div>
