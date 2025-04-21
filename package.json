@@ -64,7 +64,9 @@
     "framer-motion": "latest",
     "react-particles": "latest",
     "tsparticles-engine": "latest",
-    "tsparticles-slim": "latest"
+    "tsparticles-slim": "latest",
+    "react-icons": "^5.0.1"
+
   },
   "devDependencies": {
     "@types/node": "^20",

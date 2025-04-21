@@ -3,6 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Instagram, Globe, ArrowLeft, MessagesSquare } from "lucide-react"
+import { FaTiktok } from "react-icons/fa"
+
+
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -47,6 +50,8 @@ export default function LinksPage() {
         <div className="w-full space-y-4">
           <LinkButton href="https://softwans.com" icon={<Globe className="h-5 w-5" />} label="Sitio Web Oficial" />
 
+          <LinkButton href="https://restaurante.petvices.lat/" icon={<Globe className="h-5 w-5" />} label="Demo de Menú/Tienda" />
+
           <LinkButton
             href="https://wa.me/message/Y5IO4FCCEMICH1"
             icon={<MessagesSquare className="h-5 w-5" />}
@@ -61,12 +66,19 @@ export default function LinksPage() {
             color="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]"
           />
 
+          <LinkButton
+            href="https://www.tiktok.com/@softwansc?is_from_webapp=1&sender_device=pc"
+            icon={<FaTiktok className="h-5 w-5" />}
+            label="Instagram"
+            color="bg-black"
+          />
+
         </div>
 
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Softwans</p>
-          <p className="mt-1">Hecho por Softwans Corporations</p>
+          <p className="mt-1">Hosted by Softwans Corporations</p>
         </div>
       </div>
     </div>
