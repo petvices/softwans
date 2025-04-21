@@ -81,7 +81,7 @@ export function Download() {
             transition={{ duration: 0.7, delay: 0.4 }}
           >
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Descarga la app</h3>
+              <h3 className="text-2xl font-bold text-[#020818]">Descarga la app</h3>
               <p className="text-gray-600">
                 Accede a todas las funcionalidades de Hypatia desde tu dispositivo móvil. Disponible para Android e iOS.
               </p>
