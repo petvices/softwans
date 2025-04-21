@@ -155,7 +155,7 @@ export function Chat() {
           <div className="inline-block rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-800 mb-4">
             Prueba ahora
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-[#020818]">
             Interactúa con{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
               Hypatia

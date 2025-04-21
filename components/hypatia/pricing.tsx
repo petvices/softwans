@@ -80,7 +80,7 @@ export function Pricing() {
           <div className="inline-block rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800 mb-4">
             Precios
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-[#020818]">
             Planes diseñados para{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
               tu crecimiento

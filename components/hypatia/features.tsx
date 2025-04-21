@@ -79,7 +79,7 @@ export function Features() {
           <div className="inline-block rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800 mb-4">
             Funcionalidades
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-black">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-[#020818]"> 
             ¿Qué puede hacer{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
               Hypatia
@@ -211,7 +211,6 @@ function FeatureItem({ feature, index, totalFeatures }: FeatureItemProps) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-sm text-gray-600">Beneficio destacado #{item}</span>
               </div>
             ))}
           </motion.div>

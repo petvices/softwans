@@ -74,7 +74,7 @@ export function Testimonials() {
           <div className="inline-block rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-800 mb-4">
             Testimonios
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-[#020818]">
             Lo que dicen nuestros <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">usuarios</span>
           </h2>
           <p className="mt-4 text-gray-500 md:text-xl max-w-[700px] mx-auto">
