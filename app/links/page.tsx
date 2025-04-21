@@ -78,7 +78,7 @@ export default function LinksPage() {
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Softwans</p>
-          <p className="mt-1">Hosted by Softwans Corporations 2025 <Copyright className="h-3.5 w-3.5 inline-block" /></p>
+          <p className="mt-1">Hosted by Softwans Corporations </p>
         </div>
       </div>
     </div>
