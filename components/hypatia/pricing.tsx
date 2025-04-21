@@ -164,7 +164,7 @@ export function Pricing() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.5 }}
         >
-          <h3 className="text-xl font-bold mb-2">¿Necesitas un plan personalizado?</h3>
+          <h3 className="text-xl font-bold mb-2 text-[#020818]">¿Necesitas un plan personalizado?</h3>
           <p className="text-gray-500 mb-4">Contáctanos para crear un plan a medida para tu empresa.</p>
           <Button variant="outline">Contactar ventas</Button>
         </motion.div>
