@@ -27,8 +27,7 @@ export default function Home() {
           <div className="flex justify-center items-center mb-6">
             <div className="h-10 w-10 rounded-full bg-purple-600 flex items-center justify-center mr-3">
             <img src="/images/Hypatia_logo.png" alt="Icono" className="h-5 w-5" />
-
-
+            
             </div>
             <span className="text-xl font-bold">Hypatia</span>
           </div>
