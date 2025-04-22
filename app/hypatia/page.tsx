@@ -26,16 +26,8 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center items-center mb-6">
             <div className="h-10 w-10 rounded-full bg-purple-600 flex items-center justify-center mr-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5 text-white"
-              >
+            <img src="/images/Hypatia_logo.png" alt="Icono" className="h-5 w-5" />
+
                 <path d="M12 2a10 10 0 1 0 10 10H12V2Z" />
                 <path d="M12 12 2.1 9.1a10 10 0 0 0 9.8 12.9L12 12Z" />
                 <path d="M12 12v10a10 10 0 0 0 10-10h-10Z" />
