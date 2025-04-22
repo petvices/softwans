@@ -17,8 +17,8 @@ export function PortfolioSection() {
     {
       title: "Demo menú de Restaurante",
       category: "Aplicación Web",
-      image: "https://restaurante.petvices.lat/",
-      link: "/hypatia",
+      image: "/images/demo.png",
+      link: "https://restaurante.petvices.lat/",
     },
     {
       title: "Hypatia",
