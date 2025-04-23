@@ -9,10 +9,12 @@ import { WhyChooseUs } from "@/components/softwans/why-choose-us"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import { CtaBanner } from "@/components/softwans/cta-banner"
 import { PortfolioSection } from "@/components/softwans/portfolio-section"
+import FacebookPixel from "@/components/FacebookPixel"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+      <FacebookPixel />
       <Header />
       <main className="flex-1">
         <HeroSection />
@@ -29,4 +31,3 @@ export default function Home() {
     </div>
   )
 }
-
