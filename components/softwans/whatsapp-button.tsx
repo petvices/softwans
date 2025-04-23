@@ -20,18 +20,6 @@ export function WhatsAppButton() {
     "¡Un 15% de descuento si nos contactas ahora!",
   ]
 
-  // Función para trackear el evento de WhatsApp
-  const trackWhatsAppClick = () => {
-    if (typeof window !== 'undefined' && window.fbq) {
-      fbq('track', 'Contact'); // Evento estándar de Meta para contactos
-      // O evento personalizado:
-      fbq('track', 'WhatsAppClick', {
-        message: messages[messageIndex], // Opcional: enviar el mensaje que se mostraba
-        location: window.location.href
-      });
-    }
-  }
-
   // Mostrar el botón después de 2 segundos
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -117,7 +105,6 @@ export function WhatsAppButton() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform relative"
-          onClick={trackWhatsAppClick} // 👈 Añade el evento aquí
         >
           <motion.span
             className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white"
