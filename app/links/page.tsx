@@ -69,7 +69,7 @@ export default function LinksPage() {
           <LinkButton
             href="https://www.tiktok.com/@softwansc?is_from_webapp=1&sender_device=pc"
             icon={<FaTiktok className="h-5 w-5" />}
-            label="Instagram"
+            label="TikTok"
             color="bg-black"
           />
 
