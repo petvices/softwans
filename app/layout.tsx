@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Empresa dedicada a la distribución y creación de software empresarial pesado. Desarrollo de apps, páginas web y hosting en Caracas.",
   keywords: ["software empresarial", "desarrollo de software", "aplicaciones móviles", "hosting en Caracas"],
   openGraph: {
-    title: "Softwans | Desarrollo de Software y Hosting en Caracas",
+    title: "Softwans | Software & Marketing solutions.",
     description: "Somos una empresa especializada en software empresarial, aplicaciones móviles y hosting. Ubicados en Caracas, Venezuela.",
     url: "https://softwans.com",
     type: "website",
