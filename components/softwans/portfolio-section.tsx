@@ -15,10 +15,10 @@ export function PortfolioSection() {
       link: "https://satvicosalimentos.com/",
     },
     {
-      title: "Demo menú de Restaurante",
+      title: "Catálogo Digital",
       category: "Aplicación Web",
       image: "/images/demo.png",
-      link: "https://restaurante.petvices.lat/",
+      link: "https://menu.petvices.lat/",
     },
     {
       title: "Hypatia",
