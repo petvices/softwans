@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
+import { Header } from "@/components/softwans/header"
+import { Footer } from "@/components/softwans/footer"
+import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import {
   ArrowRight,
   Code,
