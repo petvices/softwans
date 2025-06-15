@@ -78,7 +78,7 @@ export function Header() {
     {
       title: "Gestión de Redes Sociales",
       description: "Interfaces intuitivas y experiencias de usuario excepcionales",
-      href: "/gestión-de-redes",
+      href: "/gestión-redes-sociales",
       icon: "🎨",
     },
     {
@@ -90,13 +90,13 @@ export function Header() {
     {
       title: "SEO",
       description: "Posicionamiento web para aparecer en Google",
-      href: "/SEO",
+      href: "/seo",
       icon: "🔍",
     },
     {
       title: "Aplicaciones Móviles",
       description: "Apps nativas y multiplataforma para iOS y Android",
-      href: "/aplicaciones-moviles",
+      href: "/aplicaciones-móviles",
       icon: "📱",
     },
   ]

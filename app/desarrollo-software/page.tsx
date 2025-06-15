@@ -7,85 +7,89 @@ import { Footer } from "@/components/softwans/footer"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import {
   ArrowRight,
-  TrendingUp,
-  Search,
-  Users,
-  MessageSquare,
-  Mail,
-  BarChart3,
-  Target,
+  Code,
+  Database,
+  Server,
+  Smartphone,
+  Monitor,
+  Cloud,
+  Shield,
   Zap,
   Award,
   Settings,
-  Smartphone,
-  Monitor,
-  Rocket,
-  Eye,
-  Heart,
-  Share2,
-  DollarSign,
+  Users,
+  BarChart3,
+  Cog,
+  Layers,
+  GitBranch,
+  Terminal,
+  Package,
+  Workflow,
+  CheckCircle,
+  Target,
+  MessageSquare,
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Marketing Digital Profesional | Agencia de Marketing Online | Softwans",
+  title: "Desarrollo de Software Personalizado | Programación a Medida | Softwans",
   description:
-    "Agencia de marketing digital profesional. Servicios de SEO, SEM, redes sociales, email marketing y publicidad online. Estrategias digitales que generan resultados reales. Presupuesto gratuito.",
+    "Desarrollo de software personalizado para empresas. Aplicaciones web, software de gestión, sistemas ERP, CRM y soluciones tecnológicas a medida. Programación profesional con las mejores tecnologías.",
   keywords: [
-    "marketing digital",
-    "marketing online",
-    "agencia marketing digital",
-    "publicidad digital",
-    "marketing digital profesional",
-    "servicios marketing digital",
-    "estrategias marketing digital",
-    "marketing digital empresas",
-    "SEO",
-    "posicionamiento web",
-    "SEM",
-    "Google Ads",
-    "publicidad Google",
-    "redes sociales",
-    "social media marketing",
-    "gestión redes sociales",
-    "Facebook Ads",
-    "Instagram marketing",
-    "email marketing",
-    "marketing por correo",
-    "content marketing",
-    "marketing de contenidos",
-    "inbound marketing",
-    "marketing automation",
-    "analítica web",
-    "Google Analytics",
-    "conversión web",
-    "lead generation",
-    "generación leads",
-    "ROI marketing",
-    "marketing performance",
-    "publicidad online",
-    "advertising digital",
-    "campañas publicitarias",
-    "marketing strategy",
-    "consultoría marketing",
-    "agencia publicidad",
-    "marketing consultant",
-    "digital advertising",
-    "online marketing",
-    "internet marketing",
+    "desarrollo software",
+    "desarrollo software personalizado",
+    "programación software",
+    "software a medida",
+    "desarrollo aplicaciones",
+    "software empresarial",
+    "desarrollo software empresas",
+    "programación a medida",
+    "software personalizado",
+    "desarrollo sistemas",
+    "aplicaciones empresariales",
+    "software de gestión",
+    "sistema ERP",
+    "sistema CRM",
+    "software contable",
+    "software facturación",
+    "software inventario",
+    "aplicaciones web",
+    "aplicaciones escritorio",
+    "desarrollo backend",
+    "desarrollo frontend",
+    "API development",
+    "microservicios",
+    "arquitectura software",
+    "base de datos",
+    "desarrollo full stack",
+    "programador software",
+    "empresa desarrollo software",
+    "consultoría software",
+    "mantenimiento software",
+    "migración software",
+    "integración sistemas",
+    "automatización procesos",
+    "software cloud",
+    "software seguro",
+    "desarrollo ágil",
+    "metodología scrum",
+    "testing software",
+    "calidad software",
+    "documentación software",
+    "soporte técnico software",
   ],
   openGraph: {
-    title: "Marketing Digital Profesional | Agencia de Marketing Online",
+    title: "Desarrollo de Software Personalizado | Programación a Medida",
     description:
-      "Agencia de marketing digital profesional. SEO, SEM, redes sociales y estrategias digitales que generan resultados.",
+      "Desarrollo de software personalizado para empresas. Aplicaciones web, sistemas de gestión y soluciones a medida.",
     type: "website",
     locale: "es_ES",
   },
   alternates: {
-    canonical: "https://www.softwans.com/marketing-digital",
+    canonical: "https://www.softwans.com/desarrollo-software",
   },
 }
 
-export default function MarketingDigitalPage() {
+export default function DesarrolloSoftwarePage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -116,20 +120,20 @@ export default function MarketingDigitalPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="flex flex-col justify-center space-y-8">
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary w-fit">
-                  <TrendingUp className="mr-2 h-4 w-4" />
-                  Marketing Digital Profesional
+                  <Code className="mr-2 h-4 w-4" />
+                  Desarrollo de Software
                 </div>
 
                 <div className="space-y-4">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span className="text-white">Marketing Digital que </span>
+                    <span className="text-white">Desarrollo de Software </span>
                     <span className="text-gradient bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-                      Genera Resultados
+                      Personalizado
                     </span>
                   </h1>
                   <p className="max-w-[600px] text-xl text-white/80">
-                    Agencia de marketing digital especializada en SEO, SEM, redes sociales y estrategias online que
-                    impulsan tu negocio. Aumentamos tus ventas con marketing digital profesional.
+                    Creamos software a medida que automatiza procesos, optimiza operaciones y impulsa el crecimiento de
+                    tu empresa. Soluciones tecnológicas personalizadas con las mejores prácticas de desarrollo.
                   </p>
                 </div>
 
@@ -139,7 +143,7 @@ export default function MarketingDigitalPage() {
                     target="_blank"
                   >
                     <Button size="lg" className="group w-full sm:w-auto shadow-neon">
-                      Solicitar Auditoría Gratis
+                      Solicitar Consultoría Gratis
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
@@ -152,16 +156,16 @@ export default function MarketingDigitalPage() {
 
                 <div className="grid grid-cols-3 gap-4 pt-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">300%</div>
-                    <div className="text-sm text-white/70">ROI Promedio</div>
+                    <div className="text-2xl font-bold text-primary">100+</div>
+                    <div className="text-sm text-white/70">Proyectos Software</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">15+</div>
-                    <div className="text-sm text-white/70">Campañas Exitosas</div>
+                    <div className="text-2xl font-bold text-primary">8+</div>
+                    <div className="text-sm text-white/70">Años Experiencia</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">95%</div>
-                    <div className="text-sm text-white/70">Clientes Satisfechos</div>
+                    <div className="text-2xl font-bold text-primary">99%</div>
+                    <div className="text-sm text-white/70">Proyectos Exitosos</div>
                   </div>
                 </div>
               </div>
@@ -172,7 +176,7 @@ export default function MarketingDigitalPage() {
                     src="/placeholder.svg?height=600&width=600"
                     width={600}
                     height={600}
-                    alt="Marketing digital profesional y estrategias online"
+                    alt="Desarrollo de software personalizado y programación a medida"
                     className="w-full object-cover"
                   />
                 </div>
@@ -181,60 +185,60 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Servicios de Marketing Digital */}
+        {/* Servicios de Desarrollo de Software */}
         <section id="servicios" className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Target className="mr-2 h-4 w-4" />
-                Servicios de Marketing Digital
+                <Terminal className="mr-2 h-4 w-4" />
+                Servicios de Desarrollo
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Estrategias Digitales Completas para tu Empresa
+                Soluciones de Software Completas para tu Empresa
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Ofrecemos servicios integrales de marketing digital profesional, desde SEO hasta publicidad online que
-                generan resultados medibles.
+                Ofrecemos servicios integrales de desarrollo de software, desde aplicaciones web hasta sistemas
+                empresariales complejos.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  icon: <Search className="h-10 w-10 text-primary" />,
-                  title: "SEO y Posicionamiento Web",
+                  icon: <Monitor className="h-10 w-10 text-primary" />,
+                  title: "Aplicaciones Web",
                   description:
-                    "Posicionamiento orgánico en Google para aparecer en las primeras posiciones y aumentar el tráfico web.",
+                    "Desarrollo de aplicaciones web modernas, escalables y seguras con interfaces intuitivas y funcionalidades avanzadas.",
                 },
                 {
-                  icon: <Target className="h-10 w-10 text-primary" />,
-                  title: "SEM y Google Ads",
+                  icon: <Smartphone className="h-10 w-10 text-primary" />,
+                  title: "Aplicaciones Móviles",
                   description:
-                    "Campañas de publicidad en Google Ads optimizadas para generar leads y ventas con el mejor ROI.",
+                    "Apps nativas y multiplataforma para iOS y Android que conectan tu negocio con clientes en cualquier lugar.",
                 },
                 {
-                  icon: <Users className="h-10 w-10 text-primary" />,
-                  title: "Gestión de Redes Sociales",
+                  icon: <Database className="h-10 w-10 text-primary" />,
+                  title: "Sistemas de Gestión",
                   description:
-                    "Estrategias de social media marketing para aumentar tu comunidad y engagement en todas las plataformas.",
+                    "ERP, CRM y sistemas de gestión empresarial personalizados que optimizan procesos y aumentan productividad.",
                 },
                 {
-                  icon: <Mail className="h-10 w-10 text-primary" />,
-                  title: "Email Marketing",
+                  icon: <Server className="h-10 w-10 text-primary" />,
+                  title: "APIs y Microservicios",
                   description:
-                    "Campañas de email marketing automatizadas que nutren leads y convierten suscriptores en clientes.",
+                    "Desarrollo de APIs robustas y arquitecturas de microservicios para integración y escalabilidad óptima.",
                 },
                 {
-                  icon: <BarChart3 className="h-10 w-10 text-primary" />,
-                  title: "Marketing de Contenidos",
+                  icon: <Cloud className="h-10 w-10 text-primary" />,
+                  title: "Software en la Nube",
                   description:
-                    "Creación de contenido valioso que atrae, educa y convierte a tu audiencia objetivo en clientes fieles.",
+                    "Soluciones cloud-native que aprovechan la escalabilidad y flexibilidad de la computación en la nube.",
                 },
                 {
-                  icon: <Eye className="h-10 w-10 text-primary" />,
-                  title: "Analítica y Reporting",
+                  icon: <Shield className="h-10 w-10 text-primary" />,
+                  title: "Software Seguro",
                   description:
-                    "Análisis detallado de métricas y KPIs para optimizar continuamente tus estrategias de marketing digital.",
+                    "Desarrollo con las mejores prácticas de seguridad, cifrado de datos y protección contra vulnerabilidades.",
                 },
               ].map((service, index) => (
                 <div
@@ -252,44 +256,44 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Tipos de Marketing Digital */}
+        {/* Tipos de Software */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Rocket className="mr-2 h-4 w-4" />
-                Especialidades en Marketing
+                <Package className="mr-2 h-4 w-4" />
+                Tipos de Software
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Estrategias de Marketing Digital Especializadas
+                Desarrollamos Todo Tipo de Software Empresarial
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Desde marketing B2B hasta e-commerce, tenemos la experiencia para crear estrategias digitales exitosas
-                para cualquier sector.
+                Desde sistemas de gestión hasta aplicaciones especializadas, tenemos la experiencia para crear cualquier
+                solución de software.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  icon: <DollarSign className="h-8 w-8 text-primary" />,
-                  title: "Marketing B2B",
-                  description: "Estrategias especializadas para empresas que venden a otras empresas",
+                  icon: <BarChart3 className="h-8 w-8 text-primary" />,
+                  title: "Software ERP",
+                  description: "Sistemas de planificación de recursos empresariales integrados",
                 },
                 {
-                  icon: <Heart className="h-8 w-8 text-primary" />,
-                  title: "Marketing B2C",
-                  description: "Campañas dirigidas al consumidor final con alto impacto emocional",
+                  icon: <Users className="h-8 w-8 text-primary" />,
+                  title: "Software CRM",
+                  description: "Gestión de relaciones con clientes y automatización de ventas",
                 },
                 {
-                  icon: <Smartphone className="h-8 w-8 text-primary" />,
-                  title: "Marketing E-commerce",
-                  description: "Estrategias específicas para tiendas online y marketplaces",
+                  icon: <Cog className="h-8 w-8 text-primary" />,
+                  title: "Software de Gestión",
+                  description: "Sistemas personalizados para gestión de procesos específicos",
                 },
                 {
-                  icon: <Share2 className="h-8 w-8 text-primary" />,
-                  title: "Marketing Local",
-                  description: "Posicionamiento local y estrategias para negocios físicos",
+                  icon: <Workflow className="h-8 w-8 text-primary" />,
+                  title: "Automatización",
+                  description: "Software para automatizar procesos y workflows empresariales",
                 },
               ].map((type, index) => (
                 <div
@@ -307,44 +311,44 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Ventajas del Marketing Digital Profesional */}
+        {/* Ventajas del Desarrollo Personalizado */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                   <Award className="mr-2 h-4 w-4" />
-                  Ventajas del Marketing Digital
+                  Ventajas del Software Personalizado
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
-                  ¿Por qué Invertir en Marketing Digital Profesional?
+                  ¿Por qué Elegir Desarrollo de Software a Medida?
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  El marketing digital profesional es la clave para hacer crecer tu negocio en la era digital. Te
-                  ayudamos a llegar a más clientes y aumentar tus ventas.
+                  El software personalizado se adapta exactamente a tus necesidades empresariales, optimizando procesos
+                  y generando ventajas competitivas únicas.
                 </p>
 
                 <div className="space-y-6">
                   {[
                     {
-                      icon: <TrendingUp className="h-6 w-6 text-primary" />,
-                      title: "Aumento de Ventas",
-                      description: "Estrategias probadas que generan más leads y convierten más clientes",
-                    },
-                    {
-                      icon: <Target className="h-6 w-6 text-primary" />,
-                      title: "Segmentación Precisa",
-                      description: "Llegamos exactamente a tu audiencia objetivo con mensajes personalizados",
-                    },
-                    {
-                      icon: <BarChart3 className="h-6 w-6 text-primary" />,
-                      title: "Resultados Medibles",
-                      description: "Tracking completo de ROI y métricas para optimizar continuamente",
+                      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+                      title: "Adaptación Total",
+                      description: "Software diseñado específicamente para tus procesos y necesidades únicas",
                     },
                     {
                       icon: <Zap className="h-6 w-6 text-primary" />,
-                      title: "Resultados Rápidos",
-                      description: "Campañas optimizadas que generan resultados visibles en semanas",
+                      title: "Mayor Eficiencia",
+                      description: "Automatización de procesos que reduce tiempo y costos operativos",
+                    },
+                    {
+                      icon: <Shield className="h-6 w-6 text-primary" />,
+                      title: "Seguridad Avanzada",
+                      description: "Control total sobre la seguridad y protección de datos empresariales",
+                    },
+                    {
+                      icon: <Target className="h-6 w-6 text-primary" />,
+                      title: "Escalabilidad",
+                      description: "Software que crece con tu empresa y se adapta a nuevos requerimientos",
                     },
                   ].map((advantage, index) => (
                     <div key={index} className="flex gap-4">
@@ -365,7 +369,7 @@ export default function MarketingDigitalPage() {
                   src="/placeholder.svg?height=600&width=500"
                   width={500}
                   height={600}
-                  alt="Estrategias de marketing digital en acción"
+                  alt="Desarrollo de software personalizado en acción"
                   className="rounded-xl object-cover shadow-xl"
                 />
               </div>
@@ -373,19 +377,19 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Proceso de Marketing Digital */}
+        {/* Proceso de Desarrollo */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
                 <Settings className="mr-2 h-4 w-4" />
-                Nuestro Proceso
+                Proceso de Desarrollo
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Cómo Desarrollamos tu Estrategia de Marketing Digital
+                Nuestro Proceso de Desarrollo de Software
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Un proceso estructurado y probado que garantiza el éxito de cada campaña de marketing digital.
+                Metodología ágil y probada que garantiza la entrega exitosa de software de alta calidad.
               </p>
             </div>
 
@@ -393,25 +397,24 @@ export default function MarketingDigitalPage() {
               {[
                 {
                   step: "01",
-                  title: "Auditoría y Análisis",
+                  title: "Análisis y Diseño",
                   description:
-                    "Analizamos tu situación actual, competencia y oportunidades de mercado para definir la estrategia.",
+                    "Analizamos tus necesidades, definimos requerimientos y diseñamos la arquitectura del software.",
                 },
                 {
                   step: "02",
-                  title: "Estrategia Personalizada",
-                  description: "Creamos un plan de marketing digital a medida con objetivos claros y KPIs específicos.",
+                  title: "Desarrollo Ágil",
+                  description: "Programamos usando metodologías ágiles con entregas incrementales y feedback continuo.",
                 },
                 {
                   step: "03",
-                  title: "Implementación",
-                  description:
-                    "Ejecutamos las campañas y estrategias con las mejores herramientas y técnicas del mercado.",
+                  title: "Testing y QA",
+                  description: "Realizamos pruebas exhaustivas de funcionalidad, rendimiento y seguridad del software.",
                 },
                 {
                   step: "04",
-                  title: "Optimización Continua",
-                  description: "Monitoreamos, analizamos y optimizamos constantemente para maximizar resultados.",
+                  title: "Despliegue y Soporte",
+                  description: "Implementamos el software y proporcionamos soporte técnico y mantenimiento continuo.",
                 },
               ].map((process, index) => (
                 <div key={index} className="text-center">
@@ -426,51 +429,103 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Herramientas de Marketing Digital */}
+        {/* Tecnologías de Desarrollo */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Monitor className="mr-2 h-4 w-4" />
-                Herramientas Profesionales
+                <GitBranch className="mr-2 h-4 w-4" />
+                Tecnologías de Desarrollo
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Herramientas de Marketing Digital que Utilizamos
+                Tecnologías Modernas para Desarrollo de Software
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Trabajamos con las mejores herramientas y plataformas del mercado para garantizar resultados
-                excepcionales.
+                Utilizamos las tecnologías más avanzadas y frameworks modernos para crear software robusto y escalable.
               </p>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {[
-                "Google Ads",
-                "Google Analytics",
-                "Facebook Ads",
-                "Instagram Ads",
-                "LinkedIn Ads",
-                "Mailchimp",
-                "HubSpot",
-                "Hootsuite",
-                "Buffer",
-                "Canva",
-                "Semrush",
-                "Ahrefs",
-                "Moz",
-                "Screaming Frog",
-                "Google Search Console",
-                "Hotjar",
-                "Zapier",
-                "Klaviyo",
-                "ActiveCampaign",
-                "ConvertKit",
-              ].map((tool, index) => (
+                "Python",
+                "Java",
+                "C#",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Angular",
+                "Vue.js",
+                "Node.js",
+                "Django",
+                "Spring Boot",
+                ".NET Core",
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB",
+                "Redis",
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "Azure",
+                "Google Cloud",
+                "Git",
+                "Jenkins",
+                "Terraform",
+              ].map((tech, index) => (
                 <div
                   key={index}
                   className="flex items-center justify-center rounded-lg border bg-background/50 p-4 text-center font-medium transition-all hover:bg-primary/10 hover:border-primary/20"
                 >
-                  {tool}
+                  {tech}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Metodologías de Desarrollo */}
+        <section className="bg-muted/30 py-20 md:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+                <Layers className="mr-2 h-4 w-4" />
+                Metodologías
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Metodologías de Desarrollo Ágil
+              </h2>
+              <p className="max-w-[800px] text-xl text-muted-foreground">
+                Aplicamos las mejores prácticas de desarrollo ágil para garantizar entregas exitosas y de calidad.
+              </p>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  icon: <Workflow className="h-10 w-10 text-primary" />,
+                  title: "Metodología Scrum",
+                  description: "Desarrollo iterativo con sprints cortos y entregas frecuentes de valor",
+                },
+                {
+                  icon: <GitBranch className="h-10 w-10 text-primary" />,
+                  title: "DevOps",
+                  description: "Integración continua y despliegue automatizado para mayor eficiencia",
+                },
+                {
+                  icon: <CheckCircle className="h-10 w-10 text-primary" />,
+                  title: "Test-Driven Development",
+                  description: "Desarrollo guiado por pruebas para garantizar calidad y robustez",
+                },
+              ].map((methodology, index) => (
+                <div
+                  key={index}
+                  className="text-center rounded-xl border bg-background/50 p-6 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1"
+                >
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
+                    {methodology.icon}
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold">{methodology.title}</h3>
+                  <p className="text-muted-foreground">{methodology.description}</p>
                 </div>
               ))}
             </div>
@@ -478,48 +533,48 @@ export default function MarketingDigitalPage() {
         </section>
 
         {/* Preguntas Frecuentes */}
-        <section className="bg-muted/30 py-20 md:py-32">
+        <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Preguntas Frecuentes sobre Marketing Digital
+                Preguntas Frecuentes sobre Desarrollo de Software
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Resolvemos las dudas más comunes sobre nuestros servicios de marketing digital profesional.
+                Resolvemos las dudas más comunes sobre nuestros servicios de desarrollo de software personalizado.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 {
-                  question: "¿Cuánto tiempo tardan en verse los resultados?",
+                  question: "¿Cuánto tiempo tarda el desarrollo de software personalizado?",
                   answer:
-                    "Los resultados varían según la estrategia. SEO puede tomar 3-6 meses, mientras que SEM y redes sociales pueden generar resultados en 2-4 semanas. Te proporcionamos reportes mensuales detallados.",
+                    "El tiempo varía según la complejidad del proyecto. Un software básico puede tomar 2-4 meses, mientras que sistemas complejos pueden requerir 6-12 meses. Proporcionamos cronogramas detallados en la fase de planificación.",
                 },
                 {
-                  question: "¿Qué incluyen los servicios de marketing digital?",
+                  question: "¿Incluyen mantenimiento y soporte técnico?",
                   answer:
-                    "Incluimos estrategia personalizada, implementación de campañas, creación de contenido, gestión de anuncios, reportes mensuales y optimización continua según tus objetivos.",
+                    "Sí, ofrecemos planes de mantenimiento que incluyen actualizaciones, corrección de errores, soporte técnico y mejoras continuas. El primer año de soporte está incluido en el desarrollo.",
                 },
                 {
-                  question: "¿Trabajan con empresas de todos los tamaños?",
+                  question: "¿El software es escalable para futuras necesidades?",
                   answer:
-                    "Sí, trabajamos desde startups hasta grandes empresas. Adaptamos nuestras estrategias y presupuestos a las necesidades específicas de cada cliente.",
+                    "Absolutamente. Diseñamos arquitecturas escalables que permiten agregar nuevas funcionalidades, usuarios y módulos según crezcan las necesidades de tu empresa.",
                 },
                 {
-                  question: "¿Cómo miden el ROI de las campañas?",
+                  question: "¿Qué metodología de desarrollo utilizan?",
                   answer:
-                    "Utilizamos herramientas avanzadas de analítica para trackear conversiones, leads, ventas y otros KPIs relevantes. Proporcionamos reportes detallados del retorno de inversión.",
+                    "Utilizamos metodologías ágiles como Scrum, con entregas incrementales cada 2-4 semanas. Esto permite feedback continuo y ajustes durante el desarrollo para garantizar el resultado esperado.",
                 },
                 {
-                  question: "¿Ofrecen servicios de marketing digital local?",
+                  question: "¿Proporcionan documentación y capacitación?",
                   answer:
-                    "Absolutamente. Tenemos experiencia en marketing local con Google My Business, SEO local, anuncios geográficos y estrategias específicas para negocios locales.",
+                    "Sí, entregamos documentación técnica completa, manuales de usuario y proporcionamos capacitación al equipo que utilizará el software. También incluimos videos tutoriales cuando es necesario.",
                 },
                 {
-                  question: "¿Qué diferencia su agencia de otras?",
+                  question: "¿Pueden integrar el software con sistemas existentes?",
                   answer:
-                    "Nos enfocamos en resultados medibles, transparencia total, comunicación constante y estrategias personalizadas. Cada cliente tiene un account manager dedicado.",
+                    "Por supuesto. Tenemos experiencia integrando software personalizado con sistemas ERP, CRM, bases de datos existentes y APIs de terceros para garantizar un ecosistema tecnológico cohesivo.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="rounded-xl border bg-background/50 p-6 shadow-lg">
@@ -532,7 +587,7 @@ export default function MarketingDigitalPage() {
         </section>
 
         {/* CTA Final */}
-        <section className="py-20 md:py-32">
+        <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="relative overflow-hidden rounded-3xl bg-primary p-8 md:p-12">
               <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
@@ -541,11 +596,11 @@ export default function MarketingDigitalPage() {
               <div className="relative z-10 flex flex-col items-center gap-8 text-center md:flex-row md:text-left">
                 <div className="flex-1 space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl">
-                    ¿Listo para hacer crecer tu negocio con marketing digital?
+                    ¿Listo para crear tu software personalizado?
                   </h2>
                   <p className="text-xl text-white/80">
-                    Contacta con nosotros hoy mismo y obtén una auditoría gratuita de tu presencia digital. Sin
-                    compromiso.
+                    Contacta con nosotros hoy mismo y obtén una consultoría gratuita para tu proyecto de desarrollo de
+                    software. Sin compromiso.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
@@ -555,7 +610,7 @@ export default function MarketingDigitalPage() {
                   >
                     <Button size="lg" variant="secondary" className="w-full sm:w-auto">
                       <MessageSquare className="mr-2 h-4 w-4" />
-                      Auditoría Gratis
+                      Consultoría Gratis
                     </Button>
                   </Link>
                   <Link href="/#contacto">
@@ -564,7 +619,7 @@ export default function MarketingDigitalPage() {
                       variant="outline"
                       className="border-white text-white hover:bg-white/20 w-full sm:w-auto"
                     >
-                      Solicitar Propuesta
+                      Solicitar Presupuesto
                     </Button>
                   </Link>
                 </div>
@@ -580,14 +635,14 @@ export default function MarketingDigitalPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Marketing Digital Profesional",
+              name: "Desarrollo de Software Personalizado",
               description:
-                "Servicios profesionales de marketing digital, SEO, SEM, redes sociales, email marketing y estrategias online.",
+                "Servicios profesionales de desarrollo de software a medida, aplicaciones web, sistemas de gestión y soluciones tecnológicas personalizadas.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
                 url: "https://www.softwans.com",
-                logo: "https://www.softwans.com/images/logo.webp",
+                logo: "https://www.softwans.com/logo.webp",
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+58-424-267-0533",
@@ -595,50 +650,50 @@ export default function MarketingDigitalPage() {
                   availableLanguage: "Spanish",
                 },
               },
-              serviceType: "Marketing Digital",
-              category: "Marketing y Publicidad",
+              serviceType: "Desarrollo de Software",
+              category: "Tecnología y Programación",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Servicios de Marketing Digital",
+                name: "Servicios de Desarrollo de Software",
                 itemListElement: [
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "SEO y Posicionamiento Web",
-                      description: "Optimización para motores de búsqueda y posicionamiento orgánico",
+                      name: "Aplicaciones Web",
+                      description: "Desarrollo de aplicaciones web modernas y escalables",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "SEM y Google Ads",
-                      description: "Campañas de publicidad en Google y otros buscadores",
+                      name: "Sistemas de Gestión",
+                      description: "ERP, CRM y sistemas empresariales personalizados",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Gestión de Redes Sociales",
-                      description: "Social media marketing y gestión de comunidades online",
+                      name: "APIs y Microservicios",
+                      description: "Desarrollo de APIs robustas y arquitecturas de microservicios",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Email Marketing",
-                      description: "Campañas de email marketing y marketing automation",
+                      name: "Software en la Nube",
+                      description: "Soluciones cloud-native escalables y flexibles",
                     },
                   },
                 ],
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "89",
+                ratingValue: "4.9",
+                reviewCount: "78",
                 bestRating: "5",
                 worstRating: "1",
               },

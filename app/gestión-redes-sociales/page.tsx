@@ -7,85 +7,89 @@ import { Footer } from "@/components/softwans/footer"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import {
   ArrowRight,
-  TrendingUp,
-  Search,
   Users,
+  Heart,
+  Share2,
   MessageSquare,
-  Mail,
-  BarChart3,
+  Camera,
+  TrendingUp,
   Target,
   Zap,
   Award,
   Settings,
   Smartphone,
   Monitor,
-  Rocket,
   Eye,
-  Heart,
-  Share2,
-  DollarSign,
+  BarChart3,
+  Calendar,
+  Edit3,
+  Video,
+  ImageIcon,
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Marketing Digital Profesional | Agencia de Marketing Online | Softwans",
+  title: "Gestión de Redes Sociales Profesional | Social Media Marketing | Softwans",
   description:
-    "Agencia de marketing digital profesional. Servicios de SEO, SEM, redes sociales, email marketing y publicidad online. Estrategias digitales que generan resultados reales. Presupuesto gratuito.",
+    "Gestión profesional de redes sociales para empresas. Community management, creación de contenido, estrategias de social media marketing que aumentan engagement y ventas. Presupuesto gratuito.",
   keywords: [
-    "marketing digital",
-    "marketing online",
-    "agencia marketing digital",
-    "publicidad digital",
-    "marketing digital profesional",
-    "servicios marketing digital",
-    "estrategias marketing digital",
-    "marketing digital empresas",
-    "SEO",
-    "posicionamiento web",
-    "SEM",
-    "Google Ads",
-    "publicidad Google",
-    "redes sociales",
-    "social media marketing",
     "gestión redes sociales",
+    "social media marketing",
+    "community management",
+    "gestión redes sociales empresas",
+    "social media manager",
+    "redes sociales profesional",
+    "marketing redes sociales",
+    "gestión Facebook",
+    "gestión Instagram",
+    "gestión LinkedIn",
+    "gestión Twitter",
+    "gestión TikTok",
+    "gestión YouTube",
+    "contenido redes sociales",
+    "creación contenido social",
+    "estrategia redes sociales",
+    "publicidad redes sociales",
     "Facebook Ads",
-    "Instagram marketing",
-    "email marketing",
-    "marketing por correo",
-    "content marketing",
-    "marketing de contenidos",
-    "inbound marketing",
-    "marketing automation",
-    "analítica web",
-    "Google Analytics",
-    "conversión web",
-    "lead generation",
-    "generación leads",
-    "ROI marketing",
-    "marketing performance",
-    "publicidad online",
-    "advertising digital",
-    "campañas publicitarias",
-    "marketing strategy",
-    "consultoría marketing",
-    "agencia publicidad",
-    "marketing consultant",
-    "digital advertising",
-    "online marketing",
-    "internet marketing",
+    "Instagram Ads",
+    "LinkedIn Ads",
+    "Twitter Ads",
+    "TikTok Ads",
+    "community manager",
+    "social media strategy",
+    "engagement redes sociales",
+    "followers redes sociales",
+    "crecimiento redes sociales",
+    "analítica redes sociales",
+    "métricas redes sociales",
+    "ROI redes sociales",
+    "influencer marketing",
+    "marketing viral",
+    "contenido viral",
+    "storytelling redes sociales",
+    "branding redes sociales",
+    "reputación online",
+    "crisis comunicación",
+    "social listening",
+    "monitoreo redes sociales",
+    "programación contenido",
+    "calendario editorial",
+    "hashtags estratégicos",
+    "social commerce",
+    "venta redes sociales",
   ],
   openGraph: {
-    title: "Marketing Digital Profesional | Agencia de Marketing Online",
+    title: "Gestión de Redes Sociales Profesional | Social Media Marketing",
     description:
-      "Agencia de marketing digital profesional. SEO, SEM, redes sociales y estrategias digitales que generan resultados.",
+      "Gestión profesional de redes sociales. Community management, contenido y estrategias que aumentan engagement.",
     type: "website",
     locale: "es_ES",
   },
   alternates: {
-    canonical: "https://www.softwans.com/marketing-digital",
+    canonical: "https://www.softwans.com/gestión-redes-sociales",
   },
 }
 
-export default function MarketingDigitalPage() {
+export default function GestionRedesSocialesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -116,20 +120,20 @@ export default function MarketingDigitalPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="flex flex-col justify-center space-y-8">
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary w-fit">
-                  <TrendingUp className="mr-2 h-4 w-4" />
-                  Marketing Digital Profesional
+                  <Users className="mr-2 h-4 w-4" />
+                  Gestión de Redes Sociales
                 </div>
 
                 <div className="space-y-4">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span className="text-white">Marketing Digital que </span>
+                    <span className="text-white">Gestión de Redes Sociales </span>
                     <span className="text-gradient bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-                      Genera Resultados
+                      Profesional
                     </span>
                   </h1>
                   <p className="max-w-[600px] text-xl text-white/80">
-                    Agencia de marketing digital especializada en SEO, SEM, redes sociales y estrategias online que
-                    impulsan tu negocio. Aumentamos tus ventas con marketing digital profesional.
+                    Community management profesional que hace crecer tu comunidad online. Creamos contenido viral,
+                    gestionamos tus redes sociales y aumentamos tu engagement y ventas.
                   </p>
                 </div>
 
@@ -139,7 +143,7 @@ export default function MarketingDigitalPage() {
                     target="_blank"
                   >
                     <Button size="lg" className="group w-full sm:w-auto shadow-neon">
-                      Solicitar Auditoría Gratis
+                      Solicitar Análisis Gratis
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
@@ -152,16 +156,16 @@ export default function MarketingDigitalPage() {
 
                 <div className="grid grid-cols-3 gap-4 pt-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">300%</div>
-                    <div className="text-sm text-white/70">ROI Promedio</div>
+                    <div className="text-2xl font-bold text-primary">500%</div>
+                    <div className="text-sm text-white/70">Crecimiento Promedio</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">15+</div>
-                    <div className="text-sm text-white/70">Campañas Exitosas</div>
+                    <div className="text-2xl font-bold text-primary">200+</div>
+                    <div className="text-sm text-white/70">Cuentas Gestionadas</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">95%</div>
-                    <div className="text-sm text-white/70">Clientes Satisfechos</div>
+                    <div className="text-2xl font-bold text-primary">98%</div>
+                    <div className="text-sm text-white/70">Engagement Rate</div>
                   </div>
                 </div>
               </div>
@@ -172,7 +176,7 @@ export default function MarketingDigitalPage() {
                     src="/placeholder.svg?height=600&width=600"
                     width={600}
                     height={600}
-                    alt="Marketing digital profesional y estrategias online"
+                    alt="Gestión profesional de redes sociales y community management"
                     className="w-full object-cover"
                   />
                 </div>
@@ -181,60 +185,59 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Servicios de Marketing Digital */}
+        {/* Servicios de Gestión de Redes Sociales */}
         <section id="servicios" className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Target className="mr-2 h-4 w-4" />
-                Servicios de Marketing Digital
+                <Share2 className="mr-2 h-4 w-4" />
+                Servicios de Social Media
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Estrategias Digitales Completas para tu Empresa
+                Community Management Completo para tu Empresa
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Ofrecemos servicios integrales de marketing digital profesional, desde SEO hasta publicidad online que
-                generan resultados medibles.
+                Ofrecemos servicios integrales de gestión de redes sociales, desde la creación de contenido hasta la
+                gestión de comunidades online.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  icon: <Search className="h-10 w-10 text-primary" />,
-                  title: "SEO y Posicionamiento Web",
+                  icon: <Edit3 className="h-10 w-10 text-primary" />,
+                  title: "Creación de Contenido",
                   description:
-                    "Posicionamiento orgánico en Google para aparecer en las primeras posiciones y aumentar el tráfico web.",
+                    "Contenido original, atractivo y optimizado para cada plataforma que conecta con tu audiencia.",
                 },
                 {
-                  icon: <Target className="h-10 w-10 text-primary" />,
-                  title: "SEM y Google Ads",
+                  icon: <Calendar className="h-10 w-10 text-primary" />,
+                  title: "Programación y Publicación",
                   description:
-                    "Campañas de publicidad en Google Ads optimizadas para generar leads y ventas con el mejor ROI.",
+                    "Calendario editorial estratégico con publicaciones programadas en los mejores horarios.",
                 },
                 {
                   icon: <Users className="h-10 w-10 text-primary" />,
-                  title: "Gestión de Redes Sociales",
+                  title: "Community Management",
                   description:
-                    "Estrategias de social media marketing para aumentar tu comunidad y engagement en todas las plataformas.",
+                    "Gestión activa de tu comunidad, respuesta a comentarios y construcción de relaciones sólidas.",
                 },
                 {
-                  icon: <Mail className="h-10 w-10 text-primary" />,
-                  title: "Email Marketing",
+                  icon: <Target className="h-10 w-10 text-primary" />,
+                  title: "Publicidad en Redes Sociales",
                   description:
-                    "Campañas de email marketing automatizadas que nutren leads y convierten suscriptores en clientes.",
+                    "Campañas publicitarias optimizadas en Facebook, Instagram, LinkedIn y otras plataformas.",
                 },
                 {
                   icon: <BarChart3 className="h-10 w-10 text-primary" />,
-                  title: "Marketing de Contenidos",
-                  description:
-                    "Creación de contenido valioso que atrae, educa y convierte a tu audiencia objetivo en clientes fieles.",
+                  title: "Analítica y Reportes",
+                  description: "Análisis detallado de métricas, engagement y ROI con reportes mensuales completos.",
                 },
                 {
                   icon: <Eye className="h-10 w-10 text-primary" />,
-                  title: "Analítica y Reporting",
+                  title: "Monitoreo de Marca",
                   description:
-                    "Análisis detallado de métricas y KPIs para optimizar continuamente tus estrategias de marketing digital.",
+                    "Social listening para monitorear menciones de tu marca y gestionar tu reputación online.",
                 },
               ].map((service, index) => (
                 <div
@@ -252,99 +255,118 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Tipos de Marketing Digital */}
+        {/* Plataformas de Redes Sociales */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Rocket className="mr-2 h-4 w-4" />
-                Especialidades en Marketing
+                <Smartphone className="mr-2 h-4 w-4" />
+                Plataformas que Gestionamos
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Estrategias de Marketing Digital Especializadas
+                Gestión Especializada en Todas las Redes Sociales
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Desde marketing B2B hasta e-commerce, tenemos la experiencia para crear estrategias digitales exitosas
-                para cualquier sector.
+                Dominamos todas las plataformas sociales principales con estrategias específicas para cada una.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  icon: <DollarSign className="h-8 w-8 text-primary" />,
-                  title: "Marketing B2B",
-                  description: "Estrategias especializadas para empresas que venden a otras empresas",
+                  icon: <Users className="h-8 w-8 text-primary" />,
+                  title: "Facebook",
+                  description: "Gestión completa de páginas empresariales y campañas publicitarias",
                 },
                 {
-                  icon: <Heart className="h-8 w-8 text-primary" />,
-                  title: "Marketing B2C",
-                  description: "Campañas dirigidas al consumidor final con alto impacto emocional",
+                  icon: <Camera className="h-8 w-8 text-primary" />,
+                  title: "Instagram",
+                  description: "Contenido visual atractivo, stories, reels y gestión de influencers",
                 },
                 {
-                  icon: <Smartphone className="h-8 w-8 text-primary" />,
-                  title: "Marketing E-commerce",
-                  description: "Estrategias específicas para tiendas online y marketplaces",
+                  icon: <Users className="h-8 w-8 text-primary" />,
+                  title: "LinkedIn",
+                  description: "Estrategias B2B, networking profesional y thought leadership",
+                },
+                {
+                  icon: <MessageSquare className="h-8 w-8 text-primary" />,
+                  title: "Twitter",
+                  description: "Engagement en tiempo real, trending topics y customer service",
+                },
+                {
+                  icon: <Video className="h-8 w-8 text-primary" />,
+                  title: "TikTok",
+                  description: "Contenido viral, tendencias y alcance de audiencia joven",
+                },
+                {
+                  icon: <Video className="h-8 w-8 text-primary" />,
+                  title: "YouTube",
+                  description: "Estrategia de video marketing y optimización de canal",
+                },
+                {
+                  icon: <ImageIcon className="h-8 w-8 text-primary" />,
+                  title: "Pinterest",
+                  description: "Marketing visual para e-commerce y generación de tráfico",
                 },
                 {
                   icon: <Share2 className="h-8 w-8 text-primary" />,
-                  title: "Marketing Local",
-                  description: "Posicionamiento local y estrategias para negocios físicos",
+                  title: "Otras Plataformas",
+                  description: "Snapchat, WhatsApp Business, Telegram y redes emergentes",
                 },
-              ].map((type, index) => (
+              ].map((platform, index) => (
                 <div
                   key={index}
                   className="text-center rounded-xl border bg-background/50 p-6 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                    {type.icon}
+                    {platform.icon}
                   </div>
-                  <h3 className="mb-2 text-lg font-bold">{type.title}</h3>
-                  <p className="text-sm text-muted-foreground">{type.description}</p>
+                  <h3 className="mb-2 text-lg font-bold">{platform.title}</h3>
+                  <p className="text-sm text-muted-foreground">{platform.description}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Ventajas del Marketing Digital Profesional */}
+        {/* Ventajas de la Gestión Profesional */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                   <Award className="mr-2 h-4 w-4" />
-                  Ventajas del Marketing Digital
+                  Ventajas del Community Management
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
-                  ¿Por qué Invertir en Marketing Digital Profesional?
+                  ¿Por qué Contratar Gestión Profesional de Redes Sociales?
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  El marketing digital profesional es la clave para hacer crecer tu negocio en la era digital. Te
-                  ayudamos a llegar a más clientes y aumentar tus ventas.
+                  La gestión profesional de redes sociales es clave para construir una comunidad sólida, aumentar el
+                  engagement y convertir seguidores en clientes.
                 </p>
 
                 <div className="space-y-6">
                   {[
                     {
                       icon: <TrendingUp className="h-6 w-6 text-primary" />,
-                      title: "Aumento de Ventas",
-                      description: "Estrategias probadas que generan más leads y convierten más clientes",
+                      title: "Crecimiento Orgánico",
+                      description: "Estrategias que aumentan seguidores reales y engagement auténtico",
+                    },
+                    {
+                      icon: <Heart className="h-6 w-6 text-primary" />,
+                      title: "Mayor Engagement",
+                      description: "Contenido que genera interacción, comentarios y shares genuinos",
                     },
                     {
                       icon: <Target className="h-6 w-6 text-primary" />,
-                      title: "Segmentación Precisa",
-                      description: "Llegamos exactamente a tu audiencia objetivo con mensajes personalizados",
-                    },
-                    {
-                      icon: <BarChart3 className="h-6 w-6 text-primary" />,
-                      title: "Resultados Medibles",
-                      description: "Tracking completo de ROI y métricas para optimizar continuamente",
+                      title: "Conversión de Ventas",
+                      description: "Estrategias que convierten seguidores en leads y clientes reales",
                     },
                     {
                       icon: <Zap className="h-6 w-6 text-primary" />,
-                      title: "Resultados Rápidos",
-                      description: "Campañas optimizadas que generan resultados visibles en semanas",
+                      title: "Ahorro de Tiempo",
+                      description: "Gestión completa mientras tú te enfocas en tu negocio principal",
                     },
                   ].map((advantage, index) => (
                     <div key={index} className="flex gap-4">
@@ -365,7 +387,7 @@ export default function MarketingDigitalPage() {
                   src="/placeholder.svg?height=600&width=500"
                   width={500}
                   height={600}
-                  alt="Estrategias de marketing digital en acción"
+                  alt="Community management y gestión de redes sociales en acción"
                   className="rounded-xl object-cover shadow-xl"
                 />
               </div>
@@ -373,7 +395,7 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Proceso de Marketing Digital */}
+        {/* Proceso de Gestión */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
@@ -382,10 +404,10 @@ export default function MarketingDigitalPage() {
                 Nuestro Proceso
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Cómo Desarrollamos tu Estrategia de Marketing Digital
+                Cómo Gestionamos tus Redes Sociales
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Un proceso estructurado y probado que garantiza el éxito de cada campaña de marketing digital.
+                Un proceso estructurado que garantiza el crecimiento constante y el engagement de tu comunidad online.
               </p>
             </div>
 
@@ -393,25 +415,24 @@ export default function MarketingDigitalPage() {
               {[
                 {
                   step: "01",
-                  title: "Auditoría y Análisis",
-                  description:
-                    "Analizamos tu situación actual, competencia y oportunidades de mercado para definir la estrategia.",
+                  title: "Auditoría Social",
+                  description: "Analizamos tu presencia actual, competencia y oportunidades en cada plataforma social.",
                 },
                 {
                   step: "02",
                   title: "Estrategia Personalizada",
-                  description: "Creamos un plan de marketing digital a medida con objetivos claros y KPIs específicos.",
+                  description: "Creamos un plan de contenido y engagement específico para tu marca y audiencia.",
                 },
                 {
                   step: "03",
-                  title: "Implementación",
+                  title: "Creación y Publicación",
                   description:
-                    "Ejecutamos las campañas y estrategias con las mejores herramientas y técnicas del mercado.",
+                    "Producimos contenido de calidad y lo publicamos siguiendo el calendario editorial optimizado.",
                 },
                 {
                   step: "04",
-                  title: "Optimización Continua",
-                  description: "Monitoreamos, analizamos y optimizamos constantemente para maximizar resultados.",
+                  title: "Gestión y Optimización",
+                  description: "Gestionamos la comunidad activamente y optimizamos basándonos en métricas reales.",
                 },
               ].map((process, index) => (
                 <div key={index} className="text-center">
@@ -426,7 +447,7 @@ export default function MarketingDigitalPage() {
           </div>
         </section>
 
-        {/* Herramientas de Marketing Digital */}
+        {/* Herramientas de Gestión */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
@@ -435,36 +456,35 @@ export default function MarketingDigitalPage() {
                 Herramientas Profesionales
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Herramientas de Marketing Digital que Utilizamos
+                Herramientas de Social Media que Utilizamos
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Trabajamos con las mejores herramientas y plataformas del mercado para garantizar resultados
-                excepcionales.
+                Trabajamos con las mejores herramientas de gestión de redes sociales para maximizar resultados.
               </p>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {[
-                "Google Ads",
-                "Google Analytics",
-                "Facebook Ads",
-                "Instagram Ads",
-                "LinkedIn Ads",
-                "Mailchimp",
-                "HubSpot",
                 "Hootsuite",
                 "Buffer",
+                "Sprout Social",
+                "Later",
                 "Canva",
-                "Semrush",
-                "Ahrefs",
-                "Moz",
-                "Screaming Frog",
-                "Google Search Console",
-                "Hotjar",
-                "Zapier",
-                "Klaviyo",
-                "ActiveCampaign",
-                "ConvertKit",
+                "Adobe Creative Suite",
+                "Meta Business Suite",
+                "Creator Studio",
+                "LinkedIn Campaign Manager",
+                "Twitter Ads Manager",
+                "TikTok Ads Manager",
+                "YouTube Studio",
+                "Pinterest Business",
+                "Snapchat Ads",
+                "Google Analytics",
+                "Facebook Analytics",
+                "Brandwatch",
+                "Mention",
+                "BuzzSumo",
+                "Socialbakers",
               ].map((tool, index) => (
                 <div
                   key={index}
@@ -482,44 +502,44 @@ export default function MarketingDigitalPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Preguntas Frecuentes sobre Marketing Digital
+                Preguntas Frecuentes sobre Gestión de Redes Sociales
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Resolvemos las dudas más comunes sobre nuestros servicios de marketing digital profesional.
+                Resolvemos las dudas más comunes sobre nuestros servicios de community management profesional.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 {
-                  question: "¿Cuánto tiempo tardan en verse los resultados?",
+                  question: "¿Cuántas publicaciones incluye el servicio?",
                   answer:
-                    "Los resultados varían según la estrategia. SEO puede tomar 3-6 meses, mientras que SEM y redes sociales pueden generar resultados en 2-4 semanas. Te proporcionamos reportes mensuales detallados.",
+                    "Depende del plan elegido. Nuestros paquetes van desde 15 publicaciones mensuales hasta 60+ publicaciones, incluyendo posts, stories, reels y contenido interactivo personalizado.",
                 },
                 {
-                  question: "¿Qué incluyen los servicios de marketing digital?",
+                  question: "¿Responden a comentarios y mensajes?",
                   answer:
-                    "Incluimos estrategia personalizada, implementación de campañas, creación de contenido, gestión de anuncios, reportes mensuales y optimización continua según tus objetivos.",
+                    "Sí, incluimos community management activo. Respondemos comentarios, mensajes directos y gestionamos la interacción con tu audiencia en horario comercial.",
                 },
                 {
-                  question: "¿Trabajan con empresas de todos los tamaños?",
+                  question: "¿Crean el contenido desde cero?",
                   answer:
-                    "Sí, trabajamos desde startups hasta grandes empresas. Adaptamos nuestras estrategias y presupuestos a las necesidades específicas de cada cliente.",
+                    "Absolutamente. Nuestro equipo creativo produce contenido original: textos, diseños, videos, stories y reels adaptados a tu marca y cada plataforma específica.",
                 },
                 {
-                  question: "¿Cómo miden el ROI de las campañas?",
+                  question: "¿Incluyen publicidad en redes sociales?",
                   answer:
-                    "Utilizamos herramientas avanzadas de analítica para trackear conversiones, leads, ventas y otros KPIs relevantes. Proporcionamos reportes detallados del retorno de inversión.",
+                    "La gestión orgánica y la publicidad son servicios separados. Podemos gestionar tus campañas publicitarias con presupuesto adicional para maximizar el alcance y conversiones.",
                 },
                 {
-                  question: "¿Ofrecen servicios de marketing digital local?",
+                  question: "¿Qué métricas reportan mensualmente?",
                   answer:
-                    "Absolutamente. Tenemos experiencia en marketing local con Google My Business, SEO local, anuncios geográficos y estrategias específicas para negocios locales.",
+                    "Reportamos alcance, engagement, crecimiento de seguidores, interacciones, tráfico web generado, leads obtenidos y ROI de las acciones realizadas.",
                 },
                 {
-                  question: "¿Qué diferencia su agencia de otras?",
+                  question: "¿Trabajan con todas las redes sociales?",
                   answer:
-                    "Nos enfocamos en resultados medibles, transparencia total, comunicación constante y estrategias personalizadas. Cada cliente tiene un account manager dedicado.",
+                    "Sí, gestionamos Facebook, Instagram, LinkedIn, Twitter, TikTok, YouTube, Pinterest y otras plataformas según las necesidades de tu negocio y audiencia objetivo.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="rounded-xl border bg-background/50 p-6 shadow-lg">
@@ -541,11 +561,10 @@ export default function MarketingDigitalPage() {
               <div className="relative z-10 flex flex-col items-center gap-8 text-center md:flex-row md:text-left">
                 <div className="flex-1 space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl">
-                    ¿Listo para hacer crecer tu negocio con marketing digital?
+                    ¿Listo para hacer crecer tu comunidad online?
                   </h2>
                   <p className="text-xl text-white/80">
-                    Contacta con nosotros hoy mismo y obtén una auditoría gratuita de tu presencia digital. Sin
-                    compromiso.
+                    Contacta con nosotros hoy mismo y obtén un análisis gratuito de tus redes sociales. Sin compromiso.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
@@ -555,7 +574,7 @@ export default function MarketingDigitalPage() {
                   >
                     <Button size="lg" variant="secondary" className="w-full sm:w-auto">
                       <MessageSquare className="mr-2 h-4 w-4" />
-                      Auditoría Gratis
+                      Análisis Gratis
                     </Button>
                   </Link>
                   <Link href="/#contacto">
@@ -564,7 +583,7 @@ export default function MarketingDigitalPage() {
                       variant="outline"
                       className="border-white text-white hover:bg-white/20 w-full sm:w-auto"
                     >
-                      Solicitar Propuesta
+                      Solicitar Presupuesto
                     </Button>
                   </Link>
                 </div>
@@ -580,9 +599,9 @@ export default function MarketingDigitalPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Marketing Digital Profesional",
+              name: "Gestión de Redes Sociales Profesional",
               description:
-                "Servicios profesionales de marketing digital, SEO, SEM, redes sociales, email marketing y estrategias online.",
+                "Servicios profesionales de gestión de redes sociales, community management, creación de contenido y social media marketing.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
@@ -595,50 +614,50 @@ export default function MarketingDigitalPage() {
                   availableLanguage: "Spanish",
                 },
               },
-              serviceType: "Marketing Digital",
-              category: "Marketing y Publicidad",
+              serviceType: "Gestión de Redes Sociales",
+              category: "Marketing y Comunicación",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Servicios de Marketing Digital",
+                name: "Servicios de Gestión de Redes Sociales",
                 itemListElement: [
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "SEO y Posicionamiento Web",
-                      description: "Optimización para motores de búsqueda y posicionamiento orgánico",
+                      name: "Community Management",
+                      description: "Gestión activa de comunidades online y engagement con audiencia",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "SEM y Google Ads",
-                      description: "Campañas de publicidad en Google y otros buscadores",
+                      name: "Creación de Contenido",
+                      description: "Producción de contenido original para redes sociales",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Gestión de Redes Sociales",
-                      description: "Social media marketing y gestión de comunidades online",
+                      name: "Publicidad en Redes Sociales",
+                      description: "Campañas publicitarias optimizadas en plataformas sociales",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Email Marketing",
-                      description: "Campañas de email marketing y marketing automation",
+                      name: "Analítica Social",
+                      description: "Análisis de métricas y reportes de rendimiento en redes sociales",
                     },
                   },
                 ],
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "89",
+                ratingValue: "4.9",
+                reviewCount: "156",
                 bestRating: "5",
                 worstRating: "1",
               },

@@ -271,7 +271,7 @@ export default function DesarrolloWebPage() {
                     {
                       icon: <Users className="h-6 w-6 text-primary" />,
                       title: "Soporte Continuo",
-                      description: "Mantenimiento y soporte técnico incluido durante 6 meses",
+                      description: "Mantenimiento y soporte técnico incluido durante 3 meses",
                     },
                     {
                       icon: <TrendingUp className="h-6 w-6 text-primary" />,
