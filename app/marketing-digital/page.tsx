@@ -7,81 +7,85 @@ import { Footer } from "@/components/softwans/footer"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import {
   ArrowRight,
-  Code,
-  Globe,
-  Zap,
-  Search,
-  Shield,
-  Users,
   TrendingUp,
+  Search,
+  Users,
   MessageSquare,
+  Mail,
+  BarChart3,
+  Target,
+  Zap,
   Award,
-  Palette,
-  Database,
   Settings,
-  CheckCircle,
   Smartphone,
   Monitor,
   Rocket,
+  Eye,
+  Heart,
+  Share2,
+  DollarSign,
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Desarrollo Web Profesional | Páginas Web Modernas y Responsivas | Softwans",
+  title: "Marketing Digital Profesional | Agencia de Marketing Online | Softwans",
   description:
-    "Desarrollo web profesional con tecnologías modernas. Creamos páginas web responsivas, rápidas y optimizadas para SEO. Diseño web personalizado para empresas. Presupuesto gratuito.",
+    "Agencia de marketing digital profesional. Servicios de SEO, SEM, redes sociales, email marketing y publicidad online. Estrategias digitales que generan resultados reales. Presupuesto gratuito.",
   keywords: [
-    "desarrollo web",
-    "desarrollo web profesional",
-    "páginas web",
-    "diseño web",
-    "diseño web profesional",
-    "creación páginas web",
-    "desarrollo web moderno",
-    "páginas web responsivas",
-    "diseño web responsive",
-    "desarrollo frontend",
-    "desarrollo backend",
-    "programación web",
-    "desarrollo web empresas",
-    "páginas web empresariales",
-    "desarrollo web personalizado",
-    "diseño web personalizado",
-    "desarrollo web SEO",
-    "páginas web optimizadas",
-    "desarrollo web rápido",
-    "páginas web rápidas",
-    "desarrollo web seguro",
-    "páginas web seguras",
-    "desarrollo web ecommerce",
-    "tiendas online",
-    "desarrollo web CMS",
-    "páginas web WordPress",
-    "desarrollo web React",
-    "desarrollo web Next.js",
-    "agencia desarrollo web",
-    "empresa desarrollo web",
-    "freelance desarrollo web",
-    "programador web",
-    "desarrollador web",
-    "diseñador web",
-    "desarrollo web barato",
-    "páginas web baratas",
-    "presupuesto desarrollo web",
-    "cotización páginas web",
+    "marketing digital",
+    "marketing online",
+    "agencia marketing digital",
+    "publicidad digital",
+    "marketing digital profesional",
+    "servicios marketing digital",
+    "estrategias marketing digital",
+    "marketing digital empresas",
+    "SEO",
+    "posicionamiento web",
+    "SEM",
+    "Google Ads",
+    "publicidad Google",
+    "redes sociales",
+    "social media marketing",
+    "gestión redes sociales",
+    "Facebook Ads",
+    "Instagram marketing",
+    "email marketing",
+    "marketing por correo",
+    "content marketing",
+    "marketing de contenidos",
+    "inbound marketing",
+    "marketing automation",
+    "analítica web",
+    "Google Analytics",
+    "conversión web",
+    "lead generation",
+    "generación leads",
+    "ROI marketing",
+    "marketing performance",
+    "publicidad online",
+    "advertising digital",
+    "campañas publicitarias",
+    "marketing strategy",
+    "consultoría marketing",
+    "agencia publicidad",
+    "marketing consultant",
+    "digital advertising",
+    "online marketing",
+    "internet marketing",
   ],
   openGraph: {
-    title: "Desarrollo Web Profesional | Páginas Web Modernas y Responsivas",
+    title: "Marketing Digital Profesional | Agencia de Marketing Online",
     description:
-      "Desarrollo web profesional con tecnologías modernas. Páginas web responsivas, rápidas y optimizadas para SEO.",
+      "Agencia de marketing digital profesional. SEO, SEM, redes sociales y estrategias digitales que generan resultados.",
     type: "website",
     locale: "es_ES",
   },
   alternates: {
-    canonical: "https://www.softwans.com/desarrollo-web",
+    canonical: "https://www.softwans.com/marketing-digital",
   },
 }
 
-export default function DesarrolloWeb2Page() {
+export default function MarketingDigitalPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -112,20 +116,20 @@ export default function DesarrolloWeb2Page() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="flex flex-col justify-center space-y-8">
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary w-fit">
-                  <Code className="mr-2 h-4 w-4" />
-                  Desarrollo Web Profesional
+                  <TrendingUp className="mr-2 h-4 w-4" />
+                  Marketing Digital Profesional
                 </div>
 
                 <div className="space-y-4">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span className="text-white">Desarrollo Web </span>
+                    <span className="text-white">Marketing Digital que </span>
                     <span className="text-gradient bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-                      Moderno y Profesional
+                      Genera Resultados
                     </span>
                   </h1>
                   <p className="max-w-[600px] text-xl text-white/80">
-                    Creamos páginas web profesionales, responsivas y optimizadas que impulsan tu negocio. Desarrollo web
-                    personalizado con las últimas tecnologías y mejores prácticas del sector.
+                    Agencia de marketing digital especializada en SEO, SEM, redes sociales y estrategias online que
+                    impulsan tu negocio. Aumentamos tus ventas con marketing digital profesional.
                   </p>
                 </div>
 
@@ -135,7 +139,7 @@ export default function DesarrolloWeb2Page() {
                     target="_blank"
                   >
                     <Button size="lg" className="group w-full sm:w-auto shadow-neon">
-                      Solicitar Presupuesto Gratis
+                      Solicitar Auditoría Gratis
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
@@ -148,16 +152,16 @@ export default function DesarrolloWeb2Page() {
 
                 <div className="grid grid-cols-3 gap-4 pt-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">+30</div>
-                    <div className="text-sm text-white/70">Proyectos Web</div>
+                    <div className="text-2xl font-bold text-primary">300%</div>
+                    <div className="text-sm text-white/70">ROI Promedio</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">+5</div>
-                    <div className="text-sm text-white/70">Años Experiencia</div>
+                    <div className="text-2xl font-bold text-primary">150+</div>
+                    <div className="text-sm text-white/70">Campañas Exitosas</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">99%</div>
-                    <div className="text-sm text-white/70">Satisfacción</div>
+                    <div className="text-2xl font-bold text-primary">95%</div>
+                    <div className="text-sm text-white/70">Clientes Satisfechos</div>
                   </div>
                 </div>
               </div>
@@ -168,7 +172,7 @@ export default function DesarrolloWeb2Page() {
                     src="/placeholder.svg?height=600&width=600"
                     width={600}
                     height={600}
-                    alt="Desarrollo web profesional moderno"
+                    alt="Marketing digital profesional y estrategias online"
                     className="w-full object-cover"
                   />
                 </div>
@@ -177,60 +181,60 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Servicios de Desarrollo Web */}
+        {/* Servicios de Marketing Digital */}
         <section id="servicios" className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Globe className="mr-2 h-4 w-4" />
-                Servicios de Desarrollo Web
+                <Target className="mr-2 h-4 w-4" />
+                Servicios de Marketing Digital
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Soluciones Web Completas para tu Empresa
+                Estrategias Digitales Completas para tu Empresa
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Ofrecemos servicios integrales de desarrollo web profesional, desde el diseño hasta el lanzamiento y
-                mantenimiento de tu página web.
+                Ofrecemos servicios integrales de marketing digital profesional, desde SEO hasta publicidad online que
+                generan resultados medibles.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  icon: <Monitor className="h-10 w-10 text-primary" />,
-                  title: "Páginas Web Responsivas",
-                  description:
-                    "Desarrollo web responsive que se adapta perfectamente a todos los dispositivos y tamaños de pantalla.",
-                },
-                {
                   icon: <Search className="h-10 w-10 text-primary" />,
-                  title: "SEO Optimizado",
+                  title: "SEO y Posicionamiento Web",
                   description:
-                    "Páginas web optimizadas para motores de búsqueda desde el desarrollo, mejorando tu posicionamiento web.",
+                    "Posicionamiento orgánico en Google para aparecer en las primeras posiciones y aumentar el tráfico web.",
                 },
                 {
-                  icon: <Rocket className="h-10 w-10 text-primary" />,
-                  title: "Rendimiento Superior",
+                  icon: <Target className="h-10 w-10 text-primary" />,
+                  title: "SEM y Google Ads",
                   description:
-                    "Desarrollo web optimizado para velocidad de carga ultra rápida y mejor experiencia de usuario.",
+                    "Campañas de publicidad en Google Ads optimizadas para generar leads y ventas con el mejor ROI.",
                 },
                 {
-                  icon: <Shield className="h-10 w-10 text-primary" />,
-                  title: "Seguridad Web Avanzada",
+                  icon: <Users className="h-10 w-10 text-primary" />,
+                  title: "Gestión de Redes Sociales",
                   description:
-                    "Implementamos las mejores prácticas de seguridad web con certificados SSL y protección completa.",
+                    "Estrategias de social media marketing para aumentar tu comunidad y engagement en todas las plataformas.",
                 },
                 {
-                  icon: <Palette className="h-10 w-10 text-primary" />,
-                  title: "Diseño Web Personalizado",
+                  icon: <Mail className="h-10 w-10 text-primary" />,
+                  title: "Email Marketing",
                   description:
-                    "Diseños únicos y personalizados que reflejan la identidad de tu marca y destacan de la competencia.",
+                    "Campañas de email marketing automatizadas que nutren leads y convierten suscriptores en clientes.",
                 },
                 {
-                  icon: <Database className="h-10 w-10 text-primary" />,
-                  title: "CMS y Administración",
+                  icon: <BarChart3 className="h-10 w-10 text-primary" />,
+                  title: "Marketing de Contenidos",
                   description:
-                    "Sistemas de gestión de contenido intuitivos para que gestiones tu web fácilmente sin conocimientos técnicos.",
+                    "Creación de contenido valioso que atrae, educa y convierte a tu audiencia objetivo en clientes fieles.",
+                },
+                {
+                  icon: <Eye className="h-10 w-10 text-primary" />,
+                  title: "Analítica y Reporting",
+                  description:
+                    "Análisis detallado de métricas y KPIs para optimizar continuamente tus estrategias de marketing digital.",
                 },
               ].map((service, index) => (
                 <div
@@ -248,44 +252,44 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Tipos de Páginas Web */}
+        {/* Tipos de Marketing Digital */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Code className="mr-2 h-4 w-4" />
-                Tipos de Desarrollo Web
+                <Rocket className="mr-2 h-4 w-4" />
+                Especialidades en Marketing
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Desarrollamos Todo Tipo de Páginas Web
+                Estrategias de Marketing Digital Especializadas
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Desde páginas web corporativas hasta tiendas online complejas, tenemos la experiencia para crear
-                cualquier tipo de proyecto web.
+                Desde marketing B2B hasta e-commerce, tenemos la experiencia para crear estrategias digitales exitosas
+                para cualquier sector.
               </p>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  icon: <Globe className="h-8 w-8 text-primary" />,
-                  title: "Páginas Web Corporativas",
-                  description: "Sitios web profesionales para empresas y organizaciones",
+                  icon: <DollarSign className="h-8 w-8 text-primary" />,
+                  title: "Marketing B2B",
+                  description: "Estrategias especializadas para empresas que venden a otras empresas",
                 },
                 {
-                  icon: <MessageSquare className="h-8 w-8 text-primary" />,
-                  title: "Tiendas Online",
-                  description: "E-commerce completo con pasarelas de pago integradas",
-                },
-                {
-                  icon: <Users className="h-8 w-8 text-primary" />,
-                  title: "Portales Web",
-                  description: "Plataformas web complejas con múltiples funcionalidades",
+                  icon: <Heart className="h-8 w-8 text-primary" />,
+                  title: "Marketing B2C",
+                  description: "Campañas dirigidas al consumidor final con alto impacto emocional",
                 },
                 {
                   icon: <Smartphone className="h-8 w-8 text-primary" />,
-                  title: "Landing Pages",
-                  description: "Páginas de aterrizaje optimizadas para conversión",
+                  title: "Marketing E-commerce",
+                  description: "Estrategias específicas para tiendas online y marketplaces",
+                },
+                {
+                  icon: <Share2 className="h-8 w-8 text-primary" />,
+                  title: "Marketing Local",
+                  description: "Posicionamiento local y estrategias para negocios físicos",
                 },
               ].map((type, index) => (
                 <div
@@ -303,44 +307,44 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Ventajas del Desarrollo Web Profesional */}
+        {/* Ventajas del Marketing Digital Profesional */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
                 <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                   <Award className="mr-2 h-4 w-4" />
-                  Ventajas del Desarrollo Web Profesional
+                  Ventajas del Marketing Digital
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
-                  ¿Por qué Elegir Desarrollo Web Profesional?
+                  ¿Por qué Invertir en Marketing Digital Profesional?
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  El desarrollo web profesional marca la diferencia entre una página web que funciona y una que
-                  realmente impulsa tu negocio hacia el éxito.
+                  El marketing digital profesional es la clave para hacer crecer tu negocio en la era digital. Te
+                  ayudamos a llegar a más clientes y aumentar tus ventas.
                 </p>
 
                 <div className="space-y-6">
                   {[
                     {
-                      icon: <CheckCircle className="h-6 w-6 text-primary" />,
-                      title: "Mayor Conversión",
-                      description: "Páginas web optimizadas que convierten visitantes en clientes reales",
+                      icon: <TrendingUp className="h-6 w-6 text-primary" />,
+                      title: "Aumento de Ventas",
+                      description: "Estrategias probadas que generan más leads y convierten más clientes",
                     },
                     {
-                      icon: <TrendingUp className="h-6 w-6 text-primary" />,
-                      title: "Mejor Posicionamiento",
-                      description: "SEO técnico avanzado para aparecer en las primeras posiciones de Google",
+                      icon: <Target className="h-6 w-6 text-primary" />,
+                      title: "Segmentación Precisa",
+                      description: "Llegamos exactamente a tu audiencia objetivo con mensajes personalizados",
+                    },
+                    {
+                      icon: <BarChart3 className="h-6 w-6 text-primary" />,
+                      title: "Resultados Medibles",
+                      description: "Tracking completo de ROI y métricas para optimizar continuamente",
                     },
                     {
                       icon: <Zap className="h-6 w-6 text-primary" />,
-                      title: "Velocidad Optimizada",
-                      description: "Carga ultra rápida que mejora la experiencia del usuario y el SEO",
-                    },
-                    {
-                      icon: <Shield className="h-6 w-6 text-primary" />,
-                      title: "Seguridad Garantizada",
-                      description: "Protección completa contra ataques y vulnerabilidades web",
+                      title: "Resultados Rápidos",
+                      description: "Campañas optimizadas que generan resultados visibles en semanas",
                     },
                   ].map((advantage, index) => (
                     <div key={index} className="flex gap-4">
@@ -361,7 +365,7 @@ export default function DesarrolloWeb2Page() {
                   src="/placeholder.svg?height=600&width=500"
                   width={500}
                   height={600}
-                  alt="Desarrollo web profesional en acción"
+                  alt="Estrategias de marketing digital en acción"
                   className="rounded-xl object-cover shadow-xl"
                 />
               </div>
@@ -369,19 +373,19 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Proceso de Desarrollo Web */}
+        {/* Proceso de Marketing Digital */}
         <section className="bg-muted/30 py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
                 <Settings className="mr-2 h-4 w-4" />
-                Proceso de Desarrollo
+                Nuestro Proceso
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Nuestro Proceso de Desarrollo Web
+                Cómo Desarrollamos tu Estrategia de Marketing Digital
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Un proceso estructurado y probado que garantiza el éxito de cada proyecto de desarrollo web.
+                Un proceso estructurado y probado que garantiza el éxito de cada campaña de marketing digital.
               </p>
             </div>
 
@@ -389,26 +393,25 @@ export default function DesarrolloWeb2Page() {
               {[
                 {
                   step: "01",
-                  title: "Análisis y Planificación",
+                  title: "Auditoría y Análisis",
                   description:
-                    "Analizamos tus necesidades, objetivos de negocio y definimos la estrategia de desarrollo web.",
+                    "Analizamos tu situación actual, competencia y oportunidades de mercado para definir la estrategia.",
                 },
                 {
                   step: "02",
-                  title: "Diseño y Prototipado",
-                  description:
-                    "Creamos wireframes y prototipos interactivos para visualizar la estructura de tu página web.",
+                  title: "Estrategia Personalizada",
+                  description: "Creamos un plan de marketing digital a medida con objetivos claros y KPIs específicos.",
                 },
                 {
                   step: "03",
-                  title: "Desarrollo y Programación",
+                  title: "Implementación",
                   description:
-                    "Programamos tu página web con código limpio, optimizado y siguiendo las mejores prácticas.",
+                    "Ejecutamos las campañas y estrategias con las mejores herramientas y técnicas del mercado.",
                 },
                 {
                   step: "04",
-                  title: "Testing y Lanzamiento",
-                  description: "Realizamos pruebas exhaustivas y lanzamos tu página web con configuración completa.",
+                  title: "Optimización Continua",
+                  description: "Monitoreamos, analizamos y optimizamos constantemente para maximizar resultados.",
                 },
               ].map((process, index) => (
                 <div key={index} className="text-center">
@@ -423,51 +426,51 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Tecnologías de Desarrollo Web */}
+        {/* Herramientas de Marketing Digital */}
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <Code className="mr-2 h-4 w-4" />
-                Tecnologías de Desarrollo
+                <Monitor className="mr-2 h-4 w-4" />
+                Herramientas Profesionales
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Tecnologías Modernas de Desarrollo Web
+                Herramientas de Marketing Digital que Utilizamos
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Utilizamos las tecnologías más avanzadas y actuales para crear páginas web rápidas, seguras y
-                escalables.
+                Trabajamos con las mejores herramientas y plataformas del mercado para garantizar resultados
+                excepcionales.
               </p>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {[
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "React",
-                "Next.js",
-                "Vue.js",
-                "Angular",
-                "Node.js",
-                "PHP",
-                "Python",
-                "WordPress",
-                "Shopify",
-                "MySQL",
-                "MongoDB",
-                "PostgreSQL",
-                "Tailwind CSS",
-                "Bootstrap",
-                "Sass",
-                "TypeScript",
-                "GraphQL",
-              ].map((tech, index) => (
+                "Google Ads",
+                "Google Analytics",
+                "Facebook Ads",
+                "Instagram Ads",
+                "LinkedIn Ads",
+                "Mailchimp",
+                "HubSpot",
+                "Hootsuite",
+                "Buffer",
+                "Canva",
+                "Semrush",
+                "Ahrefs",
+                "Moz",
+                "Screaming Frog",
+                "Google Search Console",
+                "Hotjar",
+                "Zapier",
+                "Klaviyo",
+                "ActiveCampaign",
+                "ConvertKit",
+              ].map((tool, index) => (
                 <div
                   key={index}
                   className="flex items-center justify-center rounded-lg border bg-background/50 p-4 text-center font-medium transition-all hover:bg-primary/10 hover:border-primary/20"
                 >
-                  {tech}
+                  {tool}
                 </div>
               ))}
             </div>
@@ -479,44 +482,44 @@ export default function DesarrolloWeb2Page() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Preguntas Frecuentes sobre Desarrollo Web
+                Preguntas Frecuentes sobre Marketing Digital
               </h2>
               <p className="max-w-[800px] text-xl text-muted-foreground">
-                Resolvemos las dudas más comunes sobre nuestros servicios de desarrollo web profesional.
+                Resolvemos las dudas más comunes sobre nuestros servicios de marketing digital profesional.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 {
-                  question: "¿Cuánto tiempo tarda el desarrollo de una página web?",
+                  question: "¿Cuánto tiempo tardan en verse los resultados?",
                   answer:
-                    "El tiempo de desarrollo varía según la complejidad del proyecto. Una página web básica puede estar lista en 1-2 semanas, mientras que proyectos más complejos pueden tomar 4-8 semanas.",
+                    "Los resultados varían según la estrategia. SEO puede tomar 3-6 meses, mientras que SEM y redes sociales pueden generar resultados en 2-4 semanas. Te proporcionamos reportes mensuales detallados.",
                 },
                 {
-                  question: "¿Las páginas web son responsive?",
+                  question: "¿Qué incluyen los servicios de marketing digital?",
                   answer:
-                    "Sí, todas nuestras páginas web son completamente responsive y se adaptan perfectamente a móviles, tablets y ordenadores.",
+                    "Incluimos estrategia personalizada, implementación de campañas, creación de contenido, gestión de anuncios, reportes mensuales y optimización continua según tus objetivos.",
                 },
                 {
-                  question: "¿Incluyen optimización SEO?",
+                  question: "¿Trabajan con empresas de todos los tamaños?",
                   answer:
-                    "Absolutamente. Todas nuestras páginas web incluyen optimización SEO básica: meta tags, estructura semántica, velocidad optimizada y más.",
+                    "Sí, trabajamos desde startups hasta grandes empresas. Adaptamos nuestras estrategias y presupuestos a las necesidades específicas de cada cliente.",
                 },
                 {
-                  question: "¿Ofrecen mantenimiento web?",
+                  question: "¿Cómo miden el ROI de las campañas?",
                   answer:
-                    "Sí, ofrecemos servicios de mantenimiento web que incluyen actualizaciones, copias de seguridad, monitoreo de seguridad y soporte técnico.",
+                    "Utilizamos herramientas avanzadas de analítica para trackear conversiones, leads, ventas y otros KPIs relevantes. Proporcionamos reportes detallados del retorno de inversión.",
                 },
                 {
-                  question: "¿Puedo gestionar el contenido yo mismo?",
+                  question: "¿Ofrecen servicios de marketing digital local?",
                   answer:
-                    "Por supuesto. Implementamos sistemas de gestión de contenido (CMS) fáciles de usar para que puedas actualizar tu web sin conocimientos técnicos.",
+                    "Absolutamente. Tenemos experiencia en marketing local con Google My Business, SEO local, anuncios geográficos y estrategias específicas para negocios locales.",
                 },
                 {
-                  question: "¿Qué incluye el presupuesto?",
+                  question: "¿Qué diferencia su agencia de otras?",
                   answer:
-                    "Nuestros presupuestos incluyen diseño, desarrollo, optimización SEO básica, configuración de hosting, certificado SSL y capacitación para gestionar la web.",
+                    "Nos enfocamos en resultados medibles, transparencia total, comunicación constante y estrategias personalizadas. Cada cliente tiene un account manager dedicado.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="rounded-xl border bg-background/50 p-6 shadow-lg">
@@ -538,11 +541,11 @@ export default function DesarrolloWeb2Page() {
               <div className="relative z-10 flex flex-col items-center gap-8 text-center md:flex-row md:text-left">
                 <div className="flex-1 space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl">
-                    ¿Listo para crear tu página web profesional?
+                    ¿Listo para hacer crecer tu negocio con marketing digital?
                   </h2>
                   <p className="text-xl text-white/80">
-                    Contacta con nosotros hoy mismo y obtén un presupuesto gratuito para tu proyecto de desarrollo web.
-                    Sin compromiso.
+                    Contacta con nosotros hoy mismo y obtén una auditoría gratuita de tu presencia digital. Sin
+                    compromiso.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
@@ -552,7 +555,7 @@ export default function DesarrolloWeb2Page() {
                   >
                     <Button size="lg" variant="secondary" className="w-full sm:w-auto">
                       <MessageSquare className="mr-2 h-4 w-4" />
-                      WhatsApp Gratis
+                      Auditoría Gratis
                     </Button>
                   </Link>
                   <Link href="/#contacto">
@@ -561,7 +564,7 @@ export default function DesarrolloWeb2Page() {
                       variant="outline"
                       className="border-white text-white hover:bg-white/20 w-full sm:w-auto"
                     >
-                      Solicitar Presupuesto
+                      Solicitar Propuesta
                     </Button>
                   </Link>
                 </div>
@@ -570,16 +573,16 @@ export default function DesarrolloWeb2Page() {
           </div>
         </section>
 
-        {/* Schema Markup para SEO General */}
+        {/* Schema Markup para SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Desarrollo Web Profesional",
+              name: "Marketing Digital Profesional",
               description:
-                "Servicios profesionales de desarrollo web, diseño web responsive, programación web y optimización SEO.",
+                "Servicios profesionales de marketing digital, SEO, SEM, redes sociales, email marketing y estrategias online.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
@@ -592,50 +595,50 @@ export default function DesarrolloWeb2Page() {
                   availableLanguage: "Spanish",
                 },
               },
-              serviceType: "Desarrollo Web",
-              category: "Tecnología",
+              serviceType: "Marketing Digital",
+              category: "Marketing y Publicidad",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "Servicios de Desarrollo Web",
+                name: "Servicios de Marketing Digital",
                 itemListElement: [
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Páginas Web Responsivas",
-                      description: "Desarrollo de páginas web que se adaptan a todos los dispositivos",
+                      name: "SEO y Posicionamiento Web",
+                      description: "Optimización para motores de búsqueda y posicionamiento orgánico",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Desarrollo Web SEO",
-                      description: "Páginas web optimizadas para motores de búsqueda",
+                      name: "SEM y Google Ads",
+                      description: "Campañas de publicidad en Google y otros buscadores",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "E-commerce",
-                      description: "Desarrollo de tiendas online profesionales",
+                      name: "Gestión de Redes Sociales",
+                      description: "Social media marketing y gestión de comunidades online",
                     },
                   },
                   {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "CMS Personalizado",
-                      description: "Sistemas de gestión de contenido a medida",
+                      name: "Email Marketing",
+                      description: "Campañas de email marketing y marketing automation",
                     },
                   },
                 ],
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "127",
+                ratingValue: "4.8",
+                reviewCount: "89",
                 bestRating: "5",
                 worstRating: "1",
               },

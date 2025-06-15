@@ -144,11 +144,11 @@ export default function DesarrolloWebPage() {
 
                 <div className="grid grid-cols-3 gap-4 pt-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">100+</div>
+                    <div className="text-2xl font-bold text-primary">+30</div>
                     <div className="text-sm text-white/70">Webs Creadas</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">5+</div>
+                    <div className="text-2xl font-bold text-primary">+5</div>
                     <div className="text-sm text-white/70">Años Experiencia</div>
                   </div>
                   <div className="text-center">
