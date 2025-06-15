@@ -5,8 +5,16 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Moon, Sun, ArrowRight } from "lucide-react"
 import { LoginModal } from "@/components/login-modal"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { useTheme } from "next-themes"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,6 +62,45 @@ export function Header() {
     setIsLoginModalOpen(true)
   }
 
+  const services = [
+    {
+      title: "Desarrollo Web",
+      description: "Sitios web profesionales y aplicaciones web modernas",
+      href: "/servicios/desarrollo-web",
+      icon: "🌐",
+    },
+    {
+      title: "Marketing Digital",
+      description: "Estrategias digitales para hacer crecer tu negocio",
+      href: "/servicios/marketing-digital",
+      icon: "📈",
+    },
+    {
+      title: "Diseño UX/UI",
+      description: "Interfaces intuitivas y experiencias de usuario excepcionales",
+      href: "/servicios/diseno-ux-ui",
+      icon: "🎨",
+    },
+    {
+      title: "E-commerce",
+      description: "Tiendas online que convierten visitantes en clientes",
+      href: "/servicios/ecommerce",
+      icon: "🛒",
+    },
+    {
+      title: "SEO",
+      description: "Posicionamiento web para aparecer en Google",
+      href: "/servicios/seo",
+      icon: "🔍",
+    },
+    {
+      title: "Aplicaciones Móviles",
+      description: "Apps nativas y multiplataforma para iOS y Android",
+      href: "/servicios/aplicaciones-moviles",
+      icon: "📱",
+    },
+  ]
+
   return (
     <>
       <header
@@ -71,16 +118,44 @@ export function Header() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Softwans
+              Tech
             </motion.span>
             <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-              Corporations
+              Solutions
             </motion.span>
           </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#servicios" className="text-sm font-medium transition-colors hover:text-primary">
-              Servicios
-            </Link>
+
+          <nav className="hidden md:flex gap-6 items-center">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-primary">
+                    Servicios
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid gap-3 p-6 w-[600px] grid-cols-2">
+                      {services.map((service) => (
+                        <NavigationMenuLink key={service.href} asChild>
+                          <Link
+                            href={service.href}
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
+                          >
+                            <div className="flex items-center gap-2 text-sm font-medium leading-none">
+                              <span className="text-lg">{service.icon}</span>
+                              {service.title}
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              {service.description}
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <Link href="#precios" className="text-sm font-medium transition-colors hover:text-primary">
               Precios
             </Link>
@@ -94,6 +169,7 @@ export function Header() {
               Blog
             </Link>
           </nav>
+
           <div className="hidden md:flex gap-4 items-center">
             <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full">
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
@@ -109,6 +185,7 @@ export function Header() {
               </Button>
             </Link>
           </div>
+
           <div className="flex md:hidden gap-2 items-center">
             <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="rounded-full">
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
@@ -120,68 +197,83 @@ export function Header() {
             </Button>
           </div>
         </div>
-        {isMenuOpen && (
-          <div className="container md:hidden py-4 border-t">
-            <nav className="flex flex-col gap-4">
-              <Link
-                href="#servicios"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Servicios
-              </Link>
-              <Link
-                href="#precios"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Precios
-              </Link>
-              <Link
-                href="#testimonios"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Testimonios
-              </Link>
-              <Link
-                href="#contacto"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contacto
-              </Link>
-              <Link
-                href="/blog/ia-productividad"
-                className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <div className="flex gap-4 pt-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full"
-                  onClick={() => {
-                    setIsMenuOpen(false)
-                    openLoginModal()
-                  }}
+
+        {/* Menú móvil */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="container md:hidden py-4 border-t"
+            >
+              <nav className="flex flex-col gap-4">
+                <div className="space-y-2">
+                  <p className="text-sm font-medium text-muted-foreground">Servicios</p>
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary pl-4"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span>{service.icon}</span>
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="#precios"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  Iniciar Sesión
-                </Button>
-                <Link href="https://wa.me/message/Y5IO4FCCEMICH1" className="w-full">
-                  <Button size="sm" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Cotizar
-                  </Button>
+                  Precios
                 </Link>
-              </div>
-            </nav>
-          </div>
-        )}
+                <Link
+                  href="#testimonios"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Testimonios
+                </Link>
+                <Link
+                  href="#contacto"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contacto
+                </Link>
+                <Link
+                  href="/blog/ia-productividad"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blog
+                </Link>
+                <div className="flex gap-4 pt-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full"
+                    onClick={() => {
+                      setIsMenuOpen(false)
+                      openLoginModal()
+                    }}
+                  >
+                    Iniciar Sesión
+                  </Button>
+                  <Link href="#contacto" className="w-full">
+                    <Button size="sm" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                      Cotizar
+                    </Button>
+                  </Link>
+                </div>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
       <LoginModal isOpen={isLoginModalOpen} onClose={() => setIsLoginModalOpen(false)} />
     </>
   )
 }
-
