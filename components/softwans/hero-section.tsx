@@ -11,7 +11,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/80 py-20 md:py-32">
       {/* Fondo con efecto de partículas */}
       <div className="absolute inset-0 z-0 opacity-20">
-        <Image src="https://images.unsplash.com/photo-1601333925326-15b724dbcd0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background Pattern" fill className="object-cover" />
+        <Image src="/images/background.webp" alt="Background Pattern" fill className="object-cover" />
       </div>
 
       {/* Círculos decorativos */}
@@ -83,7 +83,7 @@ export function HeroSection() {
             <div className="absolute inset-0 z-0 translate-x-10 translate-y-10 rounded-3xl bg-primary/20 blur-xl"></div>
             <div className="relative z-10 overflow-hidden rounded-3xl border bg-background/80 shadow-xl backdrop-blur">
               <Image
-                src="https://images.unsplash.com/photo-1726056652684-9c135013cef4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0"
+                src="/images/index.webp"
                 width={600}
                 height={600}
                 alt="Digital Marketing"
