@@ -177,7 +177,7 @@ export function Chat() {
           <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4">
             <div className="flex items-center">
               <div className="h-10 w-10 rounded-full bg-white/20 flex items-center justify-center mr-3">
-              <img src="/images/Hypatia_logo.png" alt="Icono" className="h-5 w-5" />
+              <img src="/images/Hypatia_logo.webp" alt="Icono" className="h-5 w-5" />
 
               </div>
               <div>

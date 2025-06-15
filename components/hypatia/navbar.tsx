@@ -61,7 +61,7 @@ export function Navbar() {
           transition={{ duration: 0.5 }}
         >
           <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center">
-          <img src="/images/Hypatia_logo.png" alt="Icono" className="h-5 w-5" />
+          <img src="/images/Hypatia_logo.webp" alt="Icono" className="h-5 w-5" />
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Hypatia

@@ -88,7 +88,7 @@ export function Hero() {
                     className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden"
                   >
                     <Image
-                      src={`/images/user.png?height=32&width=32&text=${i}`}
+                      src={`/images/user.webp?height=32&width=32&text=${i}`}
                       alt={`User ${i}`}
                       width={32}
                       height={32}
@@ -118,7 +118,7 @@ export function Hero() {
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 4, ease: "easeInOut" }}
               >
                 <Image
-                  src="/images/hypatia.png"
+                  src="/images/hypatia.webp"
                   alt="Hypatia AI Assistant"
                   width={300}
                   height={300}

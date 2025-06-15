@@ -11,7 +11,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/80 py-20 md:py-32">
       {/* Fondo con efecto de partículas */}
       <div className="absolute inset-0 z-0 opacity-20">
-        <Image src="/images/background.webp" alt="Background Pattern" fill className="object-cover" />
+        <Image src="/images/background.webp" alt="Background Pattern" fill className="object-cover" priority />
       </div>
 
       {/* Círculos decorativos */}
@@ -88,6 +88,7 @@ export function HeroSection() {
                 height={600}
                 alt="Digital Marketing"
                 className="w-full object-cover"
+                priority
               />
             </div>
           </motion.div>

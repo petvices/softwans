@@ -11,19 +11,19 @@ export function PortfolioSection() {
     {
       title: "Alimentos Satvicos",
       category: "Desarrollo Web",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/satvicosalimentos-ce.webp",
       link: "https://satvicosalimentos.com/",
     },
     {
       title: "Catálogo Digital",
       category: "Aplicación Web",
-      image: "/images/demo.png",
+      image: "/images/demo.webp",
       link: "https://menu.petvices.lat/",
     },
     {
       title: "Hypatia",
       category: "Desarrollo Móvil",
-      image: "https://plus.unsplash.com/premium_photo-1725985758385-d5462d6e7f50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/hypatia-ce.webp",
       link: "/hypatia",
     },
   ]

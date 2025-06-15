@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Softwans | Software & Marketing solutions.",
     description: "Somos una empresa especializada en software empresarial, aplicaciones móviles y hosting. Ubicados en Caracas, Venezuela.",
-    url: "https://softwans.com",
+    url: "https://www.softwans.com",
     type: "website",
   },
 };

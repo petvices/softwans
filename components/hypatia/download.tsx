@@ -64,7 +64,7 @@ export function Download() {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl blur-lg opacity-30 animate-pulse"></div>
               <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
                 <Image
-                  src="/images/hypatia.png?height=500&width=250&text=Hypatia+App"
+                  src="/images/hypatia.webp?height=500&width=250&text=Hypatia+App"
                   alt="Hypatia App"
                   width={250}
                   height={500}
