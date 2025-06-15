@@ -156,13 +156,13 @@ export function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <Link href="#precios" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#precios" className="text-sm font-medium transition-colors hover:text-primary">
               Precios
             </Link>
-            <Link href="#testimonios" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#testimonios" className="text-sm font-medium transition-colors hover:text-primary">
               Testimonios
             </Link>
-            <Link href="#contacto" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#contacto" className="text-sm font-medium transition-colors hover:text-primary">
               Contacto
             </Link>
             <Link href="/blog/ia-productividad" className="text-sm font-medium transition-colors hover:text-primary">
