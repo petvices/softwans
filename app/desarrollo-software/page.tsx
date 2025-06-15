@@ -635,7 +635,7 @@ export default function DesarrolloSoftwarePage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Desarrollo de Software Personalizado",
+              name: "Desarrollo de Software Personalizado - Softwans",
               description:
                 "Servicios profesionales de desarrollo de software a medida, aplicaciones web, sistemas de gestión y soluciones tecnológicas personalizadas.",
               provider: {

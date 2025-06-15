@@ -455,7 +455,7 @@ export default function DesarrolloWebPage() {
               name: "Softwans - Diseño Web Barcelona",
               description:
                 "Diseño web profesional en Barcelona y Madrid. Creamos páginas web modernas, responsivas y optimizadas para SEO.",
-              url: "https://softwans.com/desarrollo-web",
+              url: "https://www.softwans.com/barcelona",
               telephone: "+58-424-267-0533",
               address: [
                 {

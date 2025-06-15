@@ -599,14 +599,14 @@ export default function GestionRedesSocialesPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Gestión de Redes Sociales Profesional",
+              name: "Gestión de Redes Sociales Profesional - Softwans",
               description:
                 "Servicios profesionales de gestión de redes sociales, community management, creación de contenido y social media marketing.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
                 url: "https://www.softwans.com",
-                logo: "https://www.softwans.com/images/logo.webp",
+                logo: "https://www.softwans.comlogo.webp",
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+58-424-267-0533",

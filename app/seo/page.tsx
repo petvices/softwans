@@ -2979,7 +2979,7 @@ export default function SEOPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "SEO Profesional y Posicionamiento Web",
+              name: "SEO Profesional y Posicionamiento Web - Softwans",
               description:
                 "Servicios profesionales de SEO, posicionamiento web en Google, optimización técnica y estrategias de contenido.",
               provider: {

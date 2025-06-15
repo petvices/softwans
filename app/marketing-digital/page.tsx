@@ -580,14 +580,14 @@ export default function MarketingDigitalPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Marketing Digital Profesional",
+              name: "Marketing Digital Profesional - Softwans",
               description:
                 "Servicios profesionales de marketing digital, SEO, SEM, redes sociales, email marketing y estrategias online.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
                 url: "https://www.softwans.com",
-                logo: "https://www.softwans.com/images/logo.webp",
+                logo: "https://www.softwans.com/logo.webp",
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+58-424-267-0533",

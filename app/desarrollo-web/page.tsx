@@ -577,14 +577,14 @@ export default function DesarrolloWeb2Page() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Desarrollo Web Profesional",
+              name: "Desarrollo Web Profesional - Softwans",
               description:
                 "Servicios profesionales de desarrollo web, diseño web responsive, programación web y optimización SEO.",
               provider: {
                 "@type": "Organization",
                 name: "Softwans",
                 url: "https://www.softwans.com",
-                logo: "https://www.softwans.com/images/logo.webp",
+                logo: "https://www.softwans.com/logo.webp",
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+58-424-267-0533",
