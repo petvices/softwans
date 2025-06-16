@@ -24,9 +24,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Diseño Web en Barcelona | Desarrollo Web Profesional | Softwans",
+  title: "Diseño Web Barcelona",
   description:
-    "Diseño web profesional en Barcelona y Madrid. Creamos páginas web modernas, responsivas y optimizadas para SEO. Diseñador web experto con más de 5 años de experiencia. Desarrollo web a medida para empresas.",
+    "Diseño web profesional en Barcelona. Desarrollo de páginas web optimizadas para SEO y móviles. Presupuesto gratuito.",
   keywords: [
     "diseño web Barcelona",
     "diseño web Madrid",
