@@ -88,16 +88,10 @@ export function Header() {
       icon: "🛒",
     },
     {
-      title: "SEO",
-      description: "Posicionamiento web para aparecer en Google",
-      href: "/seo",
-      icon: "🔍",
-    },
-    {
-      title: "Aplicaciones Móviles",
-      description: "Apps nativas y multiplataforma para iOS y Android",
-      href: "/aplicaciones-móviles",
-      icon: "📱",
+      title: "Contenido visual",
+      description: "Contenido visual: imágenes, videos y gráficos que cuentan tus historias mejor que mil palabras.",
+      href: "/contenido-visual",
+      icon: "📷",
     },
   ]
 
