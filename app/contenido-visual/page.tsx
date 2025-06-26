@@ -56,9 +56,9 @@ const jsonLd = {
   provider: {
     "@type": "Organization",
     name: "Agencia de Contenido Visual",
-    url: "https://tudominio.com",
+    url: "https://www.softwans.com/contenido-visual/",
   },
-  areaServed: "España",
+  areaServed: "Caracas",
   serviceType: "Contenido Visual y Fotografía Comercial",
   offers: [
     {
@@ -145,7 +145,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Servicios de Contenido Visual</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Servicios de Contenido Visual</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Ofrecemos una gama completa de servicios visuales para potenciar tu marca y comunicar tu mensaje de
                 manera efectiva.
@@ -235,7 +235,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tipos de Contenido Especializado</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Tipos de Contenido Especializado</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Nos especializamos en diferentes tipos de contenido visual adaptado a las necesidades específicas de
                 cada industria y objetivo.
@@ -284,7 +284,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 ¿Por Qué Elegir Nuestros Servicios Visuales?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -350,7 +350,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestro Proceso Creativo</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Nuestro Proceso Creativo</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Un proceso estructurado que garantiza resultados excepcionales desde la conceptualización hasta la
                 entrega final.
@@ -400,7 +400,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Equipos y Tecnología Profesional</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Equipos y Tecnología Profesional</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Utilizamos la última tecnología en fotografía y video para garantizar resultados de calidad superior.
               </p>
@@ -441,7 +441,7 @@ export default function ContenidoVisualPage() {
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Preguntas Frecuentes</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Preguntas Frecuentes</h2>
               <p className="text-xl text-gray-600">
                 Resolvemos las dudas más comunes sobre nuestros servicios de contenido visual.
               </p>
