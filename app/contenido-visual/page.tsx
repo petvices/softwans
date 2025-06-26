@@ -484,8 +484,8 @@ export default function ContenidoVisualPage() {
                 },
               ].map((faq, index) => (
                 <Card key={index} className="p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-white">{faq.question}</h3>
-                  <p className="text-gray-400">{faq.answer}</p>
+                  <h3 className="text-lg font-semibold mb-3 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-600">{faq.answer}</p>
                 </Card>
               ))}
             </div>
@@ -502,9 +502,8 @@ export default function ContenidoVisualPage() {
               Contacta con nosotros para una consulta gratuita y descubre cómo podemos transformar tu comunicación
               visual.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center"> 
-
-            <Link href="https://wa.me/message/Y5IO4FCCEMICH1"></Link>            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">  
+            <Link href="https://www.softwans.com/trabajos">            
               <Button size="lg" variant="secondary" className="px-8 py-3">
                 <Camera className="w-5 h-5 mr-2" />
                 Consulta Gratuita
