@@ -484,8 +484,8 @@ export default function ContenidoVisualPage() {
                 },
               ].map((faq, index) => (
                 <Card key={index} className="p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-gray-900">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
+                  <h3 className="text-lg font-semibold mb-3 text-white">{faq.question}</h3>
+                  <p className="text-gray-400">{faq.answer}</p>
                 </Card>
               ))}
             </div>
