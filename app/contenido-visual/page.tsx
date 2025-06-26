@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from 'next/link';
 import {
   Camera,
   Video,
@@ -21,6 +22,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Header } from "@/components/softwans/header"
 import { Footer } from "@/components/softwans/footer"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
+
+
 
 export const metadata: Metadata = {
   title: "Contenido Visual y Fotografía Comercial | Producción Audiovisual Profesional",
@@ -499,11 +502,16 @@ export default function ContenidoVisualPage() {
               Contacta con nosotros para una consulta gratuita y descubre cómo podemos transformar tu comunicación
               visual.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center"> 
+
+            <Link href="https://wa.me/message/Y5IO4FCCEMICH1"></Link>            
               <Button size="lg" variant="secondary" className="px-8 py-3">
                 <Camera className="w-5 h-5 mr-2" />
                 Consulta Gratuita
               </Button>
+            </Link>
+              
+            <Link href="https://www.softwans.com/trabajos">
               <Button
                 size="lg"
                 variant="outline"
@@ -512,6 +520,8 @@ export default function ContenidoVisualPage() {
                 <Play className="w-5 h-5 mr-2" />
                 Ver Nuestro Trabajo
               </Button>
+            </Link>
+            
             </div>
           </div>
         </section>
