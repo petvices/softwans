@@ -18,9 +18,9 @@ import {
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import WhatsAppButton from "@/components/whatsapp-button"
+import { Header } from "@/components/softwans/header"
+import { Footer } from "@/components/softwans/footer"
+import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 
 export const metadata: Metadata = {
   title: "Contenido Visual y Fotografía Comercial | Producción Audiovisual Profesional",
