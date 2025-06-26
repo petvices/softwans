@@ -1889,7 +1889,7 @@ export default function TrabajosPage() {
         metric3: "Versatilidad de uso",
       },
       year: "2025",
-      link: "https://ecofashion-demo.com",
+      link: "#",
       featured: true,
     },
     {
@@ -1907,25 +1907,25 @@ export default function TrabajosPage() {
         metric3: "40% repeat customers",
       },
       year: "2025",
-      link: "https://www.softwans.com/hypatia/",
+      link: "https://wa.me//message/FO6VTPN6OIDNE1",
       featured: true,
     },
     {
       id: 3,
-      title: "Campaña SEO Sector Inmobiliario",
-      category: "SEO",
-      client: "Inmobiliaria Premium",
-      image: "/placeholder.svg?height=400&width=600",
+      title: "Catálogo digital para productos",
+      category: "Desarrollo Web",
+      client: "Catálogo Digital",
+      image: "/images/Trabajo03.webp",
       description:
-        "Estrategia SEO integral que posicionó la empresa en primera página para keywords competitivas del sector.",
-      technologies: ["SEO Técnico", "Content Marketing", "Link Building", "Analytics"],
+        "Un catálogo digital intuitivo y atractivo, pensado para facilitar la exploración de productos y servicios.",
+      technologies: ["Next.js", "Node.js", "Supabase", "JavaScript"],
       results: {
-        metric1: "400% aumento tráfico",
-        metric2: "Top 3 keywords principales",
-        metric3: "250% más leads",
+        metric1: "100% + Ventas",
+        metric2: "Aumento de ingresos",
+        metric3: "0% de comisiones",
       },
-      year: "2024",
-      link: "#",
+      year: "2025",
+      link: "menu.petvices.lat",
       featured: true,
     },
     {
@@ -1983,13 +1983,7 @@ export default function TrabajosPage() {
   ]
 
   const categories = [
-    "Todos",
-    "Desarrollo Web",
-    "Desarrollo Móvil",
-    "SEO",
-    "Marketing Digital",
-    "Contenido Visual",
-    "Desarrollo Software",
+    "Todos"
   ]
 
   return (
