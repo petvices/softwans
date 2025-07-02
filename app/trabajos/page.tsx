@@ -1879,7 +1879,7 @@ export default function TrabajosPage() {
       title: "Fotografía Gastronómica",
       category: "Contenido Visual",
       client: "MasterGrill",
-      image: "/images/Trabajo01.webp",
+      image: "/images/Trabajo01.webp?height=400&width=600",
       description:
         "Capturamos la esencia visual de cada platillo para resaltar su sabor, textura y presentación — una experiencia gastronómica que entra por los ojos.",
       technologies: ["Canon", "Photoshop", "Lightroom con conexión directa", "softboxes"],
@@ -1915,7 +1915,7 @@ export default function TrabajosPage() {
       title: "Catálogo digital para productos",
       category: "Desarrollo Web",
       client: "Catálogo Digital",
-      image: "/images/Trabajo03.webp",
+      image: "/images/Trabajo03.webp?height=400&width=600",
       description:
         "Un catálogo digital intuitivo y atractivo, pensado para facilitar la exploración de productos y servicios.",
       technologies: ["Next.js", "Node.js", "Supabase", "JavaScript"],
@@ -2111,7 +2111,7 @@ export default function TrabajosPage() {
                       <div className="relative overflow-hidden rounded-xl border bg-glass shadow-xl backdrop-blur">
                         <Image
                           src={project.image || "/placeholder.svg"}
-                          width={600}
+                          width={400}
                           height={400}
                           alt={project.title}
                           className="w-full object-cover"
