@@ -1897,7 +1897,7 @@ export default function TrabajosPage() {
       title: "Asistente virtual de whatsapp",
       category: "Desarrollo Móvil",
       client: "Hypatia",
-      image: "/images/hypatia-ce.webp",
+      image: "/images/hypatia-ce.webp?height=400&width=600",
       description:
         "IA en whastsapp que te recuerda eventos, agenda reuniones y envia correos todos desde un simple mensaje.",
       technologies: ["WhatsApp", "Firebase", "Node.js", "Supabase"],

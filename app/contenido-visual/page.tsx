@@ -503,13 +503,12 @@ export default function ContenidoVisualPage() {
               visual.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">  
-            <Link href="https://www.softwans.com/trabajos">            
+            <Link href="https://wa.me//message/FO6VTPN6OIDNE1">            
               <Button size="lg" variant="secondary" className="px-8 py-3">
                 <Camera className="w-5 h-5 mr-2" />
                 Consulta Gratuita
               </Button>
             </Link>
-              
             <Link href="https://www.softwans.com/trabajos">
               <Button
                 size="lg"
