@@ -1879,7 +1879,7 @@ export default function TrabajosPage() {
       title: "Fotografía Gastronómica",
       category: "Contenido Visual",
       client: "MasterGrill",
-      image: "/images/Trabajo01.webp?height=400&width=600",
+      image: "/images/Trabajo01.webp?height=400&width=400",
       description:
         "Capturamos la esencia visual de cada platillo para resaltar su sabor, textura y presentación — una experiencia gastronómica que entra por los ojos.",
       technologies: ["Canon", "Photoshop", "Lightroom con conexión directa", "softboxes"],
@@ -1897,7 +1897,7 @@ export default function TrabajosPage() {
       title: "Asistente virtual de whatsapp",
       category: "Desarrollo Móvil",
       client: "Hypatia",
-      image: "/images/hypatia-ce.webp?height=400&width=600",
+      image: "/images/hypatia-ce.webp?height=400&width=400",
       description:
         "IA en whastsapp que te recuerda eventos, agenda reuniones y envia correos todos desde un simple mensaje.",
       technologies: ["WhatsApp", "Firebase", "Node.js", "Supabase"],
@@ -1933,7 +1933,7 @@ export default function TrabajosPage() {
       title: "Identidad Visual Startup Tech",
       category: "Contenido Visual",
       client: "InnovateTech",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/placeholder.svg?height=400&width=400",
       description: "Desarrollo completo de identidad visual, fotografía corporativa y contenido para redes sociales.",
       technologies: ["Fotografía", "Diseño Gráfico", "Video", "Branding"],
       results: {
