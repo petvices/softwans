@@ -5,7 +5,9 @@ import Image from "next/image"
 export function BrandsSection() {
   const brands = [
     { name: "Hyaptia", logo: "/images/Hypatia_logo.webp?height=60&width=120&text=Hypatia" },
-
+    { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp?height=60&width=120&text=SHIBUICA" },
+    { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp?height=60&width=120&text=CatálogoDigital" },
+    { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.webpheight=60&width=120&text=AlimentoSatvicos" },
   ]
 
   return (
@@ -55,15 +57,15 @@ export function BrandsSection() {
         {/* Estadísticas */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 pt-8 border-t border-border/50">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">150+</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">+30</div>
             <div className="text-sm text-muted-foreground">Proyectos Completados</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">98%</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">99%</div>
             <div className="text-sm text-muted-foreground">Satisfacción del Cliente</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">5+</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">+5</div>
             <div className="text-sm text-muted-foreground">Años de Experiencia</div>
           </div>
           <div className="text-center">
