@@ -6,7 +6,8 @@ const brands = [
   { name: "Hyaptia", logo: "/images/Hypatia_logo.webp" },
   { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp" },
   { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp" },
-  { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.webp" },
+  { name: "Alimentos Satvicos", logo: "/images/satvicos.webp" },
+  { name: "Arkazul", logo: "/images/arkazul.webp" },
 ]
 
 export function BrandsSection() {
