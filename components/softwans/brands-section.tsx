@@ -27,7 +27,7 @@ export function BrandsSection() {
 
         <Marquee
           gradient={false}
-          speed={40}
+          speed={70}
           pauseOnHover={true}
           className="py-6"
         >
@@ -36,7 +36,7 @@ export function BrandsSection() {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="h-12 w-auto object-contain opacity-60 hover:opacity-100 grayscale hover:grayscale-0 transition duration-300"
+                className="h-24 w-auto object-contain opacity-60 hover:opacity-100 grayscale hover:grayscale-0 transition duration-300"
               />
             </div>
           ))}
