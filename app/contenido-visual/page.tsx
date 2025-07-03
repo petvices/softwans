@@ -106,7 +106,7 @@ export default function ContenidoVisualPage() {
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
-          <div className="absolute inset-0 bg-[#5777c2]" />
+          <div className="absolute inset-0 bg-[#015d65]" />
           <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -137,10 +137,12 @@ export default function ContenidoVisualPage() {
                     Consulta Gratuita
                   </Button>
                 </Link>
+              <Link href="https://www.softwans.com/trabajos"> 
                 <Button variant="outline" size="lg" className="px-8 py-3">
                   <Eye className="w-5 h-5 mr-2" />
                   Ver Portfolio
                 </Button>
+              </Link>
               </div>
             </div>
           </div>
