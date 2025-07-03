@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export function BrandsSection() {
   const brands = [
-    { name: "Hyaptia", logo: "/images/Hypatia_logo.webp?height=60&width=120&text=Hypatia" },
-    { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp?height=60&width=120&text=SHIBUICA" },
-    { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp?height=60&width=120&text=CatálogoDigital" },
-    { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.webpheight=60&width=120&text=AlimentoSatvicos" },
+    { name: "Hyaptia", logo: "/images/Hypatia_logo.webp" },
+    { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp" },
+    { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp" },
+    { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.web" },
   ]
 
   return (
@@ -38,18 +38,19 @@ export function BrandsSection() {
             <div className="brands-track">
               {/* Duplicamos las marcas múltiples veces para crear el efecto infinito */}
               {Array.from({ length: 4 }).map((_, setIndex) =>
-                brands.map((brand, brandIndex) => (
-                  <div key={`${setIndex}-${brandIndex}`} className="brand-item">
-                    <Image
-                      src={brand.logo || "/placeholder.svg"}
-                      alt={`Logo de ${brand.name}`}
-                      width={120}
-                      height={60}
-                      className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
-                    />
-                  </div>
-                )),
-              )}
+                  brands.map((brand, brandIndex) => (
+                    <div key={`${setIndex}-${brandIndex}`} className="brand-item">
+                      <Image
+                        src={brand.logo}
+                        alt={`Logo de ${brand.name}`}
+                        width={120}
+                        height={60}
+                        priority={setIndex === 0}
+                        className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
+                      />
+                    </div>
+                  ))
+                )}
             </div>
           </div>
         </div>
