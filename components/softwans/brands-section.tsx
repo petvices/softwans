@@ -5,17 +5,7 @@ import Image from "next/image"
 export function BrandsSection() {
   const brands = [
     { name: "Hyaptia", logo: "/images/Hypatia_logo.webp?height=60&width=120&text=Hypatia" },
-    { name: "InnovaLab", logo: "/placeholder.svg?height=60&width=120&text=InnovaLab" },
-    { name: "GlobalTech", logo: "/placeholder.svg?height=60&width=120&text=GlobalTech" },
-    { name: "StartupHub", logo: "/placeholder.svg?height=60&width=120&text=StartupHub" },
-    { name: "DigitalPro", logo: "/placeholder.svg?height=60&width=120&text=DigitalPro" },
-    { name: "CloudSoft", logo: "/placeholder.svg?height=60&width=120&text=CloudSoft" },
-    { name: "WebMaster", logo: "/placeholder.svg?height=60&width=120&text=WebMaster" },
-    { name: "AppDev", logo: "/placeholder.svg?height=60&width=120&text=AppDev" },
-    { name: "DataFlow", logo: "/placeholder.svg?height=60&width=120&text=DataFlow" },
-    { name: "CodeLab", logo: "/placeholder.svg?height=60&width=120&text=CodeLab" },
-    { name: "TechSolutions", logo: "/placeholder.svg?height=60&width=120&text=TechSolutions" },
-    { name: "InnovaTech", logo: "/placeholder.svg?height=60&width=120&text=InnovaTech" },
+
   ]
 
   return (
