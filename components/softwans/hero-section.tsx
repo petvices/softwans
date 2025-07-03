@@ -41,7 +41,7 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link href="#contacto">
+              <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                 <Button size="lg" className="group w-full sm:w-auto">
                   Solicitar Cotización
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

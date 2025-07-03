@@ -129,7 +129,7 @@ export function ServicesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Link href="#contacto">
+          <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
             <Button size="lg" className="group">
               Solicitar Cotización Personalizada
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
