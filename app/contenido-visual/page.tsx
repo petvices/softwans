@@ -119,8 +119,8 @@ export default function ContenidoVisualPage() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Contenido Visual y
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                Contenido Visual y 
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   Fotografía Comercial
                 </span>
               </h1>
