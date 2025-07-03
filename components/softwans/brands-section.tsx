@@ -1,7 +1,5 @@
 "use client"
 
-import Image from "next/image"
-
 export function BrandsSection() {
   const brands = [
     { name: "Hyaptia", logo: "/images/Hypatia_logo.webp" },
