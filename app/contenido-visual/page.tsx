@@ -432,8 +432,8 @@ export default function ContenidoVisualPage() {
                 "Sincronización Multi-dispositivo",
                 "Workflow Automatizado",
               ].map((tech, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-center">
-                  <p className="font-medium text-gray-900">{tech}</p>
+                <div key={index} className="bg-[#020818] rounded-lg shadow-sm text-center">
+                  <p className="font-medium text-gray-100">{tech}</p>
                 </div>
               ))}
             </div>
