@@ -106,7 +106,7 @@ export default function ContenidoVisualPage() {
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
-          <div className="absolute inset-0 bg-[#0a1121]" />
+          <div className="absolute inset-0 bg-[#5777c2]" />
           <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -131,10 +131,12 @@ export default function ContenidoVisualPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="px-8 py-3">
-                  <Camera className="w-5 h-5 mr-2" />
-                  Consulta Gratuita
-                </Button>
+                <Link href="https://wa.me//message/FO6VTPN6OIDNE1">            
+                  <Button size="lg" variant="secondary" className="px-8 py-3">
+                    <Camera className="w-5 h-5 mr-2" />
+                    Consulta Gratuita
+                  </Button>
+                </Link>
                 <Button variant="outline" size="lg" className="px-8 py-3">
                   <Eye className="w-5 h-5 mr-2" />
                   Ver Portfolio

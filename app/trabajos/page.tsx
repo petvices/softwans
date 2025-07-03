@@ -1925,7 +1925,7 @@ export default function TrabajosPage() {
         metric3: "0% de comisiones",
       },
       year: "2025",
-      link: "menu.petvices.lat",
+      link: "https://menu.petvices.lat",
       featured: true,
     },
     {
@@ -2038,7 +2038,7 @@ export default function TrabajosPage() {
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                <Link href="/#contacto">
+                <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto border-white/20 text-white">
                     Solicitar Presupuesto
                   </Button>
@@ -2179,7 +2179,7 @@ export default function TrabajosPage() {
                           </Button>
                         )}
                         <Button variant="outline" asChild>
-                          <Link href="/#contacto">
+                          <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                             <MessageSquare className="mr-2 h-4 w-4" />
                             Proyecto Similar
                           </Link>
@@ -2264,7 +2264,7 @@ export default function TrabajosPage() {
                             </Button>
                           )}
                           <Button size="sm" variant="outline" className="flex-1" asChild>
-                            <Link href="/#contacto">
+                            <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                               <MessageSquare className="mr-1 h-3 w-3" />
                               Consultar
                             </Link>
@@ -2382,7 +2382,7 @@ export default function TrabajosPage() {
                       Contactar Ahora
                     </Button>
                   </Link>
-                  <Link href="/#contacto">
+                  <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
                     <Button
                       size="lg"
                       variant="outline"
