@@ -44,42 +44,20 @@ export function BrandsSection() {
           {/* Contenedor de scroll infinito */}
           <div className="brands-scroll">
             <div className="brands-track">
-              {/* Primera serie de marcas */}
-              {brands.map((brand, index) => (
-                <div key={`set1-${index}`} className="brand-item">
-                  <Image
-                    src={brand.logo || "/placeholder.svg"}
-                    alt={`Logo de ${brand.name}`}
-                    width={120}
-                    height={60}
-                    className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
-                  />
-                </div>
-              ))}
-              {/* Segunda serie de marcas (duplicada para continuidad) */}
-              {brands.map((brand, index) => (
-                <div key={`set2-${index}`} className="brand-item">
-                  <Image
-                    src={brand.logo || "/placeholder.svg"}
-                    alt={`Logo de ${brand.name}`}
-                    width={120}
-                    height={60}
-                    className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
-                  />
-                </div>
-              ))}
-              {/* Tercera serie de marcas (para mayor fluidez) */}
-              {brands.map((brand, index) => (
-                <div key={`set3-${index}`} className="brand-item">
-                  <Image
-                    src={brand.logo || "/placeholder.svg"}
-                    alt={`Logo de ${brand.name}`}
-                    width={120}
-                    height={60}
-                    className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
-                  />
-                </div>
-              ))}
+              {/* Duplicamos las marcas múltiples veces para crear el efecto infinito */}
+              {Array.from({ length: 4 }).map((_, setIndex) =>
+                brands.map((brand, brandIndex) => (
+                  <div key={`${setIndex}-${brandIndex}`} className="brand-item">
+                    <Image
+                      src={brand.logo || "/placeholder.svg"}
+                      alt={`Logo de ${brand.name}`}
+                      width={120}
+                      height={60}
+                      className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
+                    />
+                  </div>
+                )),
+              )}
             </div>
           </div>
         </div>
@@ -109,26 +87,13 @@ export function BrandsSection() {
         .brands-scroll {
           width: 100%;
           overflow: hidden;
-          mask-image: linear-gradient(
-            to right,
-            transparent,
-            black 10%,
-            black 90%,
-            transparent
-          );
-          -webkit-mask-image: linear-gradient(
-            to right,
-            transparent,
-            black 10%,
-            black 90%,
-            transparent
-          );
+          position: relative;
         }
 
         .brands-track {
           display: flex;
-          animation: scroll-brands 40s linear infinite;
-          will-change: transform;
+          animation: infiniteScroll 60s linear infinite;
+          width: fit-content;
         }
 
         .brand-item {
@@ -145,18 +110,18 @@ export function BrandsSection() {
           animation-play-state: paused;
         }
 
-        @keyframes scroll-brands {
+        @keyframes infiniteScroll {
           0% {
-            transform: translateX(0);
+            transform: translateX(100%);
           }
           100% {
-            transform: translateX(calc(-100% / 3));
+            transform: translateX(-100%);
           }
         }
 
         @media (max-width: 768px) {
           .brands-track {
-            animation-duration: 25s;
+            animation-duration: 40s;
           }
           
           .brand-item {
@@ -168,7 +133,7 @@ export function BrandsSection() {
 
         @media (max-width: 480px) {
           .brands-track {
-            animation-duration: 20s;
+            animation-duration: 30s;
           }
           
           .brand-item {
