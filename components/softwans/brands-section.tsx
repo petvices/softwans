@@ -38,15 +38,15 @@ export function BrandsSection() {
         {/* Contenedor de la animación */}
         <div className="relative">
           {/* Gradientes para efecto fade */}
-          <div className="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-muted/30 to-transparent"></div>
-          <div className="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-muted/30 to-transparent"></div>
+          <div className="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-background via-background/80 to-transparent pointer-events-none"></div>
+          <div className="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-background via-background/80 to-transparent pointer-events-none"></div>
 
           {/* Contenedor de scroll infinito */}
           <div className="brands-scroll">
             <div className="brands-track">
-              {/* Primera fila de marcas */}
+              {/* Primera serie de marcas */}
               {brands.map((brand, index) => (
-                <div key={`first-${index}`} className="brand-item flex-shrink-0 mx-8 flex items-center justify-center">
+                <div key={`set1-${index}`} className="brand-item">
                   <Image
                     src={brand.logo || "/placeholder.svg"}
                     alt={`Logo de ${brand.name}`}
@@ -56,9 +56,21 @@ export function BrandsSection() {
                   />
                 </div>
               ))}
-              {/* Segunda fila de marcas (duplicada para scroll infinito) */}
+              {/* Segunda serie de marcas (duplicada para continuidad) */}
               {brands.map((brand, index) => (
-                <div key={`second-${index}`} className="brand-item flex-shrink-0 mx-8 flex items-center justify-center">
+                <div key={`set2-${index}`} className="brand-item">
+                  <Image
+                    src={brand.logo || "/placeholder.svg"}
+                    alt={`Logo de ${brand.name}`}
+                    width={120}
+                    height={60}
+                    className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
+                  />
+                </div>
+              ))}
+              {/* Tercera serie de marcas (para mayor fluidez) */}
+              {brands.map((brand, index) => (
+                <div key={`set3-${index}`} className="brand-item">
                   <Image
                     src={brand.logo || "/placeholder.svg"}
                     alt={`Logo de ${brand.name}`}
@@ -97,17 +109,36 @@ export function BrandsSection() {
         .brands-scroll {
           width: 100%;
           overflow: hidden;
+          mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+          );
+          -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+          );
         }
 
         .brands-track {
           display: flex;
-          animation: scroll-brands 30s linear infinite;
-          width: calc(200% + 64px);
+          animation: scroll-brands 40s linear infinite;
+          will-change: transform;
         }
 
         .brand-item {
-          min-width: 160px;
+          flex-shrink: 0;
+          width: 180px;
           height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 20px;
         }
 
         .brands-track:hover {
@@ -119,18 +150,31 @@ export function BrandsSection() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(calc(-100% / 3));
           }
         }
 
         @media (max-width: 768px) {
           .brands-track {
+            animation-duration: 25s;
+          }
+          
+          .brand-item {
+            width: 140px;
+            height: 60px;
+            margin: 0 15px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .brands-track {
             animation-duration: 20s;
           }
           
           .brand-item {
-            min-width: 120px;
-            height: 60px;
+            width: 120px;
+            height: 50px;
+            margin: 0 10px;
           }
         }
       `}</style>
