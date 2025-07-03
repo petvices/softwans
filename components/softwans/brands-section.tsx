@@ -7,7 +7,7 @@ export function BrandsSection() {
     { name: "Hyaptia", logo: "/images/Hypatia_logo.webp" },
     { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp" },
     { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp" },
-    { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.web" },
+    { name: "Alimentos Satvicos", logo: "/images/ALIMENTOS_SATVICOS.webp" },
   ]
 
   return (
@@ -40,14 +40,14 @@ export function BrandsSection() {
               {Array.from({ length: 4 }).map((_, setIndex) =>
                   brands.map((brand, brandIndex) => (
                     <div key={`${setIndex}-${brandIndex}`} className="brand-item">
-                      <Image
-                        src={brand.logo}
-                        alt={`Logo de ${brand.name}`}
-                        width={120}
-                        height={60}
-                        priority={setIndex === 0}
-                        className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
-                      />
+                      <img
+                          src={brand.logo}
+                          alt={`Logo de ${brand.name}`}
+                          width={120}
+                          height={60}
+                          loading="eager"
+                          className="h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
+                        />
                     </div>
                   ))
                 )}
