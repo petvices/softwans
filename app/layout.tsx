@@ -15,11 +15,18 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Softwans | Software Empresarial y Hosting en Caracas",
-  description: "Empresa dedicada a la distribución y creación de software empresarial pesado. Desarrollo de apps, páginas web y hosting en Caracas.",
-  keywords: ["software empresarial", "desarrollo de software", "aplicaciones móviles", "hosting en Caracas"],
+  description:
+    "Empresa dedicada a la distribución y creación de software empresarial pesado. Desarrollo de apps, páginas web y hosting en Caracas.",
+  keywords: [
+    "software empresarial",
+    "desarrollo de software",
+    "aplicaciones móviles",
+    "hosting en Caracas",
+  ],
   openGraph: {
     title: "Softwans | Software & Marketing solutions.",
-    description: "Somos una empresa especializada en software empresarial, aplicaciones móviles y hosting. Ubicados en Caracas, Venezuela.",
+    description:
+      "Somos una empresa especializada en software empresarial, aplicaciones móviles y hosting. Ubicados en Caracas, Venezuela.",
     url: "https://www.softwans.com",
     type: "website",
   },
@@ -31,10 +38,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Opcional: otros favicons */}
+        <link rel="icon" href="images/favicon.ico" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
