@@ -3,10 +3,10 @@
 import Marquee from "react-fast-marquee"
 
 const brands = [
-  { name: "Hyaptia", logo: "/images/Hypatia_logo.webp" },
+  { name: "Hypatia", logo: "/images/Hypatia_logo.webp" },
   { name: "SHIBUI C.A", logo: "/images/shibui_ca.webp" },
   { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp" },
-  { name: "Alimentos Satvicos", logo: "/images/satvicos.webp" },
+  { name: "Alimentos Satvicos", logo: "/images/satvicoscopia.webp" },
   { name: "Arkazul", logo: "/images/arkazul.webp" },
 ]
 
