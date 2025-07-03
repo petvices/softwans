@@ -8,6 +8,8 @@ const brands = [
   { name: "Catálogo Digital", logo: "/images/catalogo_digital.webp" },
   { name: "Alimentos Satvicos", logo: "/images/satvicoscopia.webp" },
   { name: "Arkazul", logo: "/images/arkazul.webp" },
+  { name: "Hypatia2", logo: "/images/hypatia_logo_2.webp" },
+  { name: "Codew", logo: "/images/code.webp" },
 ]
 
 export function BrandsSection() {
