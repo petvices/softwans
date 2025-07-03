@@ -2114,8 +2114,8 @@ export default function TrabajosPage() {
                           width={400}
                           height={400}
                           alt={project.title}
-                          className="w-full max-w-3xl mx-auto h-auto object-cover rounded-lg"
-                        />
+                          className="w-full max-w-3xl mx-auto h-[300px] object-cover rounded-lg"
+                        />                 
                         <div className="absolute top-4 left-4">
                           <Badge variant="secondary" className="bg-primary text-primary-foreground">
                             {project.category}
