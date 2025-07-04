@@ -1934,7 +1934,7 @@ export default function TrabajosPage() {
       category: "Contenido Visual",
       client: "Adam",
       image: "/images/artista_01.webp?height=400&width=400",
-      description: "Sesión audiovisual enfocada en la identidad y proyección de un artista urbano independiente. Incluye fotografías promocionales y un videoclip diseñado para fortalecer su presencia en plataformas digitales.",
+      description: "Producción visual con fotos y video para fortalecer la identidad de un talento emergente.",
       technologies: ["Fotografía", "Diseño Gráfico", "Video", "Branding"],
       results: {
         metric1: "500% engagement social",
@@ -1951,8 +1951,7 @@ export default function TrabajosPage() {
       category: "Contenido Visual",
       client: "Multiserviciosn123ccs",
       image: "/placeholder.svg?height=400&width=600",
-      description:
-        "Desarrollo de página web enfocada en mostrar los servicios, productos y estilo de una marca especializada en prendas hechas a pedido. El diseño combina estética visual con funcionalidad intuitiva, incluyendo secciones para catálogo dinámico, solicitudes personalizadas, y contacto directo con el taller. La estructura permite escalar el contenido según nuevas colecciones o campañas promocionales.",
+      description: "Video promocional que muestra servicios, ambiente y procesos de una chivera",
       technologies: ["Video", "Diseño Gráfico", "Video", "Branding"],
       results: {
         metric1: "100% engagement social",
@@ -1968,8 +1967,8 @@ export default function TrabajosPage() {
       title: "Diseño Web para Marca de Confección Personalizada",
       category: "Desarrollo Web",
       client: "SHIBUI C.A",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Estrategia integral de marketing digital con Google Ads, Facebook Ads y email marketing.",
+      image: "/images/shibui_ca2?height=400&width=600",
+      description: "Página web para marca de prendas hechas a medida, con diseño funcional y visual.",
       technologies: ["Next.js", "Node.js", "Supabase", "JavaScript"],
       results: {
         metric1: "200% aumento reservas",
