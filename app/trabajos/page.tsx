@@ -1967,7 +1967,7 @@ export default function TrabajosPage() {
       title: "Diseño Web para Marca de Confección Personalizada",
       category: "Desarrollo Web",
       client: "SHIBUI C.A",
-      image: "/images/shibui_ca2?height=400&width=600",
+      image: "/images/shibui_ca2.webp?height=400&width=600",
       description: "Página web para marca de prendas hechas a medida, con diseño funcional y visual.",
       technologies: ["Next.js", "Node.js", "Supabase", "JavaScript"],
       results: {
