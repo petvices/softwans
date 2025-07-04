@@ -22,7 +22,6 @@ export default function Home() {
         <ServicesSection />
         <BrandsSection />
         <WhyChooseUs />
-        <PortfolioSection />
         <PricingCards />
         <CtaBanner />
         <TestimonialSection />
