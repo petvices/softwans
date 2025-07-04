@@ -1930,10 +1930,10 @@ export default function TrabajosPage() {
     },
     {
       id: 4,
-      title: "Identidad Visual Startup Tech",
+      title: "Producción Visual para Artista Urbano Emergente",
       category: "Contenido Visual",
       client: "InnovateTech",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/images/artista_01.webp?height=400&width=400",
       description: "Desarrollo completo de identidad visual, fotografía corporativa y contenido para redes sociales.",
       technologies: ["Fotografía", "Diseño Gráfico", "Video", "Branding"],
       results: {
