@@ -10,6 +10,7 @@ const brands = [
   { name: "Arkazul", logo: "/images/arkazul.webp" },
   { name: "Hypatia2", logo: "/images/hypatia_logo_2.webp" },
   { name: "Codew", logo: "/images/code.webp" },
+  { name: "MultiserviciosN123", logo: "/images/multiserviciosn123.webp" },
 ]
 
 export function BrandsSection() {
