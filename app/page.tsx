@@ -8,7 +8,6 @@ import { ContactSection } from "@/components/softwans/contact-section"
 import { WhyChooseUs } from "@/components/softwans/why-choose-us"
 import { WhatsAppButton } from "@/components/softwans/whatsapp-button"
 import { CtaBanner } from "@/components/softwans/cta-banner"
-import { PortfolioSection } from "@/components/softwans/portfolio-section"
 import FacebookPixel from "@/components/FacebookPixel"
 import { BrandsSection } from "@/components/softwans/brands-section"
 
