@@ -1950,7 +1950,7 @@ export default function TrabajosPage() {
       title: "Producción Audiovisual para Chivera Local",
       category: "Contenido Visual",
       client: "Multiserviciosn123ccs",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/Chivera.webp?height=400&width=600",
       description: "Video promocional que muestra servicios, ambiente y procesos de una chivera",
       technologies: ["Video", "Diseño Gráfico", "Video", "Branding"],
       results: {
