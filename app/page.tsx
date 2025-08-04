@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <FacebookPixel />
-      <UrgencyBanner />
       <Header />
+      <UrgencyBanner />
       <main className="flex-1">
         <HeroSection />
         <ServicesSection />
