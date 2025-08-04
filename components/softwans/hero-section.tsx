@@ -9,34 +9,6 @@ import { ArrowRight, MessageSquare, TrendingUp, DollarSign, Users, Zap } from "l
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-blue py-20 md:py-32">
-      {/* Partículas animadas */}
-      <div className="particles">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="particle"
-            initial={{
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
-              opacity: Math.random() * 0.5 + 0.3,
-              scale: Math.random() * 0.6 + 0.2,
-            }}
-            animate={{
-              y: [Math.random() * 100 + "%", Math.random() * 100 + "%", Math.random() * 100 + "%"],
-              x: [Math.random() * 100 + "%", Math.random() * 100 + "%", Math.random() * 100 + "%"],
-            }}
-            transition={{
-              duration: Math.random() * 20 + 10,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
-            style={{
-              width: Math.random() * 6 + 2 + "px",
-              height: Math.random() * 6 + 2 + "px",
-            }}
-          />
-        ))}
-      </div>
 
       {/* Círculos decorativos */}
       <motion.div
