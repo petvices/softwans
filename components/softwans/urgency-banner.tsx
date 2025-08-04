@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Clock, MessageSquare, X } from "lucide-react"
+import { Clock, MessageSquare, X } from 'lucide-react'
 import { useEffect, useState } from "react"
 
 export function UrgencyBanner() {
@@ -16,7 +16,6 @@ export function UrgencyBanner() {
   })
 
   useEffect(() => {
-    // Calcular tiempo hasta fin de mes
     const calculateTimeLeft = () => {
       const now = new Date()
       const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59)
@@ -34,20 +33,21 @@ export function UrgencyBanner() {
 
     calculateTimeLeft()
     const timer = setInterval(calculateTimeLeft, 1000)
-
     return () => clearInterval(timer)
   }, [])
 
   if (!isVisible) return null
 
   return (
-    <motion.div
-      className="relative bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-2 md:py-3 px-3 md:px-4 shadow-lg"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="container mx-auto">
+    <div className="relative bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-2 md:py-3 px-3 md:px-4 shadow-lg">
+      {/* Animación de fondo */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none"
+        animate={{ x: ["-100%", "100%"] }}
+        transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+      />
+
+      <div className="container mx-auto relative">
         {/* Layout móvil */}
         <div className="flex flex-col md:hidden gap-2">
           <div className="flex items-center justify-between">
@@ -62,7 +62,11 @@ export function UrgencyBanner() {
                 <span>🔥 AUDITORÍA GRATIS</span>
               </div>
             </div>
-            <button onClick={() => setIsVisible(false)} className="text-white/80 hover:text-white p-1">
+            <button 
+              onClick={() => setIsVisible(false)} 
+              className="text-white/80 hover:text-white p-2 -m-2 touch-manipulation"
+              style={{ zIndex: 9999 }}
+            >
               <X className="h-4 w-4" />
             </button>
           </div>
@@ -77,15 +81,21 @@ export function UrgencyBanner() {
                 3 CUPOS
               </motion.span>
             </div>
-            <Link
-              href={`https://wa.me/1234567890?text=${encodeURIComponent("¡Hola! Quiero mi AUDITORÍA GRATIS antes de que se acaben los cupos")}`}
+            <a
+              href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20mi%20AUDITORÍA%20GRATIS%20antes%20de%20que%20se%20acaben%20los%20cupos"
               target="_blank"
+              rel="noopener noreferrer"
+              className="touch-manipulation"
+              style={{ zIndex: 9999 }}
             >
-              <Button size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xs px-3 py-1">
+              <Button 
+                size="sm" 
+                className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xs px-3 py-2 touch-manipulation"
+              >
                 <MessageSquare className="h-3 w-3 mr-1" />
                 ¡RESERVAR!
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -131,27 +141,30 @@ export function UrgencyBanner() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link
-              href={`https://wa.me/1234567890?text=${encodeURIComponent("¡Hola! Quiero mi AUDITORÍA GRATIS antes de que se acaben los cupos")}`}
+            <a
+              href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20mi%20AUDITORÍA%20GRATIS%20antes%20de%20que%20se%20acaben%20los%20cupos"
               target="_blank"
+              rel="noopener noreferrer"
+              style={{ zIndex: 9999 }}
             >
               <Button
                 size="sm"
-                className="bg-white text-red-600 hover:bg-gray-100 font-bold shadow-lg relative z-20 cursor-pointer"
+                className="bg-white text-red-600 hover:bg-gray-100 font-bold shadow-lg cursor-pointer"
               >
                 <MessageSquare className="h-4 w-4 mr-1" />
                 ¡RESERVAR AHORA!
               </Button>
-            </Link>
-            <button onClick={() => setIsVisible(false)} className="text-white/80 hover:text-white p-1">
+            </a>
+            <button 
+              onClick={() => setIsVisible(false)} 
+              className="text-white/80 hover:text-white p-2 -m-2 cursor-pointer"
+              style={{ zIndex: 9999 }}
+            >
               <X className="h-4 w-4" />
             </button>
           </div>
         </div>
       </div>
-
-      {/* Animación de fondo */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-yellow-400/20 to-red-600/0 animate-pulse" />
-    </motion.div>
+    </div>
   )
 }
