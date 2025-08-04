@@ -42,7 +42,7 @@ export function UrgencyBanner() {
       {/* Animación de fondo */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none"
-        animate={{ x: ["-100%", "100%"] }}
+        animate={{ x: ["0%", "0%"] }}
         transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
       />
 
