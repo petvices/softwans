@@ -63,7 +63,7 @@ export function UrgencyBanner() {
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
             >
-              7 CUPOS
+              3 CUPOS
             </motion.span>
             <span>este mes</span>
           </div>
@@ -89,7 +89,7 @@ export function UrgencyBanner() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="https://wa.me/message/Y5IO4FCCEMICH1?text=¡Hola!%20Quiero%20mi%20AUDITORÍA%20GRATIS%20antes%20de%20que%20se%20acaben%20los%20cupos"
+            href="https://wa.me/message/Y5IO4FCCEMICH1"
             target="_blank"
           >
             <Button size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold shadow-lg">

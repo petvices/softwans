@@ -194,7 +194,6 @@ export function HeroSection() {
               transition={{ delay: 1 }}
             >
               <div className="flex items-center gap-2">
-                <span>+30 empresas confían en nosotros</span>
               </div>
               <div className="flex items-center gap-1">
                 <span>⭐⭐⭐⭐⭐</span>
