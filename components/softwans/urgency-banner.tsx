@@ -55,10 +55,10 @@ export function UrgencyBanner() {
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
-                <Clock className="h-4 w-4 text-yellow-300" />
+                <Clock className="h-4 w-4 text-white" />
               </motion.div>
               <div className="text-xs font-bold">
-                <span>🔥 AUDITORÍA GRATIS</span>
+                <span>AUDITORÍA GRATIS</span>
               </div>
             </div>
             <button 
@@ -81,7 +81,7 @@ export function UrgencyBanner() {
               </motion.span>
             </div>
             <a
-              href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20mi%20AUDITORÍA%20GRATIS%20antes%20de%20que%20se%20acaben%20los%20cupos"
+              href="https://wa.me/message/Y5IO4FCCEMICH1"
               target="_blank"
               rel="noopener noreferrer"
               className="touch-manipulation"
