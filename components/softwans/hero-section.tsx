@@ -185,23 +185,7 @@ export function HeroSection() {
                 </Button>
               </Link>
             </div>
-
-            {/* Prueba social */}
-            <motion.div
-              className="flex items-center justify-center sm:justify-start gap-6 pt-4 text-sm text-gray-400"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
-            >
-              <div className="flex items-center gap-2">
-              </div>
-              <div className="flex items-center gap-1">
-                <span>⭐⭐⭐⭐⭐</span>
-                <span>4.9/5 (18 reseñas)</span>
-              </div>
-            </motion.div>
-          </motion.div>
-
+            
           <motion.div
             className="relative flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
