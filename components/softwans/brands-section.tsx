@@ -21,6 +21,7 @@ export function BrandsSection() {
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
             Nuestros Clientes
           </div>
+
           <h2 className="text-2xl font-bold text-white mb-4">Empresas que ya están vendiendo MÁS gracias a nosotros</h2>
           <div className="flex justify-center items-center gap-8 text-sm text-gray-400">
             <div className="flex items-center gap-2">
@@ -41,6 +42,7 @@ export function BrandsSection() {
             </div>
           </div>
         </div>
+      </div>
 
         <Marquee
           gradient={false}
