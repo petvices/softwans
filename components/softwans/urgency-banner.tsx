@@ -42,33 +42,41 @@ export function UrgencyBanner() {
 
   return (
     <motion.div
-      className="relative bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-3 px-4 shadow-lg z-50"
+      className="relative bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-3 px-4 shadow-lg"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4 flex-1">
+      {/* Animación de fondo */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+        animate={{ x: ["-100%", "100%"] }}
+        transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+      />
+
+      <div className="container mx-auto flex items-center justify-between relative z-10">
+        <div className="flex items-center gap-2 md:gap-4 flex-1">
           <motion.div
             animate={{ rotate: [0, 10, -10, 0] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           >
-            <Clock className="h-5 w-5 text-yellow-300" />
+            <Clock className="h-4 w-4 md:h-5 md:w-5 text-yellow-300" />
           </motion.div>
 
-          <div className="flex items-center gap-2 text-sm md:text-base font-bold">
-            <span>🔥 PRIMERA AUDITORÍA GRATIS - Solo quedan</span>
+          <div className="flex items-center gap-1 md:gap-2 text-xs md:text-base font-bold">
+            <span className="hidden sm:inline">🔥</span>
+            <span>PRIMERA AUDITORÍA GRATIS - Solo quedan</span>
             <motion.span
-              className="bg-white text-red-600 px-2 py-1 rounded font-black"
+              className="bg-white text-red-600 px-1 md:px-2 py-1 rounded font-black text-xs md:text-sm"
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
             >
               3 CUPOS
             </motion.span>
-            <span>este mes</span>
+            <span className="hidden sm:inline">este mes</span>
           </div>
 
-          <div className="hidden md:flex items-center gap-2 text-sm">
+          <div className="hidden lg:flex items-center gap-2 text-sm ml-4">
             <span>Termina en:</span>
             <div className="flex gap-1">
               <span className="bg-black/20 px-2 py-1 rounded text-xs font-mono">
@@ -87,25 +95,30 @@ export function UrgencyBanner() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-3">
           <Link
-            href="https://wa.me/message/Y5IO4FCCEMICH1"
+            href="https://wa.me/message/Y5IO4FCCEMICH1?text=¡Hola!%20Quiero%20mi%20AUDITORÍA%20GRATIS%20antes%20de%20que%20se%20acaben%20los%20cupos"
             target="_blank"
+            className="relative z-20"
           >
-            <Button size="sm" className="bg-white text-red-600 hover:bg-gray-100 font-bold shadow-lg">
-              <MessageSquare className="h-4 w-4 mr-1" />
+            <Button
+              size="sm"
+              className="bg-white text-red-600 hover:bg-gray-100 font-bold shadow-lg text-xs md:text-sm px-2 md:px-4 py-1 md:py-2 cursor-pointer"
+            >
+              <MessageSquare className="h-3 w-3 md:h-4 md:w-4 mr-1" />
               ¡RESERVAR AHORA!
             </Button>
           </Link>
 
-          <button onClick={() => setIsVisible(false)} className="text-white/80 hover:text-white p-1">
+          <button
+            onClick={() => setIsVisible(false)}
+            className="text-white/80 hover:text-white p-1 cursor-pointer relative z-20"
+            aria-label="Cerrar banner"
+          >
             <X className="h-4 w-4" />
           </button>
         </div>
       </div>
-
-      {/* Animación de fondo */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-yellow-400/20 to-red-600/0 animate-pulse" />
     </motion.div>
   )
 }
