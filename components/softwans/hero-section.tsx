@@ -4,19 +4,100 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Code, MessageSquare, TrendingUp } from "lucide-react"
+import { ArrowRight, MessageSquare, TrendingUp, DollarSign, Users, Zap } from "lucide-react"
+import { useEffect, useState, useRef } from "react"
 
 export function HeroSection() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const heroRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (heroRef.current) {
+        const rect = heroRef.current.getBoundingClientRect()
+        setMousePosition({
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top,
+        })
+      }
+    }
+
+    window.addEventListener("mousemove", handleMouseMove)
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove)
+    }
+  }, [])
+
+  const calculateTransform = (depth = 1) => {
+    if (!heroRef.current) return { x: 0, y: 0 }
+
+    const rect = heroRef.current.getBoundingClientRect()
+    const centerX = rect.width / 2
+    const centerY = rect.height / 2
+
+    const moveX = (mousePosition.x - centerX) / (50 / depth)
+    const moveY = (mousePosition.y - centerY) / (50 / depth)
+
+    return { x: moveX, y: moveY }
+  }
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/80 py-20 md:py-32">
-      {/* Fondo con efecto de partículas */}
-      <div className="absolute inset-0 z-0 opacity-20">
-        <Image src="/images/background.webp" alt="Background Pattern" fill className="object-cover" />
+    <section ref={heroRef} className="relative overflow-hidden bg-gradient-blue py-20 md:py-32">
+      {/* Partículas animadas */}
+      <div className="particles">
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="particle"
+            initial={{
+              x: Math.random() * 100 + "%",
+              y: Math.random() * 100 + "%",
+              opacity: Math.random() * 0.5 + 0.3,
+              scale: Math.random() * 0.6 + 0.2,
+            }}
+            animate={{
+              y: [Math.random() * 100 + "%", Math.random() * 100 + "%", Math.random() * 100 + "%"],
+              x: [Math.random() * 100 + "%", Math.random() * 100 + "%", Math.random() * 100 + "%"],
+            }}
+            transition={{
+              duration: Math.random() * 20 + 10,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear",
+            }}
+            style={{
+              width: Math.random() * 6 + 2 + "px",
+              height: Math.random() * 6 + 2 + "px",
+            }}
+          />
+        ))}
       </div>
 
       {/* Círculos decorativos */}
-      <div className="absolute -left-20 -top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl"></div>
-      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-primary/20 blur-3xl"></div>
+      <motion.div
+        className="absolute -left-20 -top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl"
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.3, 0.5, 0.3],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-primary/20 blur-3xl"
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.2, 0.4, 0.2],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "easeInOut",
+          delay: 1,
+        }}
+      />
 
       <div className="container relative z-10 px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -24,69 +105,175 @@ export function HeroSection() {
             className="flex flex-col justify-center space-y-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
+            style={{
+              transform: `translate(${calculateTransform(0.5).x}px, ${calculateTransform(0.5).y}px)`,
+            }}
           >
-            <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              <span className="mr-1">✨</span> Potencia tu presencia digital
-            </div>
+            <motion.div
+              className="inline-flex items-center rounded-full border border-green-400/30 bg-green-400/10 px-4 py-1.5 text-sm font-medium text-green-400"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <motion.span
+                className="mr-2"
+                animate={{ rotate: [0, 15, 0, -15, 0] }}
+                transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, repeatDelay: 3 }}
+              >
+                💰
+              </motion.span>
+              Ayudamos a negocios a VENDER MÁS digitalmente
+            </motion.div>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                Software & Marketing <span className="text-primary">Digital</span>
+                <span className="text-white">¿Tu negocio necesita mpas</span>{" "}
+                <motion.span
+                  className="text-gradient block"
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                  }}
+                  style={{
+                    backgroundSize: "200% auto",
+                  }}
+                >
+                  CLIENTES?
+                </motion.span>
               </h1>
-              <p className="max-w-[600px] text-xl text-muted-foreground">
-                Transformamos tu negocio con soluciones tecnológicas y estrategias de marketing que generan resultados
-                reales.
-              </p>
+
+              <div className="space-y-4">
+                <p className="text-xl text-gray-300 font-medium">
+                  Te ayudamos a conseguir más ventas online sin complicaciones.
+                </p>
+
+                {/* Beneficios claros */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
+                  <motion.div
+                    className="flex items-center gap-3 text-green-400"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    <DollarSign className="h-5 w-5 flex-shrink-0" />
+                    <span className="text-sm font-medium">+300% aumentos de ventas</span>
+                  </motion.div>
+                  <motion.div
+                    className="flex items-center gap-3 text-green-400"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.6 }}
+                  >
+                    <Users className="h-5 w-5 flex-shrink-0" />
+                    <span className="text-sm font-medium">Miles de seguidores reales</span>
+                  </motion.div>
+                  <motion.div
+                    className="flex items-center gap-3 text-green-400"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.7 }}
+                  >
+                    <Zap className="h-5 w-5 flex-shrink-0" />
+                    <span className="text-sm font-medium">Resultados en 60 días</span>
+                  </motion.div>
+                  <motion.div
+                    className="flex items-center gap-3 text-green-400"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.8 }}
+                  >
+                    <TrendingUp className="h-5 w-5 flex-shrink-0" />
+                    <span className="text-sm font-medium">Sin estrés técnico</span>
+                  </motion.div>
+                </div>
+              </div>
             </div>
 
+            {/* CTAs mejorados con urgencia */}
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link href="https://wa.me/message/Y5IO4FCCEMICH1">
-                <Button size="lg" className="group w-full sm:w-auto">
-                  Solicitar Cotización
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
               <Link
                 href="https://wa.me/message/Y5IO4FCCEMICH1"
                 target="_blank"
+                className="flex-1"
               >
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  Contactar por WhatsApp
+                <Button
+                  size="lg"
+                  className="group cta-button w-full shadow-neon bg-green-600 hover:bg-green-700 text-white font-bold"
+                >
+                  <MessageSquare className="mr-2 h-5 w-5" />
+                  ¡QUIERO VENDER MÁS! (GRATIS)
+                  <motion.span
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, repeatDelay: 2 }}
+                  >
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </motion.span>
+                </Button>
+              </Link>
+
+              <Link href="/trabajos">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto border-gradient text-white border-white/30 hover:bg-white/10 bg-transparent"
+                >
+                  Ver Casos de Éxito
                 </Button>
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-4">
-              <div className="flex flex-col items-center rounded-lg border bg-background/50 p-3 backdrop-blur">
-                <Code className="mb-2 h-6 w-6 text-primary" />
-                <p className="text-center text-sm font-medium">Desarrollo</p>
+            {/* Prueba social */}
+            <motion.div
+              className="flex items-center justify-center sm:justify-start gap-6 pt-4 text-sm text-gray-400"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              <div className="flex items-center gap-2">
+                <div className="flex -space-x-2">
+                  {[1, 2, 3, 4].map((i) => 
+                <span>+30 empresas confían en nosotros</span>
               </div>
-              <div className="flex flex-col items-center rounded-lg border bg-background/50 p-3 backdrop-blur">
-                <TrendingUp className="mb-2 h-6 w-6 text-primary" />
-                <p className="text-center text-sm font-medium">Marketing Digital</p>
+              <div className="flex items-center gap-1">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span>4.9/5 (18 reseñas)</span>
               </div>
-              <div className="flex flex-col items-center rounded-lg border bg-background/50 p-3 backdrop-blur">
-                <MessageSquare className="mb-2 h-6 w-6 text-primary" />
-                <p className="text-center text-sm font-medium">Redes Sociales</p>
-              </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
             className="relative flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            style={{
+              transform: `translate(${calculateTransform(1).x}px, ${calculateTransform(1).y}px)`,
+            }}
           >
-            <div className="absolute inset-0 z-0 translate-x-10 translate-y-10 rounded-3xl bg-primary/20 blur-xl"></div>
-            <div className="relative z-10 overflow-hidden rounded-3xl border bg-background/80 shadow-xl backdrop-blur">
+            <motion.div
+              className="absolute inset-0 z-0 translate-x-10 translate-y-10 rounded-3xl bg-primary/20 blur-xl"
+              animate={{
+                scale: [1, 1.05, 1],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+            />
+            <div className="relative z-10 overflow-hidden rounded-3xl border bg-glass shadow-xl backdrop-blur">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-60" />
+              <div className="animate-shimmer absolute inset-0" />
               <Image
-                src="/images/index.webp"
+                src="/images/background.webp"
                 width={600}
                 height={600}
-                alt="Digital Marketing"
+                alt="Crecimiento de ventas online"
                 className="w-full object-cover"
               />
             </div>
