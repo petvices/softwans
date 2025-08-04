@@ -91,7 +91,7 @@ export function HeroSection() {
 
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="text-white">¿Tu negocio necesita más</span>{" "}
+                <span className="text-white">¿Tu negocio necesita</span>{" "}
                 <motion.span
                   className="text-gradient block"
                   animate={{
@@ -106,7 +106,7 @@ export function HeroSection() {
                     backgroundSize: "200% auto",
                   }}
                 >
-                  CLIENTES?
+                  MÁS CLIENTES?
                 </motion.span>
               </h1>
 
@@ -194,14 +194,6 @@ export function HeroSection() {
               transition={{ delay: 1 }}
             >
               <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 border-2 border-white"
-                    />
-                  ))}
-                </div>
                 <span>+30 empresas confían en nosotros</span>
               </div>
               <div className="flex items-center gap-1">
@@ -232,7 +224,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-60" />
               <div className="animate-shimmer absolute inset-0" />
               <Image
-                src="/placeholder.svg?height=600&width=600&text=Gráfico+de+Crecimiento+de+Ventas+Online"
+                src="/images/index.webp"
                 width={600}
                 height={600}
                 alt="Crecimiento de ventas online"
