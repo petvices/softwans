@@ -21,13 +21,28 @@ export function BrandsSection() {
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
             Nuestros Clientes
           </div>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Marcas que confían en nosotros
-          </h2>
-          <p className="max-w-[700px] mx-auto text-muted-foreground md:text-lg">
-            Hemos trabajado con empresas de todos los tamaños, desde startups hasta corporaciones multinacionales.
-          </p>
+
+          <h2 className="text-2xl font-bold text-white mb-4">Empresas que ya están vendiendo MÁS gracias a nosotros</h2>
+          <div className="flex justify-center items-center gap-8 text-sm text-gray-400">
+            <div className="flex items-center gap-2">
+              <span className="text-green-400 font-bold text-lg">150+</span>
+              <span>Proyectos Completados</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-400 font-bold text-lg">98%</span>
+              <span>Satisfacción del Cliente</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-400 font-bold text-lg">5+</span>
+              <span>Años de Experiencia</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-400 font-bold text-lg">24/7</span>
+              <span>Soporte Técnico</span>
+            </div>
+          </div>
         </div>
+      </div>
 
         <Marquee
           gradient={false}

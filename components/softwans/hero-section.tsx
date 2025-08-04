@@ -9,10 +9,10 @@ import { useEffect, useState, useRef } from "react"
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const heroRef = useRef(null)
+  const heroRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       if (heroRef.current) {
         const rect = heroRef.current.getBoundingClientRect()
         setMousePosition({
@@ -128,7 +128,7 @@ export function HeroSection() {
 
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="text-white">¿Tu negocio necesita mpas</span>{" "}
+                <span className="text-white">¿Tu negocio necesita más</span>{" "}
                 <motion.span
                   className="text-gradient block"
                   animate={{
@@ -196,11 +196,7 @@ export function HeroSection() {
 
             {/* CTAs mejorados con urgencia */}
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="https://wa.me/message/Y5IO4FCCEMICH1"
-                target="_blank"
-                className="flex-1"
-              >
+              <Link href="https://wa.me/message/Y5IO4FCCEMICH1" target="_blank" className="flex-1">
                 <Button
                   size="lg"
                   className="group cta-button w-full shadow-neon bg-green-600 hover:bg-green-700 text-white font-bold"
@@ -236,7 +232,13 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => 
+                  {[1, 2, 3, 4].map((i) => (
+                    <div
+                      key={i}
+                      className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 border-2 border-white"
+                    />
+                  ))}
+                </div>
                 <span>+30 empresas confían en nosotros</span>
               </div>
               <div className="flex items-center gap-1">
@@ -270,7 +272,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-60" />
               <div className="animate-shimmer absolute inset-0" />
               <Image
-                src="/images/background.webp"
+                src="/placeholder.svg?height=600&width=600&text=Gráfico+de+Crecimiento+de+Ventas+Online"
                 width={600}
                 height={600}
                 alt="Crecimiento de ventas online"
