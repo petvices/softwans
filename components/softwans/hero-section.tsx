@@ -185,7 +185,8 @@ export function HeroSection() {
                 </Button>
               </Link>
             </div>
-            
+          </motion.div>
+
           <motion.div
             className="relative flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
