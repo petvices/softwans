@@ -1,6 +1,7 @@
 "use client"
 
 import Marquee from "react-fast-marquee"
+import Image from "next/image"
 
 const brands = [
   { name: "Hypatia", logo: "/images/Hypatia_logo.webp" },
@@ -37,7 +38,7 @@ export function BrandsSection() {
         >
           {brands.map((brand, i) => (
             <div key={i} className="mx-10 flex items-center justify-center min-w-[150px]">
-              <img
+              <Image
                 src={brand.logo}
                 alt={brand.name}
                 className="h-24 w-auto object-contain transition duration-300"

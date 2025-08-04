@@ -5,44 +5,10 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, MessageSquare, TrendingUp, DollarSign, Users, Zap } from "lucide-react"
-import { useEffect, useState, useRef } from "react"
 
 export function HeroSection() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const heroRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (heroRef.current) {
-        const rect = heroRef.current.getBoundingClientRect()
-        setMousePosition({
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top,
-        })
-      }
-    }
-
-    window.addEventListener("mousemove", handleMouseMove)
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove)
-    }
-  }, [])
-
-  const calculateTransform = (depth = 1) => {
-    if (!heroRef.current) return { x: 0, y: 0 }
-
-    const rect = heroRef.current.getBoundingClientRect()
-    const centerX = rect.width / 2
-    const centerY = rect.height / 2
-
-    const moveX = (mousePosition.x - centerX) / (50 / depth)
-    const moveY = (mousePosition.y - centerY) / (50 / depth)
-
-    return { x: moveX, y: moveY }
-  }
-
   return (
-    <section ref={heroRef} className="relative overflow-hidden bg-gradient-blue py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-blue py-20 md:py-32">
       {/* Partículas animadas */}
       <div className="particles">
         {[...Array(20)].map((_, i) => (
@@ -106,9 +72,6 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            style={{
-              transform: `translate(${calculateTransform(0.5).x}px, ${calculateTransform(0.5).y}px)`,
-            }}
           >
             <motion.div
               className="inline-flex items-center rounded-full border border-green-400/30 bg-green-400/10 px-4 py-1.5 text-sm font-medium text-green-400"
@@ -253,9 +216,6 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            style={{
-              transform: `translate(${calculateTransform(1).x}px, ${calculateTransform(1).y}px)`,
-            }}
           >
             <motion.div
               className="absolute inset-0 z-0 translate-x-10 translate-y-10 rounded-3xl bg-primary/20 blur-xl"
