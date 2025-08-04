@@ -48,9 +48,17 @@ export default function LinksPage() {
 
         {/* Enlaces */}
         <div className="w-full space-y-4">
-          <LinkButton href="https://softwans.com" icon={<Globe className="h-5 w-5" />} label="Sitio Web Oficial" />
+          <LinkButton 
+            href="https://www.softwans.com" 
+            icon={<Globe className="h-5 w-5" />} 
+            label="Sitio Web Oficial" 
+            />
 
-          <LinkButton href="https://menu.petvices.lat/" icon={<Globe className="h-5 w-5" />} label="Catálogo Digital" />
+          <LinkButton 
+            href="https://menu.petvices.lat/" 
+            icon={<Globe className="h-5 w-5" />} 
+            label="Catálogo Digital" 
+            />
 
           <LinkButton
             href="https://wa.me/message/Y5IO4FCCEMICH1"
