@@ -366,7 +366,7 @@ export default function DesarrolloSoftwarePage() {
 
               <div className="relative">
                 <Image
-                  src="images/web-creation.webp?height=600&width=500"
+                  src="images/aplication-creation.webp?height=600&width=500"
                   width={500}
                   height={600}
                   alt="Desarrollo de software personalizado en acción"
