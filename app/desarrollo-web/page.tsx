@@ -165,7 +165,7 @@ export default function DesarrolloWeb2Page() {
               <div className="relative flex items-center justify-center">
                 <div className="relative overflow-hidden rounded-3xl border bg-glass shadow-xl backdrop-blur">
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
+                    src="https://cdn.pixabay.com/photo/2016/02/19/12/37/design-1210160_1280.jpg"
                     width={600}
                     height={600}
                     alt="Desarrollo web profesional moderno"

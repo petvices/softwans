@@ -169,7 +169,7 @@ export default function MarketingDigitalPage() {
               <div className="relative flex items-center justify-center">
                 <div className="relative overflow-hidden rounded-3xl border bg-glass shadow-xl backdrop-blur">
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
+                    src="https://cdn.pixabay.com/photo/2020/02/08/14/28/camera-4830248_1280.jpg"
                     width={600}
                     height={600}
                     alt="Marketing digital profesional y estrategias online"

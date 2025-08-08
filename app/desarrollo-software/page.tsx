@@ -173,7 +173,7 @@ export default function DesarrolloSoftwarePage() {
               <div className="relative flex items-center justify-center">
                 <div className="relative overflow-hidden rounded-3xl border bg-glass shadow-xl backdrop-blur">
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
+                    src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg"
                     width={600}
                     height={600}
                     alt="Desarrollo de software personalizado y programación a medida"
