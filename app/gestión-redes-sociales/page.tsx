@@ -384,7 +384,7 @@ export default function GestionRedesSocialesPage() {
 
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=600&width=500"
+                  src="images/marketing-creation.webp?height=600&width=500"
                   width={500}
                   height={600}
                   alt="Community management y gestión de redes sociales en acción"
