@@ -362,7 +362,7 @@ export default function MarketingDigitalPage() {
 
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=600&width=500"
+                  src="images/marketing-creation.webp?height=600&width=500"
                   width={500}
                   height={600}
                   alt="Estrategias de marketing digital en acción"

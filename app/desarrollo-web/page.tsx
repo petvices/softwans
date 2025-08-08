@@ -165,7 +165,7 @@ export default function DesarrolloWeb2Page() {
               <div className="relative flex items-center justify-center">
                 <div className="relative overflow-hidden rounded-3xl border bg-glass shadow-xl backdrop-blur">
                   <Image
-                    src="images/web-creation.webp?height=600&width=600"
+                    src="/placeholder.svg?height=600&width=600"
                     width={600}
                     height={600}
                     alt="Desarrollo web profesional moderno"
@@ -358,7 +358,7 @@ export default function DesarrolloWeb2Page() {
 
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=600&width=500"
+                  src="images/web-creation.webp?height=600&width=500"
                   width={500}
                   height={600}
                   alt="Desarrollo web profesional en acción"
